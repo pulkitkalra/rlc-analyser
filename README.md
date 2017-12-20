@@ -1,6 +1,17 @@
 # RLC Analyser Set Up Guide
 ## Product Usage
 When the RLC Analyser is started the user is prompted to browse to search for a new folder or RLC to process. Alternatively, the user can also process the default folder/file displayed. Instructions are provided on the top of the window. 
+
+## User Set Up
+
+### 1. Download the JAR file
+Download the JAR file supplied on GitHUb. This JAR file contains the latest built version of the RLC Analyser.
+
+
+### 2. Run the JAR
+In order to run the JAR file, Java 8 needs to be installed. To run the JAR double click on the icon. Skip the next step if permissions are not denied.
+1. On Mac - permissions may need to be changed. Open System Preferences -> Security & Privacy -> General -> Open Anyway. 
+
 ## Developer Set Up
 
 ### 1. Eclipse Development Environment Set Up
@@ -34,19 +45,15 @@ In the "Project" menu, check the "Build Automatically" menu item.
 
 ### 4. Starting RLC Analyser and Unit Tests
 #### 4.1. Start RLC Analyser Program
-1. From the "Run" menu, hover over "Run As", the select "Java Application"
-2. A pop-up should appear asking to select Java Application. Select "RlcAnalyserConsole". Click "OK"
-3. The program should have now started
+1. From the "Run" menu, hover over "Run As", the select "Java Application".
+2. A pop-up should appear asking to select Java Application. Select "RlcAnalyserConsole". Click "OK".
+3. The program should have now started.
 #### 4.2 Start Maven build
-1. From the "Run" menu, hover over "Run As", then select "Maven Build"
+1. From the "Run" menu, hover over "Run As", then select "Maven Build".
 
 
-## User Set Up
-
-### 1. Download the JAR file
-Download the JAR file supplied on GitHUb. This JAR file contains the latest built version of the RLC Analyser.
-
-
-### 2. Run the JAR
-In order to run the JAR file, Java 8 needs to be installed. To run the JAR double click on the icon. Skip the next step if permissions are not denied.
-1. On Mac - permissions may need to be changed. Open System Preferences -> Security & Privacy -> General -> Open Anyway. 
+## Contributing to the Project
+1. Fork the orionhealth/rlc-analyser repository.
+2. Create a new pull request when you want to push changes.
+// TO BE COMPLETED: 
+3. The pull request must pass the build and the code review process (at least 1 approval?).
