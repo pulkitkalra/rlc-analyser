@@ -1,5 +1,6 @@
 # RLC Analyser Set Up Guide
-
+## Product Usage
+When the RLC Analyser is started the user is prompted to browse to search for a new folder or RLC to process. Alternatively, the user can also process the default folder/file displayed. Instructions are provided on the top of the window. 
 ## Developer Set Up
 
 ### 1. Eclipse Development Environment Set Up
