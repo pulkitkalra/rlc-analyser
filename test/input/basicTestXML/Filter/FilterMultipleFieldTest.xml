@@ -1,0 +1,37 @@
+<Filter>
+  <ID>bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/01113204-c7d1-4d35-ac3f-dda0eed7fbdd</ID>
+  <Type>Batcher</Type>
+  <State>stConfigured</State>
+  <Priority>-1</Priority>
+  <Configuration>
+      <Property>
+        <Name>UserName</Name>
+        <Value>jasons</Value>
+        <Type>UserDetails</Type>
+      </Property>
+      <Property>
+        <Name></Name>
+        <Value></Value>
+        <Type></Type>
+      </Property>
+  </Configuration>
+  <GeneralProperties>
+      <Property>
+        <Name>UserName</Name>
+        <Value>jasons</Value>
+        <Type>UserDetails</Type>
+      </Property>
+      <Property/>
+  </GeneralProperties>
+  <Destinations>
+      <Destination>
+        <ID>bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/098c3c8e-fc00-4e76-97c8-5804aabc27da</ID>
+      </Destination>
+      <Destination>
+        <ID></ID>
+      </Destination>
+  </Destinations>
+  <ErrorOutputID>bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/714fbd75-b53f-452e-ba6d-ea4cd940f295</ErrorOutputID>
+  <NoMatchOutputID>bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/a92248b4-9425-49bf-b24c-09d6ad30134e</NoMatchOutputID>
+  <NextDestinations>&lt;NextDestinations&gt;&lt;Connector&gt;&lt;DestinationId&gt;bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/098c3c8e-fc00-4e76-97c8-5804aabc27da&lt;/DestinationId&gt;&lt;/Connector&gt;&lt;ErrorConnector&gt;bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/714fbd75-b53f-452e-ba6d-ea4cd940f295&lt;/ErrorConnector&gt;&lt;/NextDestinations&gt;</NextDestinations>
+</Filter>
