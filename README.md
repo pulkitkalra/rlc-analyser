@@ -5,7 +5,7 @@ When the RLC Analyser is started the user is prompted to browse to search for a 
 ## User Set Up
 
 ### 1. Download the JAR file
-Download the JAR file supplied on GitHUb. This JAR file contains the latest built version of the RLC Analyser.
+Download the JAR file supplied on GitHub. This JAR file contains the latest built version of the RLC Analyser.
 
 
 ### 2. Run the JAR
