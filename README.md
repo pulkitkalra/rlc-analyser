@@ -24,6 +24,8 @@ Settings Panel | Change
 ---------------|-------
 Window (Menu) -> Preferences -> Java -> JUnit | Select the "add -ea to VM arguments when creating JUnit launch configuration" checkbox
 
+Apply the changes and close.
+
 ### 2. Import Sources to Eclipse
 #### 2.1. Disable "Build Automatically"
 1. Uncheck the "Build Automatically" menu item in the "Project" menu.
@@ -44,11 +46,26 @@ In the "Project" menu, check the "Build Automatically" menu item.
 
 
 ### 4. Starting RLC Analyser and Unit Tests
-#### 4.1. Start RLC Analyser Program
-1. From the "Run" menu, hover over "Run As", the select "Java Application".
-2. A pop-up should appear asking to select Java Application. Select "RlcAnalyserConsole". Click "OK".
-3. The program should have now started.
-#### 4.2 Start Maven build
+#### 4.1 Create a Run Configuration - Java Application
+1. From the "Run" menu, click on "Run Configurations...".
+2. Right click "Java Application" -> click "New".
+3. Set name to "RLCAnalyserStart" or anything similar.
+4. Under Project, click "Browse..." -> select the RLC Analyser project -> click "Ok".
+5. Click "Search..." -> select "com.orchestral.rhapsody.rlcanalyser.RlcAnalyserConsole" -> click "Ok".
+6. Click "Apply" -> click "Run".
+
+Note: A warning should appear in the Eclipse console on first start due to the initialisation of the logger files, on the next launch these warning should disappear.
+
+#### 4.2 Create a Run Configuration - JUnit Tests
+1. From the "Run" menu, click on "Run Configurations...".
+2. Right click "JUnit" -> click "New".
+3. Set name to "RLCAnalyserTest" or anything similar.
+4. Select "Run all tests in the selected project, package or course folder:".
+5. Click "Search..." -> Select the RLCAnalyser project.
+6. Ensure the "Test runner" field is set to "JUnit 4".
+7. Click "Apply" -> "Run".
+
+#### 4.3 Start Maven build
 1. From the "Run" menu, hover over "Run As", then select "Maven Build".
 
 
