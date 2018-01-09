@@ -66,7 +66,7 @@ Note: A warning should appear in the Eclipse console on first start due to the i
 7. Click "Apply" -> "Run".
 
 #### 4.3 Start Maven build
-1. From the "Run" menu, hover over "Run As", then select "Maven Build".
+1. From the "Run" menu, hover over "Run As", then select "Maven Build". Errors may occur if Java JDK and JRE are not properly installed.
 
 
 ## Contributing to the Project
