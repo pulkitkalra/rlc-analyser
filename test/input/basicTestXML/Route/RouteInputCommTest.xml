@@ -1,0 +1,65 @@
+<Route>
+      <ID>5de893ea-86b5-40a0-b12e-b1c494b0d1d9</ID>
+      <Folder />
+      <Filters>
+        <Filter>
+          <ID>5de893ea-86b5-40a0-b12e-b1c494b0d1d9/cb7fc700-5342-4d48-8432-62228ab9e561</ID>
+          <Type>No-op</Type>
+          <State>stConfigured</State>
+          <Priority>-1</Priority>
+          <Configuration />
+          <GeneralProperties>
+            <Property>
+              <Name>UserName</Name>
+              <Value>No-operation</Value>
+              <Type />
+            </Property>
+          </GeneralProperties>
+          <Destinations />
+          <NextDestinations xsi:type="xsd:string">&lt;NextDestinations /&gt;</NextDestinations>
+        </Filter>
+      </Filters>
+      <InputCommPoints>
+        <InputCommPoint>
+          <ID>b1ea5940-1e5f-443f-8504-182dd00bda16</ID>
+          <FirstFilters>
+            <ID>5de893ea-86b5-40a0-b12e-b1c494b0d1d9/009f45d9-b0f3-4279-8eea-099a13ccaa03</ID>
+          </FirstFilters>
+        </InputCommPoint>
+        <InputCommPoint>
+          <ID>c4853633-2c98-4d8e-9b2f-7f312a2036ea</ID>
+          <FirstFilters>
+            <ID>1cb57484-47e2-48a1-a84a-ff6cec2c3a06/619f5640-d8b0-4e52-b098-c4f3108b041a</ID>
+            <ID>1cb57484-47e2-48a1-a84a-ff6cec2c3a06/a1b5b039-5632-4ea7-9143-54471b09f075</ID>
+          </FirstFilters>
+        </InputCommPoint>
+      </InputCommPoints>
+      <OutputCommPoints>
+        <ID>b1ea5940-1e5f-443f-8504-182dd00bda16</ID>
+      </OutputCommPoints>
+      <RouteProperties>
+        <ExtractedProperties />
+        <RoutePropertiesDefinitions />
+        <RepeatedResponse>brIgnore</RepeatedResponse>
+        <UnsolicitedResponse>brIgnore</UnsolicitedResponse>
+      </RouteProperties>
+      <GeneralProperties>
+        <Property>
+          <Name>StartupStateTracking</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UserName</Name>
+          <Value>NewRoute</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>PersistenceMode</Name>
+          <Value>False</Value>
+          <Type />
+        </Property>
+      </GeneralProperties>
+      <Priority>3</Priority>
+      <State>stNotConfigured</State>
+    </Route>

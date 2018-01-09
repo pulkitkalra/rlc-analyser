@@ -1,0 +1,3002 @@
+<?xml version="1.0"?>
+<Engine xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" FileVersion="9" CompatibleDownToFileVersion="5" xmlns="urn:www.yourcompany.com/Rhapsody/Schema.xml">
+  <CommPoints>
+    <CommPoint>
+      <ID>4b185350-aec9-418e-90ce-f0d0b3aa29ba</ID>
+      <Type>TCPServer</Type>
+      <InputRoutes>
+        <ID>bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29</ID>
+      </InputRoutes>
+      <OutputRoutes>
+        <ID>bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29</ID>
+      </OutputRoutes>
+      <Configuration>
+        <Property>
+          <Name>inputMaxCount</Name>
+          <Value>-1</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>inputThrottleConnOnly</Name>
+          <Value>1</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>inputTimePeriod</Name>
+          <Value>0</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>OnlineModeAction</Name>
+          <Value>0</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>OrphanCleanupTimeout</Name>
+          <Value>0</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>outputMaxCount</Name>
+          <Value>-1</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>outputThrottleConnOnly</Name>
+          <Value>1</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>outputTimePeriod</Name>
+          <Value>0</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>LOCALPORT</Name>
+          <Value>6431</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>LOCALHOST</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>SERVERSOCKET_LISTEN_BACKLOG</Name>
+          <Value>10</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>SECURE</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>SSL_MODE</Name>
+          <Value>0</Value>
+          <Type>ptEnum</Type>
+        </Property>
+        <Property>
+          <Name>SSL_CLIENT_MODE</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>SECURE_KEYS</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>SECURE_TRUSTS</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>LOGCONNECTIONS</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>LOGDATA</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>DATAHEX</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>CONNECTIONLOG</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>LOGTIME</Name>
+          <Value>-1</Value>
+          <Type>ptEnum</Type>
+        </Property>
+        <Property>
+          <Name>INCOMING_WRAPPER</Name>
+          <Value>0</Value>
+          <Type>ptEnum</Type>
+        </Property>
+        <Property>
+          <Name>INCOMING_STRIP_WRAPPERS</Name>
+          <Value>true</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>INCOMING_HEADER</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>INCOMING_TRAILER</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>INCOMING_ENDIAN</Name>
+          <Value>-1</Value>
+          <Type>ptEnum</Type>
+        </Property>
+        <Property>
+          <Name>IN_OUT_TIMEOUT_ACTION</Name>
+          <Value>RECEIVE_NEXT_MESSAGE</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>IN_OUT_STATIC_TIMEOUT_RESPONSE</Name>
+          <Value />
+          <Type>ptFile</Type>
+        </Property>
+        <Property>
+          <Name>OUTGOING_WRAPPER</Name>
+          <Value>0</Value>
+          <Type>ptEnum</Type>
+        </Property>
+        <Property>
+          <Name>OUTGOING_HEADER</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>OUTGOING_TRAILER</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>OUTGOING_ENDIAN</Name>
+          <Value>-1</Value>
+          <Type>ptEnum</Type>
+        </Property>
+        <Property>
+          <Name>InputCharacterEncoding</Name>
+          <Value>151</Value>
+          <Type />
+        </Property>
+      </Configuration>
+      <GeneralProperties>
+        <Property>
+          <Name>Notes</Name>
+          <Value>{\rtf1\ansi\ansicpg1252\uc0\deff0{\fonttbl
+{\f0\fswiss\fcharset0\fprq2 Arial;}
+{\f1\froman\fcharset2\fprq2 Symbol;}}
+{\colortbl;\red0\green0\blue0;\red255\green255\blue255;}
+{\stylesheet{\s0\f0\fs24 [Normal];}{\*\cs10\additive Default Paragraph Font;}}
+{\*\generator TX_RTF32 9.0.311.500;}
+\deftab1134\pard\plain\f0\fs24\par }</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>NotificationSchemes</Name>
+          <Value>[]</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>StartupState</Name>
+          <Value>START_LEVEL_1</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>StartupStateTracking</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UserName</Name>
+          <Value>A-Team.Millennium.BillingPro_TCPServer</Value>
+          <Type />
+        </Property>
+      </GeneralProperties>
+      <Priority>-1</Priority>
+      <Mode>cpmBidirectional</Mode>
+      <NumConnections>1</NumConnections>
+      <IdleTimeout>0</IdleTimeout>
+      <Autotrack>0</Autotrack>
+      <RetryType>rtImmediate</RetryType>
+      <NumRetries>5</NumRetries>
+      <NotificationRetries>5</NotificationRetries>
+      <RetryDelay>5000</RetryDelay>
+      <State>stRunning</State>
+      <Folder>A-Team;Millennium;Billing;Pro</Folder>
+    </CommPoint>
+    <CommPoint>
+      <ID>5bbc7063-55b2-4542-b024-6709d1f6b579</ID>
+      <Type>FTPClient</Type>
+      <InputRoutes />
+      <OutputRoutes>
+        <ID>bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29</ID>
+      </OutputRoutes>
+      <Configuration>
+        <Property>
+          <Name>OnlineModeAction</Name>
+          <Value>0</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>outputMaxCount</Name>
+          <Value>-1</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>outputThrottleConnOnly</Name>
+          <Value>1</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>outputTimePeriod</Name>
+          <Value>0</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>Server</Name>
+          <Value>dh31.hitchcock.org</Value>
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>Port</Name>
+          <Value>21</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>Username</Name>
+          <Value>APFILES</Value>
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>Password</Name>
+          <Value>OhFkg4PntgkTpIDXHnE1eL4CXk+8JALUHhWqzJkyod+vt0Chd26+eg==</Value>
+          <Type>ptPassword</Type>
+        </Property>
+        <Property>
+          <Name>Passive</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>ReadTimeout</Name>
+          <Value>3000</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>TransferType</Name>
+          <Value>1</Value>
+          <Type>ptEnum</Type>
+        </Property>
+        <Property>
+          <Name>ConnectionMode</Name>
+          <Value>1</Value>
+          <Type>ptEnum</Type>
+        </Property>
+        <Property>
+          <Name>ConnectionType</Name>
+          <Value>0</Value>
+          <Type>ptEnum</Type>
+        </Property>
+        <Property>
+          <Name>DataChannelProtectionLevel</Name>
+          <Value>-1</Value>
+          <Type>ptEnum</Type>
+        </Property>
+        <Property>
+          <Name>FTPSMode</Name>
+          <Value>-1</Value>
+          <Type>ptEnum</Type>
+        </Property>
+        <Property>
+          <Name>DisableStandardClosure</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>ServerValidation</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>ServerCertificates</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>CheckHostNames</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>ClientAuthentication</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>ClientKey</Name>
+          <Value />
+          <Type>ptKey</Type>
+        </Property>
+        <Property>
+          <Name>ClientCertificate</Name>
+          <Value />
+          <Type>ptCertificate</Type>
+        </Property>
+        <Property>
+          <Name>InputDir</Name>
+          <Value />
+          <Type>ptDir</Type>
+        </Property>
+        <Property>
+          <Name>ListParam</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>Pattern</Name>
+          <Value>*</Value>
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>RefreshRate</Name>
+          <Value>60000</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>DeleteAfterReceive</Name>
+          <Value>true</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>BeforeReceive</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>OutputDir</Name>
+          <Value />
+          <Type>ptDir</Type>
+        </Property>
+        <Property>
+          <Name>OutputDirCreate</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>BaseFilename</Name>
+          <Value>t01_p</Value>
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>Suffix</Name>
+          <Value>.dat</Value>
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>AppendDate</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>CheckName</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>UseTempFile</Name>
+          <Value>true</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>AppendKey</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>BeforeSend</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>InputCharacterEncoding</Name>
+          <Value>151</Value>
+          <Type />
+        </Property>
+      </Configuration>
+      <GeneralProperties>
+        <Property>
+          <Name>NotificationSchemes</Name>
+          <Value>[]</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>StartupState</Name>
+          <Value>START_LEVEL_1</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>StartupStateTracking</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UserName</Name>
+          <Value>A-Team.Millennium.BillingPro_FTP</Value>
+          <Type />
+        </Property>
+      </GeneralProperties>
+      <Priority>-1</Priority>
+      <Mode>cpmOutput</Mode>
+      <NumConnections>1</NumConnections>
+      <IdleTimeout>0</IdleTimeout>
+      <Autotrack>0</Autotrack>
+      <RetryType>rtImmediate</RetryType>
+      <NumRetries>5</NumRetries>
+      <NotificationRetries>5</NotificationRetries>
+      <RetryDelay>5000</RetryDelay>
+      <State>stInError</State>
+      <Folder>A-Team;Millennium;Billing;Pro</Folder>
+    </CommPoint>
+    <CommPoint>
+      <ID>6cb89abb-5c94-43c4-ae92-c8028201dbe9</ID>
+      <Type>Directory</Type>
+      <InputRoutes />
+      <OutputRoutes>
+        <ID>6790f5b5-e371-4600-9542-819b865051cb</ID>
+      </OutputRoutes>
+      <Configuration>
+        <Property>
+          <Name>OnlineModeAction</Name>
+          <Value>0</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>INPUT_DIRECTORY_NAME</Name>
+          <Value />
+          <Type>ptDir</Type>
+        </Property>
+        <Property>
+          <Name>FILTER_PATTERN</Name>
+          <Value>*</Value>
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>EXCLUDE_PATTERN</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>InputOrder</Name>
+          <Value>0</Value>
+          <Type>ptEnum</Type>
+        </Property>
+        <Property>
+          <Name>JavaScriptComparator</Name>
+          <Value>// Example custom comparator - sorting by size.
+// var leftSize = left.length();
+// var rightSize = right.length();
+// leftSize - rightSize; // No return statement required.
+</Value>
+          <Type>ptJScript</Type>
+        </Property>
+        <Property>
+          <Name>DIR_REFRESH_RATE</Name>
+          <Value>5000</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>RECEIVE_RATE</Name>
+          <Value>0</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>MOVE_PROCCESSED_FILES</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>MOVE_TO_DIRECTORY_NAME</Name>
+          <Value />
+          <Type>ptDir</Type>
+        </Property>
+        <Property>
+          <Name>ZIP_FILE_INPUT_MODE</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>INPUT_DEBATCH_MODE</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>InputHeaderRegex</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>InputTrailerRegex</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>InputSeparatorType</Name>
+          <Value>0</Value>
+          <Type>ptEnum</Type>
+        </Property>
+        <Property>
+          <Name>InputSeparatorRegex</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>OUTPUT_DIRECTORY_NAME</Name>
+          <Value>/home/rhapsody/test2</Value>
+          <Type>ptDir</Type>
+        </Property>
+        <Property>
+          <Name>OUTPUT_BASE_FILENAME</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>OUTPUT_FILENAME_SUFFIX</Name>
+          <Value>txt</Value>
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>OUTPUT_FILENAME_APPENDDATE</Name>
+          <Value>true</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>OUTPUT_BATCH_MODE</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>OUTPUT_OVERWRITE_FILES</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>USE_TEMP</Name>
+          <Value>0</Value>
+          <Type>ptEnum</Type>
+        </Property>
+        <Property>
+          <Name>OUTPUT_WRAPPER</Name>
+          <Value>-1</Value>
+          <Type>ptEnum</Type>
+        </Property>
+        <Property>
+          <Name>OUTPUT_HEADER</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>OUTPUT_TRAILER</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>ENDIAN</Name>
+          <Value>-1</Value>
+          <Type>ptEnum</Type>
+        </Property>
+        <Property>
+          <Name>BATCHFILE_ROLLOVER</Name>
+          <Value>-1</Value>
+          <Type>ptEnum</Type>
+        </Property>
+        <Property>
+          <Name>BATCHFILE_ROLLOVERSIZE</Name>
+          <Value>1M</Value>
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>COMPRESS_BATCHFILE</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>INDIVIDUAL_FILES_IN_ZIP</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>InputCharacterEncoding</Name>
+          <Value>151</Value>
+          <Type />
+        </Property>
+      </Configuration>
+      <GeneralProperties>
+        <Property>
+          <Name>NotificationSchemes</Name>
+          <Value>[]</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>StartupState</Name>
+          <Value>DONT_START</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>StartupStateTracking</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UserName</Name>
+          <Value>Output folder for testing</Value>
+          <Type />
+        </Property>
+      </GeneralProperties>
+      <Priority>-1</Priority>
+      <Mode>cpmOutput</Mode>
+      <NumConnections>1</NumConnections>
+      <IdleTimeout>0</IdleTimeout>
+      <Autotrack>0</Autotrack>
+      <RetryType>rtLinear</RetryType>
+      <NumRetries>5</NumRetries>
+      <NotificationRetries>5</NotificationRetries>
+      <RetryDelay>5000</RetryDelay>
+      <State>stStopped</State>
+      <Folder>CLINICOM &lt;=&gt; CRIS;CRIS</Folder>
+    </CommPoint>
+    <CommPoint>
+      <ID>c4853633-2c98-4d8e-9b2f-7f312a2036ea</ID>
+      <Type>webservicesproducer</Type>
+      <InputRoutes>
+        <ID>5de893ea-86b5-40a0-b12e-b1c494b0d1d9</ID>
+      </InputRoutes>
+      <OutputRoutes />
+      <Configuration>
+        <Property>
+          <Name>Config</Name>
+          <Value>&lt;configuration&gt;&lt;serviceId&gt;a1f0398e-d353-4a54-9016-30e33bbccd0b&lt;/serviceId&gt;&lt;operation&gt;&lt;name&gt;adfasdfasf&lt;/name&gt;&lt;inputMapping&gt;&lt;mode&gt;USE_SOAP_BODY&lt;/mode&gt;&lt;namespace uri="sdfgsdfg" prefix="ns1" /&gt;&lt;/inputMapping&gt;&lt;/operation&gt;&lt;/configuration&gt;</Value>
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>InputCharacterEncoding</Name>
+          <Value>151</Value>
+          <Type />
+        </Property>
+      </Configuration>
+      <GeneralProperties>
+        <Property>
+          <Name>NotificationSchemes</Name>
+          <Value>[]</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>StartupState</Name>
+          <Value>DONT_START</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UserName</Name>
+          <Value>Web Service Hosting</Value>
+          <Type />
+        </Property>
+      </GeneralProperties>
+      <Priority>-1</Priority>
+      <Mode>cpmInput</Mode>
+      <NumConnections>1</NumConnections>
+      <IdleTimeout>0</IdleTimeout>
+      <Autotrack>0</Autotrack>
+      <RetryType>rtLinear</RetryType>
+      <NumRetries>5</NumRetries>
+      <NotificationRetries>5</NotificationRetries>
+      <RetryDelay>5000</RetryDelay>
+      <State>stStopped</State>
+      <Folder />
+    </CommPoint>
+    <CommPoint>
+      <ID>b1ea5940-1e5f-443f-8504-182dd00bda16</ID>
+      <Type>ErrorDestinationRedirector</Type>
+      <InputRoutes>
+        <ID>5de893ea-86b5-40a0-b12e-b1c494b0d1d9</ID>
+      </InputRoutes>
+      <OutputRoutes>
+        <ID>bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29</ID>
+        <ID>5de893ea-86b5-40a0-b12e-b1c494b0d1d9</ID>
+      </OutputRoutes>
+      <Configuration>
+        <Property>
+          <Name>OnlineModeAction</Name>
+          <Value>0</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>InputCharacterEncoding</Name>
+          <Value>151</Value>
+          <Type />
+        </Property>
+      </Configuration>
+      <GeneralProperties>
+        <Property>
+          <Name>NotificationSchemes</Name>
+          <Value>[]</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>StartupState</Name>
+          <Value>START_LEVEL_1</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>StartupStateTracking</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UserName</Name>
+          <Value>A-Team.Millennium.BillingPro Notify Redirector</Value>
+          <Type />
+        </Property>
+      </GeneralProperties>
+      <Priority>-1</Priority>
+      <Mode>cpmBidirectional</Mode>
+      <NumConnections>1</NumConnections>
+      <IdleTimeout>0</IdleTimeout>
+      <Autotrack>0</Autotrack>
+      <RetryType>rtLinear</RetryType>
+      <NumRetries>5</NumRetries>
+      <NotificationRetries>5</NotificationRetries>
+      <RetryDelay>5000</RetryDelay>
+      <State>stStopped</State>
+      <Folder>A-Team;Millennium;Billing</Folder>
+    </CommPoint>
+    <CommPoint>
+      <ID>f13e1ee6-19c6-4b89-aedf-89095b3097d2</ID>
+      <Type>Directory</Type>
+      <InputRoutes>
+        <ID>6790f5b5-e371-4600-9542-819b865051cb</ID>
+      </InputRoutes>
+      <OutputRoutes />
+      <Configuration>
+        <Property>
+          <Name>OnlineModeAction</Name>
+          <Value>0</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>INPUT_DIRECTORY_NAME</Name>
+          <Value>/home/rhapsody/test</Value>
+          <Type>ptDir</Type>
+        </Property>
+        <Property>
+          <Name>FILTER_PATTERN</Name>
+          <Value>*</Value>
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>EXCLUDE_PATTERN</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>InputOrder</Name>
+          <Value>0</Value>
+          <Type>ptEnum</Type>
+        </Property>
+        <Property>
+          <Name>JavaScriptComparator</Name>
+          <Value>// Example custom comparator - sorting by size.
+// var leftSize = left.length();
+// var rightSize = right.length();
+// leftSize - rightSize; // No return statement required.
+</Value>
+          <Type>ptJScript</Type>
+        </Property>
+        <Property>
+          <Name>DIR_REFRESH_RATE</Name>
+          <Value>5000</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>RECEIVE_RATE</Name>
+          <Value>0</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>MOVE_PROCCESSED_FILES</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>MOVE_TO_DIRECTORY_NAME</Name>
+          <Value />
+          <Type>ptDir</Type>
+        </Property>
+        <Property>
+          <Name>ZIP_FILE_INPUT_MODE</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>INPUT_DEBATCH_MODE</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>InputHeaderRegex</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>InputTrailerRegex</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>InputSeparatorType</Name>
+          <Value>-1</Value>
+          <Type>ptEnum</Type>
+        </Property>
+        <Property>
+          <Name>InputSeparatorRegex</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>OUTPUT_DIRECTORY_NAME</Name>
+          <Value />
+          <Type>ptDir</Type>
+        </Property>
+        <Property>
+          <Name>OUTPUT_BASE_FILENAME</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>OUTPUT_FILENAME_SUFFIX</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>OUTPUT_FILENAME_APPENDDATE</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>OUTPUT_BATCH_MODE</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>OUTPUT_OVERWRITE_FILES</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>USE_TEMP</Name>
+          <Value>0</Value>
+          <Type>ptEnum</Type>
+        </Property>
+        <Property>
+          <Name>OUTPUT_WRAPPER</Name>
+          <Value>2</Value>
+          <Type>ptEnum</Type>
+        </Property>
+        <Property>
+          <Name>OUTPUT_HEADER</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>OUTPUT_TRAILER</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>ENDIAN</Name>
+          <Value>0</Value>
+          <Type>ptEnum</Type>
+        </Property>
+        <Property>
+          <Name>BATCHFILE_ROLLOVER</Name>
+          <Value>2</Value>
+          <Type>ptEnum</Type>
+        </Property>
+        <Property>
+          <Name>BATCHFILE_ROLLOVERSIZE</Name>
+          <Value>1M</Value>
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>COMPRESS_BATCHFILE</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>INDIVIDUAL_FILES_IN_ZIP</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>InputCharacterEncoding</Name>
+          <Value>151</Value>
+          <Type />
+        </Property>
+      </Configuration>
+      <GeneralProperties>
+        <Property>
+          <Name>NotificationSchemes</Name>
+          <Value>[]</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>StartupState</Name>
+          <Value>DONT_START</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>StartupStateTracking</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UserName</Name>
+          <Value>Input Folder for testing</Value>
+          <Type />
+        </Property>
+      </GeneralProperties>
+      <Priority>-1</Priority>
+      <Mode>cpmInput</Mode>
+      <NumConnections>1</NumConnections>
+      <IdleTimeout>0</IdleTimeout>
+      <Autotrack>0</Autotrack>
+      <RetryType>rtLinear</RetryType>
+      <NumRetries>5</NumRetries>
+      <NotificationRetries>5</NotificationRetries>
+      <RetryDelay>5000</RetryDelay>
+      <State>stStopped</State>
+      <Folder>CLINICOM &lt;=&gt; CRIS;CRIS</Folder>
+    </CommPoint>
+  </CommPoints>
+  <Definitions>
+    <Definition>
+      <ID>CRIS3 v1.s3d</ID>
+      <Name>CRIS3 v1.s3d</Name>
+      <Version>47</Version>
+      <Size>49214</Size>
+      <GUID />
+      <DisplayFileRelativeFileName>Definitions/CRIS3 v1.s3d/CRIS3 v1.s3d</DisplayFileRelativeFileName>
+      <ActualFileRelativeFileName>Definitions/CRIS3 v1.s3d/CRIS3 v1.pcf</ActualFileRelativeFileName>
+      <OtherFiles />
+    </Definition>
+    <Definition>
+      <ID>A-Team.Millennium.ADT.HL723.DFT_Out.s3d</ID>
+      <Name>A-Team.Millennium.ADT.HL723.DFT_Out.s3d</Name>
+      <Version>58</Version>
+      <Size>63083</Size>
+      <GUID />
+      <DisplayFileRelativeFileName>Definitions/A-Team.Millennium.ADT.HL723.DFT_Out.s3d/A-Team.Millennium.ADT.HL723.DFT_Out.s3d</DisplayFileRelativeFileName>
+      <ActualFileRelativeFileName>Definitions/A-Team.Millennium.ADT.HL723.DFT_Out.s3d/A-Team.Millennium.ADT.HL723.DFT_Out.pcf</ActualFileRelativeFileName>
+      <OtherFiles />
+    </Definition>
+  </Definitions>
+  <Files>
+    <File>
+      <RelativeFileName>5de893ea-86b5-40a0-b12e-b1c494b0d1d9/009f45d9-b0f3-4279-8eea-099a13ccaa03/patient.xsl</RelativeFileName>
+      <LocalLastModifiedDateLo>105521502</LocalLastModifiedDateLo>
+      <LocalLastModifiedDateHi>304</LocalLastModifiedDateHi>
+      <LastModifiedDate>15:26:18, 05 19 2011</LastModifiedDate>
+    </File>
+  </Files>
+  <Routes>
+    <Route>
+      <ID>bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29</ID>
+      <Folder>A-Team;Millennium;Billing;Pro</Folder>
+      <Filters>
+        <Filter>
+          <ID>bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/008313a5-2786-47d0-ba25-b1048361a52b</ID>
+          <Type>No-op</Type>
+          <State>stConfigured</State>
+          <Priority>-1</Priority>
+          <Configuration />
+          <GeneralProperties>
+            <Property>
+              <Name>UserName</Name>
+              <Value>BillingPro Header/Trailer No-Op</Value>
+              <Type />
+            </Property>
+          </GeneralProperties>
+          <Destinations>
+            <Destination>
+              <ID>bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/9a7957f0-92ae-4c5f-82c6-e23461e7d1a9</ID>
+            </Destination>
+            <Destination>
+              <ID>bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/01113204-c7d1-4d35-ac3f-dda0eed7fbdd</ID>
+            </Destination>
+          </Destinations>
+          <NextDestinations xsi:type="xsd:string">&lt;NextDestinations&gt;&lt;Connector&gt;&lt;DestinationId&gt;bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/9a7957f0-92ae-4c5f-82c6-e23461e7d1a9&lt;/DestinationId&gt;&lt;/Connector&gt;&lt;Connector&gt;&lt;DestinationId&gt;bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/01113204-c7d1-4d35-ac3f-dda0eed7fbdd&lt;/DestinationId&gt;&lt;/Connector&gt;&lt;/NextDestinations&gt;</NextDestinations>
+        </Filter>
+        <Filter>
+          <ID>bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/01113204-c7d1-4d35-ac3f-dda0eed7fbdd</ID>
+          <Type>Batcher</Type>
+          <State>stConfigured</State>
+          <Priority>-1</Priority>
+          <Configuration>
+            <Property>
+              <Name>MaxPasses</Name>
+              <Value>0</Value>
+            </Property>
+            <Property>
+              <Name>MaxPassesDestination</Name>
+              <Value>0</Value>
+            </Property>
+            <Property>
+              <Name>MessageCollector</Name>
+              <Value>Trigger</Value>
+            </Property>
+            <Property>
+              <Name>Mode</Name>
+              <Value>0</Value>
+              <Type>ptEnum</Type>
+            </Property>
+            <Property>
+              <Name>Header</Name>
+              <Value />
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>Separator</Name>
+              <Value>\x1C\x0D\x0A\x0B</Value>
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>Trailer</Name>
+              <Value>\x1C</Value>
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>HeaderExpr</Name>
+              <Value />
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>TrailerExpr</Name>
+              <Value />
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>MarkerOrSeparator</Name>
+              <Value>1</Value>
+              <Type>ptEnum</Type>
+            </Property>
+            <Property>
+              <Name>SeparatorExpr</Name>
+              <Value />
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>property</Name>
+              <Value>$Trailer</Value>
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>TimeoutPeriod</Name>
+              <Value>5</Value>
+              <Type>ptInteger</Type>
+            </Property>
+            <Property>
+              <Name>TimeoutUnits</Name>
+              <Value>2</Value>
+              <Type>ptEnum</Type>
+            </Property>
+            <Property>
+              <Name>TimeoutDestination</Name>
+              <Value>0</Value>
+              <Type>ptEnum</Type>
+            </Property>
+          </Configuration>
+          <GeneralProperties>
+            <Property>
+              <Name>UserName</Name>
+              <Value>Pro Batching</Value>
+              <Type />
+            </Property>
+          </GeneralProperties>
+          <Destinations>
+            <Destination>
+              <ID>bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/098c3c8e-fc00-4e76-97c8-5804aabc27da</ID>
+            </Destination>
+          </Destinations>
+          <ErrorOutputID>bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/714fbd75-b53f-452e-ba6d-ea4cd940f295</ErrorOutputID>
+          <NextDestinations xsi:type="xsd:string">&lt;NextDestinations&gt;&lt;Connector&gt;&lt;DestinationId&gt;bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/098c3c8e-fc00-4e76-97c8-5804aabc27da&lt;/DestinationId&gt;&lt;/Connector&gt;&lt;ErrorConnector&gt;bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/714fbd75-b53f-452e-ba6d-ea4cd940f295&lt;/ErrorConnector&gt;&lt;/NextDestinations&gt;</NextDestinations>
+        </Filter>
+        <Filter>
+          <ID>bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/098c3c8e-fc00-4e76-97c8-5804aabc27da</ID>
+          <Type>ExecuteScript</Type>
+          <State>stConfigured</State>
+          <Priority>-1</Priority>
+          <Configuration>
+            <Property>
+              <Name>Script</Name>
+              <Value>for(var i = 0; i &lt; input.length; i++)
+{
+    var next = output.append(input[i]);
+    var SliceText = next.text
+	if (SliceText.slice(1,4) == "BHS")
+	{	
+	
+		var x = next.setProperty("PassFilter","Y");
+	}
+}</Value>
+              <Type>ptJScript</Type>
+            </Property>
+          </Configuration>
+          <GeneralProperties>
+            <Property>
+              <Name>UserName</Name>
+              <Value>ProBilling Check for Header Java Script</Value>
+              <Type />
+            </Property>
+          </GeneralProperties>
+          <Destinations>
+            <Destination>
+              <ID>5bbc7063-55b2-4542-b024-6709d1f6b579</ID>
+              <PropertyName>PassFilter</PropertyName>
+              <Value>Y</Value>
+            </Destination>
+          </Destinations>
+          <NoMatchOutputID>bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/a92248b4-9425-49bf-b24c-09d6ad30134e</NoMatchOutputID>
+          <NextDestinations xsi:type="xsd:string">&lt;NextDestinations&gt;&lt;Connector&gt;&lt;DestinationId&gt;5bbc7063-55b2-4542-b024-6709d1f6b579&lt;/DestinationId&gt;&lt;Condition type="CONDITIONAL"&gt;&lt;ConditionType&gt;PROPERTY&lt;/ConditionType&gt;&lt;Operator&gt;REGULAR_EXPRESSION_GNU&lt;/Operator&gt;&lt;Source&gt;PassFilter&lt;/Source&gt;&lt;Operand&gt;Y&lt;/Operand&gt;&lt;/Condition&gt;&lt;/Connector&gt;&lt;NoMatchConnector&gt;bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/a92248b4-9425-49bf-b24c-09d6ad30134e&lt;/NoMatchConnector&gt;&lt;/NextDestinations&gt;</NextDestinations>
+        </Filter>
+        <Filter>
+          <ID>bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/2751505e-8087-4520-b405-f02ed05e16c2</ID>
+          <Type>Hold</Type>
+          <State>stConfigured</State>
+          <Priority>-1</Priority>
+          <Configuration />
+          <GeneralProperties>
+            <Property>
+              <Name>UserName</Name>
+              <Value>BillingPro Hold Message</Value>
+              <Type />
+            </Property>
+          </GeneralProperties>
+          <Destinations>
+            <Destination>
+              <ID>bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/01113204-c7d1-4d35-ac3f-dda0eed7fbdd</ID>
+            </Destination>
+          </Destinations>
+          <NextDestinations xsi:type="xsd:string">&lt;NextDestinations&gt;&lt;Connector&gt;&lt;DestinationId&gt;bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/01113204-c7d1-4d35-ac3f-dda0eed7fbdd&lt;/DestinationId&gt;&lt;/Connector&gt;&lt;/NextDestinations&gt;</NextDestinations>
+        </Filter>
+        <Filter>
+          <ID>bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/3296f60a-7358-4308-be1d-ca00b1f0f907</ID>
+          <Type>No-op</Type>
+          <State>stConfigured</State>
+          <Priority>-1</Priority>
+          <Configuration />
+          <GeneralProperties>
+            <Property>
+              <Name>UserName</Name>
+              <Value>BillingPro Ack No-Op</Value>
+              <Type />
+            </Property>
+          </GeneralProperties>
+          <Destinations>
+            <Destination>
+              <ID>bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/01113204-c7d1-4d35-ac3f-dda0eed7fbdd</ID>
+            </Destination>
+            <Destination>
+              <ID>bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/d4633885-b691-44a3-ae9d-1f7f8888a630</ID>
+            </Destination>
+          </Destinations>
+          <NextDestinations xsi:type="xsd:string">&lt;NextDestinations&gt;&lt;Connector&gt;&lt;DestinationId&gt;bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/01113204-c7d1-4d35-ac3f-dda0eed7fbdd&lt;/DestinationId&gt;&lt;/Connector&gt;&lt;Connector&gt;&lt;DestinationId&gt;bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/d4633885-b691-44a3-ae9d-1f7f8888a630&lt;/DestinationId&gt;&lt;/Connector&gt;&lt;/NextDestinations&gt;</NextDestinations>
+        </Filter>
+        <Filter>
+          <ID>bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/714fbd75-b53f-452e-ba6d-ea4cd940f295</ID>
+          <Type>No-op</Type>
+          <State>stConfigured</State>
+          <Priority>-1</Priority>
+          <Configuration />
+          <GeneralProperties>
+            <Property>
+              <Name>UserName</Name>
+              <Value>BillingPro Error No-Op</Value>
+              <Type />
+            </Property>
+          </GeneralProperties>
+          <Destinations>
+            <Destination>
+              <ID>bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/2751505e-8087-4520-b405-f02ed05e16c2</ID>
+            </Destination>
+            <Destination>
+              <ID>b1ea5940-1e5f-443f-8504-182dd00bda16</ID>
+            </Destination>
+          </Destinations>
+          <NextDestinations xsi:type="xsd:string">&lt;NextDestinations&gt;&lt;Connector&gt;&lt;DestinationId&gt;bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/2751505e-8087-4520-b405-f02ed05e16c2&lt;/DestinationId&gt;&lt;/Connector&gt;&lt;Connector&gt;&lt;DestinationId&gt;b1ea5940-1e5f-443f-8504-182dd00bda16&lt;/DestinationId&gt;&lt;/Connector&gt;&lt;/NextDestinations&gt;</NextDestinations>
+        </Filter>
+        <Filter>
+          <ID>bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/9a7957f0-92ae-4c5f-82c6-e23461e7d1a9</ID>
+          <Type>AckGenerationFilter</Type>
+          <State>stConfigured</State>
+          <Priority>-1</Priority>
+          <Configuration>
+            <Property>
+              <Name>MessageDefintion</Name>
+              <Value>A-Team.Millennium.ADT.HL723.DFT_Out.s3d</Value>
+              <Type>ptMsgDefn</Type>
+            </Property>
+            <Property>
+              <Name>AckMapping</Name>
+              <Value />
+              <Type>ptArray</Type>
+            </Property>
+            <Property>
+              <Name>Acknowledgment_Mode</Name>
+              <Value>0</Value>
+              <Type>ptEnum</Type>
+            </Property>
+            <Property>
+              <Name>NACK Mode</Name>
+              <Value>AR</Value>
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>ErrorDescription</Name>
+              <Value />
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>On message validation failure</Name>
+              <Value>0</Value>
+              <Type>ptEnum</Type>
+            </Property>
+            <Property>
+              <Name>On successful validation</Name>
+              <Value>0</Value>
+              <Type>ptEnum</Type>
+            </Property>
+            <Property>
+              <Name>Message Errors Property Name</Name>
+              <Value />
+              <Type>ptArray</Type>
+            </Property>
+            <Property>
+              <Name>HL7 version</Name>
+              <Value>0</Value>
+              <Type>ptMap</Type>
+            </Property>
+            <Property>
+              <Name>FieldLength</Name>
+              <Value>0</Value>
+              <Type>ptEnum</Type>
+            </Property>
+            <Property>
+              <Name>CopyFields</Name>
+              <Value />
+              <Type>ptArray</Type>
+            </Property>
+          </Configuration>
+          <GeneralProperties>
+            <Property>
+              <Name>UserName</Name>
+              <Value>Pro Header/Trailer Ack Gen</Value>
+              <Type />
+            </Property>
+          </GeneralProperties>
+          <Destinations>
+            <Destination>
+              <ID>4b185350-aec9-418e-90ce-f0d0b3aa29ba</ID>
+            </Destination>
+          </Destinations>
+          <NextDestinations xsi:type="xsd:string">&lt;NextDestinations&gt;&lt;Connector&gt;&lt;DestinationId&gt;4b185350-aec9-418e-90ce-f0d0b3aa29ba&lt;/DestinationId&gt;&lt;/Connector&gt;&lt;/NextDestinations&gt;</NextDestinations>
+        </Filter>
+        <Filter>
+          <ID>bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/a92248b4-9425-49bf-b24c-09d6ad30134e</ID>
+          <Type>ExecuteScript</Type>
+          <State>stConfigured</State>
+          <Priority>-1</Priority>
+          <Configuration>
+            <Property>
+              <Name>Script</Name>
+              <Value>var next = output.append(input[0]);
+var d = new Date();
+next.text = "&#xB;BHS|^~\\&amp;|HNAM|HNAM|HPA|DHMC|00000000000000|||1|000000000000001\x1C\r\n&#xB;" + input[0].text;
+//for(var i = 0; i &lt; input.length; i++){
+    //var next = output.append(input[i]);
+    //get the body
+    //var body = input[i].text;
+    //set the body
+    //next.text = "OrderID   Accession Number\r\n__________________________"+body;
+    //set a property
+    //next.setProperty("PropertyName","PropertyValue");
+//}</Value>
+              <Type>ptJScript</Type>
+            </Property>
+          </Configuration>
+          <GeneralProperties>
+            <Property>
+              <Name>UserName</Name>
+              <Value>ProBilling Add Header Java Script</Value>
+              <Type />
+            </Property>
+          </GeneralProperties>
+          <Destinations>
+            <Destination>
+              <ID>5bbc7063-55b2-4542-b024-6709d1f6b579</ID>
+            </Destination>
+          </Destinations>
+          <NextDestinations xsi:type="xsd:string">&lt;NextDestinations&gt;&lt;Connector&gt;&lt;DestinationId&gt;5bbc7063-55b2-4542-b024-6709d1f6b579&lt;/DestinationId&gt;&lt;/Connector&gt;&lt;/NextDestinations&gt;</NextDestinations>
+        </Filter>
+        <Filter>
+          <ID>bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/bb8586d4-c161-4008-9501-f4d5d14c5a16</ID>
+          <Type>ExecuteScript</Type>
+          <State>stConfigured</State>
+          <Priority>-1</Priority>
+          <Configuration>
+            <Property>
+              <Name>Script</Name>
+              <Value>for(var i = 0; i &lt; input.length; i++)
+{
+    var next = output.append(input[i]);
+    var SliceText = next.text
+	if (SliceText.slice(1,4) != "BHS"
+		&amp;&amp; SliceText.slice(0,3) != "BTS")
+	{	
+	
+		//Messages[596]/Transaction[0]/FT1/TransactionCode/Identifier
+	    switch (next.getField("Transaction[0]/FT1/TransactionCode/Identifier"))
+		{
+		/*case "004009998":
+			var str=next.getField("Transaction[0]/FT1/TransactionExtendedAmount/Price/Quantity");
+			next.setField("Transaction[0]/FT1/TransactionExtendedAmount/Price/Quantity",str.replace(".", ""));
+			var str2=next.getField("Transaction[0]/FT1/TransactionUnitAmount/Price/Quantity");
+			next.setField("Transaction[0]/FT1/TransactionUnitAmount/Price/Quantity",str.replace(".", ""));
+		case "004000334":
+			var str=next.getField("Transaction[0]/FT1/TransactionExtendedAmount/Price/Quantity");
+			next.setField("Transaction[0]/FT1/TransactionExtendedAmount/Price/Quantity",str.replace(".", ""));
+			var str2=next.getField("Transaction[0]/FT1/TransactionUnitAmount/Price/Quantity");
+			next.setField("Transaction[0]/FT1/TransactionUnitAmount/Price/Quantity",str.replace(".", ""));
+		break;*/
+		
+		default:
+			next.setField("Transaction[0]/FT1/TransactionExtendedAmount/Price/Quantity","0");
+			next.setField("Transaction[0]/FT1/TransactionUnitAmount/Price/Quantity","0");
+		}
+		
+		var x = next.setProperty("PassFilter","Y"); 
+	}
+	/*if (SliceText.slice(1,4) == "BHS")
+	{
+	var y = next.setProperty("Header","Y");
+	}*/
+	next.text = input[0].text.slice(0,(input[0].text.length-1));
+	next.text = next.text.replace(/\r/g,"\r\n");
+}</Value>
+              <Type>ptJScript</Type>
+            </Property>
+          </Configuration>
+          <GeneralProperties>
+            <Property>
+              <Name>UserName</Name>
+              <Value>ProBilling Java Script</Value>
+              <Type />
+            </Property>
+          </GeneralProperties>
+          <Destinations>
+            <Destination>
+              <ID>bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/3296f60a-7358-4308-be1d-ca00b1f0f907</ID>
+              <PropertyName>PassFilter</PropertyName>
+              <Value>Y</Value>
+            </Destination>
+          </Destinations>
+          <NoMatchOutputID>bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/008313a5-2786-47d0-ba25-b1048361a52b</NoMatchOutputID>
+          <NextDestinations xsi:type="xsd:string">&lt;NextDestinations&gt;&lt;Connector&gt;&lt;DestinationId&gt;bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/3296f60a-7358-4308-be1d-ca00b1f0f907&lt;/DestinationId&gt;&lt;Condition type="CONDITIONAL"&gt;&lt;ConditionType&gt;PROPERTY&lt;/ConditionType&gt;&lt;Operator&gt;REGULAR_EXPRESSION_GNU&lt;/Operator&gt;&lt;Source&gt;PassFilter&lt;/Source&gt;&lt;Operand&gt;Y&lt;/Operand&gt;&lt;/Condition&gt;&lt;/Connector&gt;&lt;NoMatchConnector&gt;bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/008313a5-2786-47d0-ba25-b1048361a52b&lt;/NoMatchConnector&gt;&lt;/NextDestinations&gt;</NextDestinations>
+        </Filter>
+        <Filter>
+          <ID>bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/d4633885-b691-44a3-ae9d-1f7f8888a630</ID>
+          <Type>AckGenerationFilter</Type>
+          <State>stConfigured</State>
+          <Priority>-1</Priority>
+          <Configuration>
+            <Property>
+              <Name>MessageDefintion</Name>
+              <Value>A-Team.Millennium.ADT.HL723.DFT_Out.s3d</Value>
+              <Type>ptMsgDefn</Type>
+            </Property>
+            <Property>
+              <Name>AckMapping</Name>
+              <Value />
+              <Type>ptArray</Type>
+            </Property>
+            <Property>
+              <Name>Acknowledgment_Mode</Name>
+              <Value>0</Value>
+              <Type>ptEnum</Type>
+            </Property>
+            <Property>
+              <Name>NACK Mode</Name>
+              <Value>AR</Value>
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>ErrorDescription</Name>
+              <Value />
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>On message validation failure</Name>
+              <Value>0</Value>
+              <Type>ptEnum</Type>
+            </Property>
+            <Property>
+              <Name>On successful validation</Name>
+              <Value>0</Value>
+              <Type>ptEnum</Type>
+            </Property>
+            <Property>
+              <Name>Message Errors Property Name</Name>
+              <Value />
+              <Type>ptArray</Type>
+            </Property>
+            <Property>
+              <Name>HL7 version</Name>
+              <Value>0</Value>
+              <Type>ptMap</Type>
+            </Property>
+            <Property>
+              <Name>FieldLength</Name>
+              <Value>0</Value>
+              <Type>ptEnum</Type>
+            </Property>
+            <Property>
+              <Name>CopyFields</Name>
+              <Value>[[MSH.SendingApplication,MSH.ReceivingApplication],[MSH.SendingFacility,MSH.ReceivingFacility],[MSH.ReceivingApplication,MSH.SendingApplication],[MSH.ReceivingFacility,MSH.SendingFacility],[MSH.MessageControlId,MSA.MessageControlId],[MSH.ProcessingID,MSH.ProcessingID]]</Value>
+              <Type>ptArray</Type>
+            </Property>
+          </Configuration>
+          <GeneralProperties>
+            <Property>
+              <Name>UserName</Name>
+              <Value>Pro Ack Gen</Value>
+              <Type />
+            </Property>
+          </GeneralProperties>
+          <Destinations>
+            <Destination>
+              <ID>4b185350-aec9-418e-90ce-f0d0b3aa29ba</ID>
+            </Destination>
+          </Destinations>
+          <NextDestinations xsi:type="xsd:string">&lt;NextDestinations&gt;&lt;Connector&gt;&lt;DestinationId&gt;4b185350-aec9-418e-90ce-f0d0b3aa29ba&lt;/DestinationId&gt;&lt;/Connector&gt;&lt;/NextDestinations&gt;</NextDestinations>
+        </Filter>
+      </Filters>
+      <InputCommPoints>
+        <InputCommPoint>
+          <ID>4b185350-aec9-418e-90ce-f0d0b3aa29ba</ID>
+          <FirstFilters>
+            <ID>bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/bb8586d4-c161-4008-9501-f4d5d14c5a16</ID>
+          </FirstFilters>
+        </InputCommPoint>
+      </InputCommPoints>
+      <OutputCommPoints>
+        <ID>5bbc7063-55b2-4542-b024-6709d1f6b579</ID>
+        <ID>4b185350-aec9-418e-90ce-f0d0b3aa29ba</ID>
+        <ID>b1ea5940-1e5f-443f-8504-182dd00bda16</ID>
+      </OutputCommPoints>
+      <RouteProperties>
+        <ExtractedProperties>
+          <ExtractedProperty>
+            <Name>FIN</Name>
+            <SystemProperty>0</SystemProperty>
+            <Required>0</Required>
+            <ArchiveProperty>1</ArchiveProperty>
+          </ExtractedProperty>
+          <ExtractedProperty>
+            <Name>MessIndex</Name>
+            <SystemProperty>0</SystemProperty>
+            <Required>0</Required>
+            <ArchiveProperty>0</ArchiveProperty>
+          </ExtractedProperty>
+          <ExtractedProperty>
+            <Name>MRN</Name>
+            <SystemProperty>0</SystemProperty>
+            <Required>0</Required>
+            <ArchiveProperty>1</ArchiveProperty>
+          </ExtractedProperty>
+          <ExtractedProperty>
+            <Name>Trailer</Name>
+            <SystemProperty>0</SystemProperty>
+            <Required>0</Required>
+            <ArchiveProperty>1</ArchiveProperty>
+          </ExtractedProperty>
+        </ExtractedProperties>
+        <RoutePropertiesDefinitions>
+          <RoutePropertiesDefinition>
+            <Name>A-Team.Millennium.ADT.HL723.DFT_Out.s3d</Name>
+            <DefinitionProperties>
+              <DefinitionProperty>
+                <Name>FIN</Name>
+                <Messages>
+                  <Message>DFTP03</Message>
+                </Messages>
+                <Fields>
+                  <Field>PID.PatientAccountNumber.IDNumber</Field>
+                </Fields>
+              </DefinitionProperty>
+              <DefinitionProperty>
+                <Name>MessIndex</Name>
+                <Messages>
+                  <Message>DFTP03</Message>
+                </Messages>
+                <Fields>
+                  <Field>MSH.SequenceNumber</Field>
+                </Fields>
+              </DefinitionProperty>
+              <DefinitionProperty>
+                <Name>MRN</Name>
+                <Messages>
+                  <Message>DFTP03</Message>
+                </Messages>
+                <Fields>
+                  <Field>PID.InternalPatientID[*].IDNumber</Field>
+                </Fields>
+              </DefinitionProperty>
+              <DefinitionProperty>
+                <Name>Trailer</Name>
+                <Messages>
+                  <Message>Footer</Message>
+                </Messages>
+                <Fields>
+                  <Field>BTS.BatchMessageCount</Field>
+                </Fields>
+              </DefinitionProperty>
+            </DefinitionProperties>
+          </RoutePropertiesDefinition>
+        </RoutePropertiesDefinitions>
+        <RepeatedResponse>brIgnore</RepeatedResponse>
+        <UnsolicitedResponse>brIgnore</UnsolicitedResponse>
+      </RouteProperties>
+      <GeneralProperties>
+        <Property>
+          <Name>_0745e492-6e19-493d-bfc0-23cfc7a0bdc9__Position</Name>
+          <Value>(577,154,744,227)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_3ccd2037-3c67-412a-8669-9c661dda749a__Position</Name>
+          <Value>(1225,254,1412,327)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_4b185350-aec9-418e-90ce-f0d0b3aa29ba__Position</Name>
+          <Value>(985,410,1208,503)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_4b185350-aec9-418e-90ce-f0d0b3aa29ba_I_Position</Name>
+          <Value>(0,180,223,273)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_5bbc7063-55b2-4542-b024-6709d1f6b579__Position</Name>
+          <Value>(985,180,1176,273)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_620dbd60-21be-4e40-97df-29096176f708__Position</Name>
+          <Value>(524,234,736,307)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_620dbd60-21be-4e40-97df-29096176f708_I_Position</Name>
+          <Value>(0,21,212,94)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_634da1ac-ac9e-40c1-a84a-21e982a2ae5d__Position</Name>
+          <Value>(521,274,740,347)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_634da1ac-ac9e-40c1-a84a-21e982a2ae5d_I_Position</Name>
+          <Value>(2,94,219,167)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_804711f5-a3d5-420c-a723-1fb10044cb6e__Position</Name>
+          <Value>(580,74,761,147)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_837e92f6-546f-4a45-bda2-e2fdf67347f2__Position</Name>
+          <Value>(839,280,1015,373)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_8bccc833-4751-4e5c-96e0-d2ebe255c172__Position</Name>
+          <Value>(569,148,751,221)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_b1ea5940-1e5f-443f-8504-182dd00bda16__Position</Name>
+          <Value>(1014,290,1179,396)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/008313a5-2786-47d0-ba25-b1048361a52b__Position</Name>
+          <Value>(400,50,500,169)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/01113204-c7d1-4d35-ac3f-dda0eed7fbdd__Position</Name>
+          <Value>(544,200,636,293)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/0331e0ef-7846-4211-a913-7efce8265ca0__Position</Name>
+          <Value>(310,104,351,177)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/03d065d8-29df-42be-8554-8ae200e7f1b8__Position</Name>
+          <Value>(232,21,273,94)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/098c3c8e-fc00-4e76-97c8-5804aabc27da__Position</Name>
+          <Value>(664,140,756,272)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/0b004c5d-4f8b-4915-ad06-1f7c5137a832__Position</Name>
+          <Value>(443,21,498,107)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/0b1a4dc9-9f6f-46dd-9bdd-a989722e570a__Position</Name>
+          <Value>(386,37,439,123)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/0bd0d7ee-7990-486b-8afe-fc76558a8b23__Position</Name>
+          <Value>(261,44,339,117)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/14a0ac85-37cc-4d71-8ddc-fc8ee9435f25__Position</Name>
+          <Value>(361,84,439,157)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/188473a3-a3ae-45cf-ab6e-8939628faed3__Position</Name>
+          <Value>(454,357,546,443)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/2751505e-8087-4520-b405-f02ed05e16c2__Position</Name>
+          <Value>(581,380,679,486)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/2ddbce2a-439a-4aec-a9d3-fc6ed830d3c9__Position</Name>
+          <Value>(271,109,331,195)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/2fee54f4-3316-467d-bfa0-e19642226138__Position</Name>
+          <Value>(485,347,551,433)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/31e5718e-dea4-4750-8369-acffd403c5f2__Position</Name>
+          <Value>(479,114,521,187)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/3296f60a-7358-4308-be1d-ca00b1f0f907__Position</Name>
+          <Value>(372,200,468,306)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/4835215c-be0d-4b0e-98e1-63f1611eeae5__Position</Name>
+          <Value>(361,21,439,94)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/69f0ac06-a609-4f11-8347-6245cc72219c__Position</Name>
+          <Value>(351,24,429,97)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/6bbde572-bac7-4be4-b7b3-0812ad96637d__Position</Name>
+          <Value>(437,417,519,503)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/714fbd75-b53f-452e-ba6d-ea4cd940f295__Position</Name>
+          <Value>(701,290,799,396)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/7cf1ef26-25cf-474c-862e-86b9ad23fe84__Position</Name>
+          <Value>(280,27,360,113)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/7e06ea39-9f49-4b5d-a651-154d80c72cd2__Position</Name>
+          <Value>(370,24,411,97)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/8142e6fc-3492-4866-ab48-0d217a523f9e__Position</Name>
+          <Value>(240,164,300,237)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/82410c7c-f81f-42ef-b231-ef6f87971dc0__Position</Name>
+          <Value>(320,44,361,117)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/8ba17449-6a67-47d7-9a56-399c06c9e9a1__Position</Name>
+          <Value>(243,241,305,327)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/8f4bdd73-9d12-4b98-b747-735f57f2919f__Position</Name>
+          <Value>(331,90,409,163)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/96d9dcfc-b5ec-4f43-b05c-5f28217e6554__Position</Name>
+          <Value>(232,217,324,303)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/96e4e5f0-bf49-44e2-9d69-cb9f129f80ab__Position</Name>
+          <Value>(284,257,376,343)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/9a7957f0-92ae-4c5f-82c6-e23461e7d1a9__Position</Name>
+          <Value>(520,570,620,689)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/a92248b4-9425-49bf-b24c-09d6ad30134e__Position</Name>
+          <Value>(812,58,908,177)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/b1c58419-0bb9-455e-b55a-49df3fb0c4eb__Position</Name>
+          <Value>(240,137,321,223)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/b238d424-b022-44fd-82f1-10f633fa3b2a__Position</Name>
+          <Value>(311,38,368,124)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/bb03b955-420e-4ea3-a3b8-17097f3853e7__Position</Name>
+          <Value>(529,284,600,357)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/bb8586d4-c161-4008-9501-f4d5d14c5a16__Position</Name>
+          <Value>(240,200,340,306)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/d42fad9f-2f3f-4711-888b-0529153b2367__Position</Name>
+          <Value>(271,44,349,117)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/d4633885-b691-44a3-ae9d-1f7f8888a630__Position</Name>
+          <Value>(414,500,506,593)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/dd8e431a-4810-4529-9a20-3a41deab2163__Position</Name>
+          <Value>(383,137,462,223)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/e793bad9-b7fd-432b-9c45-aa802a706d70__Position</Name>
+          <Value>(362,244,419,317)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/e8169d5e-4ac7-4efe-83b8-6420b5d234ba__Position</Name>
+          <Value>(439,168,481,241)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/e91eccd0-60db-453b-a50b-dbc9136f481c__Position</Name>
+          <Value>(222,57,298,143)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/f015502b-ba88-41e7-878f-b4ef93992151__Position</Name>
+          <Value>(230,157,310,243)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_bbd4dfd1-d3bd-43ae-9e23-73c0d1361f29/f44d1339-3bab-4324-b99f-a07b751e59a1__Position</Name>
+          <Value>(376,237,449,323)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_InputWidth</Name>
+          <Value>228</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_OutputStart</Name>
+          <Value>984</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>NotificationSchemes</Name>
+          <Value>[d6f40da3-d34d-4fd4-9d0d-e6bf9596b059]</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>StartupState</Name>
+          <Value>START_LEVEL_1</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>StartupStateTracking</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UserName</Name>
+          <Value>A-Team.Millennium.BillingPro</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>PersistenceMode</Name>
+          <Value>True</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>FifoMode</Name>
+          <Value>NoFifo</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>RouteErrorHandlerName</Name>
+          <Value>Route Error Handler</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>RouteErrorHandlerVisible</Name>
+          <Value>False</Value>
+          <Type />
+        </Property>
+      </GeneralProperties>
+      <Priority>2</Priority>
+      <State>stRunning</State>
+    </Route>
+    <Route>
+      <ID>5de893ea-86b5-40a0-b12e-b1c494b0d1d9</ID>
+      <Folder />
+      <Filters>
+        <Filter>
+          <ID>5de893ea-86b5-40a0-b12e-b1c494b0d1d9/009f45d9-b0f3-4279-8eea-099a13ccaa03</ID>
+          <Type>XSLT</Type>
+          <State>stNotConfigured</State>
+          <Priority>-1</Priority>
+          <Configuration>
+            <Property>
+              <Name>NumberInstances</Name>
+              <Value>0</Value>
+              <Type>ptInteger</Type>
+            </Property>
+            <Property>
+              <Name>XSLTFile</Name>
+              <Value>5de893ea-86b5-40a0-b12e-b1c494b0d1d9/009f45d9-b0f3-4279-8eea-099a13ccaa03/patient.xsl</Value>
+              <Type>ptFile</Type>
+            </Property>
+            <Property>
+              <Name>InputDefn</Name>
+              <Value />
+              <Type>ptMsgDefn</Type>
+            </Property>
+            <Property>
+              <Name>OutputDefn</Name>
+              <Value />
+              <Type>ptMsgDefn</Type>
+            </Property>
+          </Configuration>
+          <GeneralProperties>
+            <Property>
+              <Name>UserName</Name>
+              <Value>XSLT Stylesheet</Value>
+              <Type />
+            </Property>
+          </GeneralProperties>
+          <Destinations>
+            <Destination>
+              <ID>5de893ea-86b5-40a0-b12e-b1c494b0d1d9/cb7fc700-5342-4d48-8432-62228ab9e561</ID>
+              <MatchSelectorCondition>input.getProperty("prop");</MatchSelectorCondition>
+            </Destination>
+            <Destination>
+              <ID>5de893ea-86b5-40a0-b12e-b1c494b0d1d9/0b8806cf-1122-4a00-8d9d-d992bdc7fd01</ID>
+              <PropertyName>adfasdfasdf</PropertyName>
+              <Value>asdfasdfasf</Value>
+            </Destination>
+          </Destinations>
+          <NextDestinations xsi:type="xsd:string">&lt;NextDestinations&gt;&lt;Connector&gt;&lt;DestinationId&gt;5de893ea-86b5-40a0-b12e-b1c494b0d1d9/cb7fc700-5342-4d48-8432-62228ab9e561&lt;/DestinationId&gt;&lt;Condition type="JAVASCRIPT"&gt;&lt;JavaScript&gt;aW5wdXQuZ2V0UHJvcGVydHkoInByb3AiKTs=&lt;/JavaScript&gt;&lt;/Condition&gt;&lt;/Connector&gt;&lt;Connector&gt;&lt;DestinationId&gt;5de893ea-86b5-40a0-b12e-b1c494b0d1d9/0b8806cf-1122-4a00-8d9d-d992bdc7fd01&lt;/DestinationId&gt;&lt;Condition type="CONDITIONAL"&gt;&lt;ConditionType&gt;PROPERTY&lt;/ConditionType&gt;&lt;Operator&gt;REGULAR_EXPRESSION_GNU&lt;/Operator&gt;&lt;Source&gt;adfasdfasdf&lt;/Source&gt;&lt;Operand&gt;asdfasdfasf&lt;/Operand&gt;&lt;/Condition&gt;&lt;/Connector&gt;&lt;/NextDestinations&gt;</NextDestinations>
+        </Filter>
+        <Filter>
+          <ID>5de893ea-86b5-40a0-b12e-b1c494b0d1d9/0b8806cf-1122-4a00-8d9d-d992bdc7fd01</ID>
+          <Type>Hold</Type>
+          <State>stConfigured</State>
+          <Priority>-1</Priority>
+          <Configuration />
+          <GeneralProperties>
+            <Property>
+              <Name>UserName</Name>
+              <Value>Hold Queue</Value>
+              <Type />
+            </Property>
+          </GeneralProperties>
+          <Destinations>
+            <Destination>
+              <ID>b1ea5940-1e5f-443f-8504-182dd00bda16</ID>
+            </Destination>
+          </Destinations>
+          <NextDestinations xsi:type="xsd:string">&lt;NextDestinations&gt;&lt;Connector&gt;&lt;DestinationId&gt;b1ea5940-1e5f-443f-8504-182dd00bda16&lt;/DestinationId&gt;&lt;/Connector&gt;&lt;/NextDestinations&gt;</NextDestinations>
+        </Filter>
+        <Filter>
+          <ID>5de893ea-86b5-40a0-b12e-b1c494b0d1d9/cb7fc700-5342-4d48-8432-62228ab9e561</ID>
+          <Type>No-op</Type>
+          <State>stConfigured</State>
+          <Priority>-1</Priority>
+          <Configuration />
+          <GeneralProperties>
+            <Property>
+              <Name>UserName</Name>
+              <Value>No-operation</Value>
+              <Type />
+            </Property>
+          </GeneralProperties>
+          <Destinations />
+          <NextDestinations xsi:type="xsd:string">&lt;NextDestinations /&gt;</NextDestinations>
+        </Filter>
+      </Filters>
+      <InputCommPoints>
+        <InputCommPoint>
+          <ID>b1ea5940-1e5f-443f-8504-182dd00bda16</ID>
+          <FirstFilters>
+            <ID>5de893ea-86b5-40a0-b12e-b1c494b0d1d9/009f45d9-b0f3-4279-8eea-099a13ccaa03</ID>
+          </FirstFilters>
+        </InputCommPoint>
+        <InputCommPoint>
+          <ID>c4853633-2c98-4d8e-9b2f-7f312a2036ea</ID>
+          <FirstFilters>
+            <ID>5de893ea-86b5-40a0-b12e-b1c494b0d1d9/009f45d9-b0f3-4279-8eea-099a13ccaa03</ID>
+          </FirstFilters>
+        </InputCommPoint>
+      </InputCommPoints>
+      <OutputCommPoints>
+        <ID>b1ea5940-1e5f-443f-8504-182dd00bda16</ID>
+      </OutputCommPoints>
+      <RouteProperties>
+        <ExtractedProperties />
+        <RoutePropertiesDefinitions />
+        <RepeatedResponse>brIgnore</RepeatedResponse>
+        <UnsolicitedResponse>brIgnore</UnsolicitedResponse>
+      </RouteProperties>
+      <GeneralProperties>
+        <Property>
+          <Name>_5de893ea-86b5-40a0-b12e-b1c494b0d1d9/009f45d9-b0f3-4279-8eea-099a13ccaa03__Position</Name>
+          <Value>(465,290,545,396)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_5de893ea-86b5-40a0-b12e-b1c494b0d1d9/0b8806cf-1122-4a00-8d9d-d992bdc7fd01__Position</Name>
+          <Value>(862,310,949,403)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_5de893ea-86b5-40a0-b12e-b1c494b0d1d9/cb7fc700-5342-4d48-8432-62228ab9e561__Position</Name>
+          <Value>(655,120,746,213)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_b1ea5940-1e5f-443f-8504-182dd00bda16__Position</Name>
+          <Value>(1138,330,1303,436)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_b1ea5940-1e5f-443f-8504-182dd00bda16_I_Position</Name>
+          <Value>(1,310,166,416)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_c4853633-2c98-4d8e-9b2f-7f312a2036ea_I_Position</Name>
+          <Value>(1,160,93,266)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_InputWidth</Name>
+          <Value>185</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_OutputStart</Name>
+          <Value>1138</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>NotificationSchemes</Name>
+          <Value>[]</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>StartupState</Name>
+          <Value>DONT_START</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>StartupStateTracking</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UserName</Name>
+          <Value>NewRoute</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>PersistenceMode</Name>
+          <Value>False</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>FifoMode</Name>
+          <Value>InputOrder</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>RouteErrorHandlerName</Name>
+          <Value>Route Error Handler</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>RouteErrorHandlerVisible</Name>
+          <Value>False</Value>
+          <Type />
+        </Property>
+      </GeneralProperties>
+      <Priority>3</Priority>
+      <State>stNotConfigured</State>
+    </Route>
+    <Route>
+      <ID>6790f5b5-e371-4600-9542-819b865051cb</ID>
+      <Folder>CLINICOM &lt;=&gt; CRIS</Folder>
+      <Filters>
+        <Filter>
+          <ID>6790f5b5-e371-4600-9542-819b865051cb/17a0a53c-2b58-4e94-9bb7-6135f03f1473</ID>
+          <Type>ExecuteScript</Type>
+          <State>stConfigured</State>
+          <Priority>-1</Priority>
+          <Configuration>
+            <Property>
+              <Name>Script</Name>
+              <Value>for(var i = 0; i &lt; input.length; i++){
+    var next = output.append(input[i]);
+	next.setProperty("CRIS_ACKMESSAGECONTROLID", incCounter("CRIS_ACKMESSAGECONTROLID",1));
+	next.setProperty("pFrom","CRISLive");
+	//next.setProperty("pRouteCode","BB");
+	next.setProperty("pRouteCode", getVariable("RouteCode"));
+	next.setProperty("CLINICOM_ACKMESSAGECONTROLID", next.getProperty("CRIS_ACKMESSAGECONTROLID"));
+	
+}</Value>
+              <Type>ptJScript</Type>
+            </Property>
+          </Configuration>
+          <GeneralProperties>
+            <Property>
+              <Name>UserName</Name>
+              <Value>From and Create Unique ID</Value>
+              <Type />
+            </Property>
+          </GeneralProperties>
+          <Destinations>
+            <Destination>
+              <ID>6790f5b5-e371-4600-9542-819b865051cb/ff2251fd-88fd-488c-a052-c670fd0fb66b</ID>
+            </Destination>
+          </Destinations>
+          <NextDestinations xsi:type="xsd:string">&lt;NextDestinations&gt;&lt;Connector&gt;&lt;DestinationId&gt;6790f5b5-e371-4600-9542-819b865051cb/ff2251fd-88fd-488c-a052-c670fd0fb66b&lt;/DestinationId&gt;&lt;/Connector&gt;&lt;/NextDestinations&gt;</NextDestinations>
+        </Filter>
+        <Filter>
+          <ID>6790f5b5-e371-4600-9542-819b865051cb/1e2bbaa9-90b3-4dcc-ae95-a5b9061176ae</ID>
+          <Type>SearchAndReplace</Type>
+          <State>stConfigured</State>
+          <Priority>-1</Priority>
+          <Configuration>
+            <Property>
+              <Name>Search</Name>
+              <Value>A0</Value>
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>Replace</Name>
+              <Value>20</Value>
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>Encoding</Name>
+              <Value>1</Value>
+              <Type>ptEnum</Type>
+            </Property>
+          </Configuration>
+          <GeneralProperties>
+            <Property>
+              <Name>UserName</Name>
+              <Value>Funny Space</Value>
+              <Type />
+            </Property>
+          </GeneralProperties>
+          <Destinations>
+            <Destination>
+              <ID>6790f5b5-e371-4600-9542-819b865051cb/2eec4bc0-1aa2-408b-aa6f-2414d55ca939</ID>
+            </Destination>
+          </Destinations>
+          <NextDestinations xsi:type="xsd:string">&lt;NextDestinations&gt;&lt;Connector&gt;&lt;DestinationId&gt;6790f5b5-e371-4600-9542-819b865051cb/2eec4bc0-1aa2-408b-aa6f-2414d55ca939&lt;/DestinationId&gt;&lt;/Connector&gt;&lt;/NextDestinations&gt;</NextDestinations>
+        </Filter>
+        <Filter>
+          <ID>6790f5b5-e371-4600-9542-819b865051cb/28e504d9-c8ff-4d49-a957-aaa2c33bb55e</ID>
+          <Type>SearchAndReplace</Type>
+          <State>stConfigured</State>
+          <Priority>-1</Priority>
+          <Configuration>
+            <Property>
+              <Name>Search</Name>
+              <Value>BD</Value>
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>Replace</Name>
+              <Value>2B</Value>
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>Encoding</Name>
+              <Value>1</Value>
+              <Type>ptEnum</Type>
+            </Property>
+          </Configuration>
+          <GeneralProperties>
+            <Property>
+              <Name>UserName</Name>
+              <Value>Half</Value>
+              <Type />
+            </Property>
+          </GeneralProperties>
+          <Destinations>
+            <Destination>
+              <ID>6790f5b5-e371-4600-9542-819b865051cb/b4992aba-0564-44f6-baca-a798c2306288</ID>
+            </Destination>
+          </Destinations>
+          <NextDestinations xsi:type="xsd:string">&lt;NextDestinations&gt;&lt;Connector&gt;&lt;DestinationId&gt;6790f5b5-e371-4600-9542-819b865051cb/b4992aba-0564-44f6-baca-a798c2306288&lt;/DestinationId&gt;&lt;/Connector&gt;&lt;/NextDestinations&gt;</NextDestinations>
+        </Filter>
+        <Filter>
+          <ID>6790f5b5-e371-4600-9542-819b865051cb/2eec4bc0-1aa2-408b-aa6f-2414d55ca939</ID>
+          <Type>SearchAndReplace</Type>
+          <State>stConfigured</State>
+          <Priority>-1</Priority>
+          <Configuration>
+            <Property>
+              <Name>Search</Name>
+              <Value>B2</Value>
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>Replace</Name>
+              <Value>32</Value>
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>Encoding</Name>
+              <Value>1</Value>
+              <Type>ptEnum</Type>
+            </Property>
+          </Configuration>
+          <GeneralProperties>
+            <Property>
+              <Name>UserName</Name>
+              <Value>Squared</Value>
+              <Type />
+            </Property>
+          </GeneralProperties>
+          <Destinations>
+            <Destination>
+              <ID>6790f5b5-e371-4600-9542-819b865051cb/bf543f4c-c50f-453d-8207-99de62ca4d33</ID>
+            </Destination>
+          </Destinations>
+          <NextDestinations xsi:type="xsd:string">&lt;NextDestinations&gt;&lt;Connector&gt;&lt;DestinationId&gt;6790f5b5-e371-4600-9542-819b865051cb/bf543f4c-c50f-453d-8207-99de62ca4d33&lt;/DestinationId&gt;&lt;/Connector&gt;&lt;/NextDestinations&gt;</NextDestinations>
+        </Filter>
+        <Filter>
+          <ID>6790f5b5-e371-4600-9542-819b865051cb/65809129-7a1a-4432-ab79-f78c8d8cd011</ID>
+          <Type>ExecuteScript</Type>
+          <State>stConfigured</State>
+          <Priority>-1</Priority>
+          <Configuration>
+            <Property>
+              <Name>Script</Name>
+              <Value>/* Single input message case */
+// Create the output message 
+var next = output.append(input[0]);
+
+// Get current date/time, and save it in a property as a string
+//var now = new Date();
+//now = now.toString();
+//next.setProperty("timestamp", now);
+
+// Get the body of the input message
+var body = input[0].text;
+
+var buffy = "";
+
+for (var i = 0; i &lt; body.length; i++ ) {
+    ch = body.charAt(i);  // get char 
+    
+    buffy = buffy + charactermap(body.charCodeAt(i));
+    
+
+}
+next.text = buffy;
+
+function charactermap(ch)
+{
+ if (ch == '\x91' || ch == '\x92')
+ 	return '\x27';
+ else if (ch == '\x95' || ch == '\x95')
+ 	return '\x2D';
+else if (ch == '\x93' || ch == '\x94')
+ 	return '\x22';
+else if (ch == '\B0' || ch == '\BA')
+ 	return '\x64';
+else if (ch == '\x85')
+ 	return '\x5F';
+else if (ch == '\xB2')
+ 	return '\x32';
+else if (ch == '\xB3')
+ 	return '\x33';
+else if (ch == '\xBD')
+ 	return '\x2B';
+else if (ch == '\xA0')
+ 	return '\x20';
+ else
+ 	return ch;
+}</Value>
+              <Type>ptJScript</Type>
+            </Property>
+          </Configuration>
+          <GeneralProperties>
+            <Property>
+              <Name>rhapsody:filterTestingSavedMessages</Name>
+              <Value>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih4/K8o2r9/kTfs6b9tiedEcPW6LRV6t26NPdx7fNb8/LquLC/r6eX6Zl0dPT5989fnju8Fnj4vlat1+kTdNdpEfPV5mi/woa2bn/v8f3+WPH8/yZloXq7aolundo8eTanZ99O395uxYntPjL/cePtk7nr7+qd+n/E7xsL1etndfX/7k77X7yZOd6ieK49/nyRdv977z5Pj0yx88Kb64t3i7vpplX01/+vfKml90MV2VP7n4ydlPzX/q+Adf7s0uX57n+SefPHz48P6DBw/u3Vv/9Hr2pji/d+/uwd3f+/Ofenv83R/s/eBtnV3/1P784veqz779g4efnD85uHtW39+/m++df3K++8mn+d0HJ/fuLnZny3p5d3m9O1v83s8ffudy+W7/7vndl+3DL3/w7Hr6ycHLp59+5/z5L7rX3H1xcX/v6eXv8+X5xb3LB1+ufvDw6dPJg0/v/uSD9sHLT7+4+8ni4cX9h/c/efPiwT61PvjBF3end39w8FO7n07vNj94efeL3+fyB/cffPKDLx+8vPft9f6X9x5cTb88/+QHD38w2Zvt3b/7yfLlgy9/0Nz94vpNvfvpwSff3v3k8np2fn7+4NOHdy8fnq9/ajmb312/fPiD2d7Dew8Wrx9+cn9xvjdb320n67uf/ODFp08v7t7bySfZJ4tnnyzvHeytzx/cpf/93u8OHn5xeV4fXP7ed3c/efru7nTvQfnt5w/3luf3Du7ePXt5DtiXv+g7nxzP3j68vPvt58uH1+WD+u7BYpZfvll+evfeJ3fv7T1cErSnP/Htuz9of+Le6pPLTx/md5/tX15e/mBd3H2zKq9nlycv31w+2XvzxcEnvzeN5eDhd754c+/by4urL/c/mZ/cvftu//LL3/vhJw/O7z188FN7b+79PvfaTx7M7p2cv7xcv7j89M36917d++Tp2e7Bw0++/eRq996964NPpjufn6x+Yuc8u3e+Zjyum2dffXd99/zzTw4e5i+fPvj25OHBJ3n9fPmDHzy8m63Kp8XrbzfHd7/9+if2Xi5/8OlP372798Xb47v7L7+93P3i3f53H66m39798vxLGszOw5fTT+5e3pvWP9i/Xt/Nv7N+cn9dtj910p5+fgqa/N7t5CdffOeT9tMfXD38Rd/9qfvV/aer/Z/8JH+YFVfNwYudT17e23twb+fTl8WTYvH22wfnP/2Lvnty+t1iee/ekqhz75P1m0n9YP/gkwnN5SefTC+X9e4nd9998vLBi3vN0/NPZt8+v7xLw9q/fNP84KtPZi8v7z78vef37p63O/PT6ic/mXz6/CcWD+9Odr47ufdT9+effppd/vRqb0b0unt98PBg+fJ8ef0uXxPYg/vnl99ePCROe9A+vbt4Mnn58mz/4mS9O79bfnLwZfZ73zv/ZPLi8vP560/KT7775hddPjsrP9n79LtXD68fLC4vf+rgfvX6px7k9y6/enOxvPfwi+by8vrJ2ScvHj64uNx7QShfT35ReXbv4gsS5c8+e3yXxfvx3VA/3I1onv8Hd+oAgo4EAAA=</Value>
+              <Type />
+            </Property>
+            <Property>
+              <Name>UserName</Name>
+              <Value>JavaScript</Value>
+              <Type />
+            </Property>
+          </GeneralProperties>
+          <Destinations />
+          <NextDestinations xsi:type="xsd:string">&lt;NextDestinations /&gt;</NextDestinations>
+        </Filter>
+        <Filter>
+          <ID>6790f5b5-e371-4600-9542-819b865051cb/65dca1ce-26bf-403c-b5d2-a292d9506914</ID>
+          <Type>SearchAndReplace</Type>
+          <State>stConfigured</State>
+          <Priority>-1</Priority>
+          <Configuration>
+            <Property>
+              <Name>Search</Name>
+              <Value>93</Value>
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>Replace</Name>
+              <Value>22</Value>
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>Encoding</Name>
+              <Value>1</Value>
+              <Type>ptEnum</Type>
+            </Property>
+          </Configuration>
+          <GeneralProperties>
+            <Property>
+              <Name>UserName</Name>
+              <Value>DoubleQuote1</Value>
+              <Type />
+            </Property>
+          </GeneralProperties>
+          <Destinations>
+            <Destination>
+              <ID>6790f5b5-e371-4600-9542-819b865051cb/aada72a8-7bbd-4e7a-b751-facbc903853b</ID>
+            </Destination>
+          </Destinations>
+          <NextDestinations xsi:type="xsd:string">&lt;NextDestinations&gt;&lt;Connector&gt;&lt;DestinationId&gt;6790f5b5-e371-4600-9542-819b865051cb/aada72a8-7bbd-4e7a-b751-facbc903853b&lt;/DestinationId&gt;&lt;/Connector&gt;&lt;/NextDestinations&gt;</NextDestinations>
+        </Filter>
+        <Filter>
+          <ID>6790f5b5-e371-4600-9542-819b865051cb/a1a9c24a-30ee-47f0-af02-f7973b6119a5</ID>
+          <Type>SearchAndReplace</Type>
+          <State>stConfigured</State>
+          <Priority>-1</Priority>
+          <Configuration>
+            <Property>
+              <Name>Search</Name>
+              <Value>96</Value>
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>Replace</Name>
+              <Value>2D</Value>
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>Encoding</Name>
+              <Value>1</Value>
+              <Type>ptEnum</Type>
+            </Property>
+          </Configuration>
+          <GeneralProperties>
+            <Property>
+              <Name>UserName</Name>
+              <Value>Dash</Value>
+              <Type />
+            </Property>
+          </GeneralProperties>
+          <Destinations>
+            <Destination>
+              <ID>6790f5b5-e371-4600-9542-819b865051cb/ef0d7456-94d4-4348-920e-027d16186ddd</ID>
+            </Destination>
+          </Destinations>
+          <NextDestinations xsi:type="xsd:string">&lt;NextDestinations&gt;&lt;Connector&gt;&lt;DestinationId&gt;6790f5b5-e371-4600-9542-819b865051cb/ef0d7456-94d4-4348-920e-027d16186ddd&lt;/DestinationId&gt;&lt;/Connector&gt;&lt;/NextDestinations&gt;</NextDestinations>
+        </Filter>
+        <Filter>
+          <ID>6790f5b5-e371-4600-9542-819b865051cb/aada72a8-7bbd-4e7a-b751-facbc903853b</ID>
+          <Type>SearchAndReplace</Type>
+          <State>stConfigured</State>
+          <Priority>-1</Priority>
+          <Configuration>
+            <Property>
+              <Name>Search</Name>
+              <Value>94</Value>
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>Replace</Name>
+              <Value>22</Value>
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>Encoding</Name>
+              <Value>1</Value>
+              <Type>ptEnum</Type>
+            </Property>
+          </Configuration>
+          <GeneralProperties>
+            <Property>
+              <Name>UserName</Name>
+              <Value>DoubleQuote2</Value>
+              <Type />
+            </Property>
+          </GeneralProperties>
+          <Destinations>
+            <Destination>
+              <ID>6790f5b5-e371-4600-9542-819b865051cb/1e2bbaa9-90b3-4dcc-ae95-a5b9061176ae</ID>
+            </Destination>
+          </Destinations>
+          <NextDestinations xsi:type="xsd:string">&lt;NextDestinations&gt;&lt;Connector&gt;&lt;DestinationId&gt;6790f5b5-e371-4600-9542-819b865051cb/1e2bbaa9-90b3-4dcc-ae95-a5b9061176ae&lt;/DestinationId&gt;&lt;/Connector&gt;&lt;/NextDestinations&gt;</NextDestinations>
+        </Filter>
+        <Filter>
+          <ID>6790f5b5-e371-4600-9542-819b865051cb/b4992aba-0564-44f6-baca-a798c2306288</ID>
+          <Type>SearchAndReplace</Type>
+          <State>stConfigured</State>
+          <Priority>-1</Priority>
+          <Configuration>
+            <Property>
+              <Name>Search</Name>
+              <Value>B0</Value>
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>Replace</Name>
+              <Value>64</Value>
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>Encoding</Name>
+              <Value>1</Value>
+              <Type>ptEnum</Type>
+            </Property>
+          </Configuration>
+          <GeneralProperties>
+            <Property>
+              <Name>UserName</Name>
+              <Value>degrees</Value>
+              <Type />
+            </Property>
+          </GeneralProperties>
+          <Destinations>
+            <Destination>
+              <ID>6790f5b5-e371-4600-9542-819b865051cb/bb689d33-690a-4aa4-a0ec-4cb517174fef</ID>
+            </Destination>
+          </Destinations>
+          <NextDestinations xsi:type="xsd:string">&lt;NextDestinations&gt;&lt;Connector&gt;&lt;DestinationId&gt;6790f5b5-e371-4600-9542-819b865051cb/bb689d33-690a-4aa4-a0ec-4cb517174fef&lt;/DestinationId&gt;&lt;/Connector&gt;&lt;/NextDestinations&gt;</NextDestinations>
+        </Filter>
+        <Filter>
+          <ID>6790f5b5-e371-4600-9542-819b865051cb/bb689d33-690a-4aa4-a0ec-4cb517174fef</ID>
+          <Type>SearchAndReplace</Type>
+          <State>stConfigured</State>
+          <Priority>-1</Priority>
+          <Configuration>
+            <Property>
+              <Name>Search</Name>
+              <Value>BA</Value>
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>Replace</Name>
+              <Value>64</Value>
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>Encoding</Name>
+              <Value>1</Value>
+              <Type>ptEnum</Type>
+            </Property>
+          </Configuration>
+          <GeneralProperties>
+            <Property>
+              <Name>UserName</Name>
+              <Value>degrees 2</Value>
+              <Type />
+            </Property>
+          </GeneralProperties>
+          <Destinations>
+            <Destination>
+              <ID>6cb89abb-5c94-43c4-ae92-c8028201dbe9</ID>
+            </Destination>
+          </Destinations>
+          <NextDestinations xsi:type="xsd:string">&lt;NextDestinations&gt;&lt;Connector&gt;&lt;DestinationId&gt;6cb89abb-5c94-43c4-ae92-c8028201dbe9&lt;/DestinationId&gt;&lt;/Connector&gt;&lt;/NextDestinations&gt;</NextDestinations>
+        </Filter>
+        <Filter>
+          <ID>6790f5b5-e371-4600-9542-819b865051cb/bf543f4c-c50f-453d-8207-99de62ca4d33</ID>
+          <Type>SearchAndReplace</Type>
+          <State>stConfigured</State>
+          <Priority>-1</Priority>
+          <Configuration>
+            <Property>
+              <Name>Search</Name>
+              <Value>B3</Value>
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>Replace</Name>
+              <Value>33</Value>
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>Encoding</Name>
+              <Value>1</Value>
+              <Type>ptEnum</Type>
+            </Property>
+          </Configuration>
+          <GeneralProperties>
+            <Property>
+              <Name>UserName</Name>
+              <Value>Cubed</Value>
+              <Type />
+            </Property>
+          </GeneralProperties>
+          <Destinations>
+            <Destination>
+              <ID>6790f5b5-e371-4600-9542-819b865051cb/28e504d9-c8ff-4d49-a957-aaa2c33bb55e</ID>
+            </Destination>
+          </Destinations>
+          <NextDestinations xsi:type="xsd:string">&lt;NextDestinations&gt;&lt;Connector&gt;&lt;DestinationId&gt;6790f5b5-e371-4600-9542-819b865051cb/28e504d9-c8ff-4d49-a957-aaa2c33bb55e&lt;/DestinationId&gt;&lt;/Connector&gt;&lt;/NextDestinations&gt;</NextDestinations>
+        </Filter>
+        <Filter>
+          <ID>6790f5b5-e371-4600-9542-819b865051cb/c9fbf1f4-72d1-4309-bf38-32e9af0c64af</ID>
+          <Type>SearchAndReplace</Type>
+          <State>stConfigured</State>
+          <Priority>-1</Priority>
+          <Configuration>
+            <Property>
+              <Name>Search</Name>
+              <Value>85</Value>
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>Replace</Name>
+              <Value>5F</Value>
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>Encoding</Name>
+              <Value>1</Value>
+              <Type>ptEnum</Type>
+            </Property>
+          </Configuration>
+          <GeneralProperties>
+            <Property>
+              <Name>UserName</Name>
+              <Value>Replace funny dotty char with underscore</Value>
+              <Type />
+            </Property>
+          </GeneralProperties>
+          <Destinations>
+            <Destination>
+              <ID>6790f5b5-e371-4600-9542-819b865051cb/65dca1ce-26bf-403c-b5d2-a292d9506914</ID>
+            </Destination>
+          </Destinations>
+          <NextDestinations xsi:type="xsd:string">&lt;NextDestinations&gt;&lt;Connector&gt;&lt;DestinationId&gt;6790f5b5-e371-4600-9542-819b865051cb/65dca1ce-26bf-403c-b5d2-a292d9506914&lt;/DestinationId&gt;&lt;/Connector&gt;&lt;/NextDestinations&gt;</NextDestinations>
+        </Filter>
+        <Filter>
+          <ID>6790f5b5-e371-4600-9542-819b865051cb/df6f44eb-c2a4-4cbb-bf11-db81387ce680</ID>
+          <Type>SearchAndReplace</Type>
+          <State>stConfigured</State>
+          <Priority>-1</Priority>
+          <Configuration>
+            <Property>
+              <Name>Search</Name>
+              <Value>92</Value>
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>Replace</Name>
+              <Value>27</Value>
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>Encoding</Name>
+              <Value>1</Value>
+              <Type>ptEnum</Type>
+            </Property>
+          </Configuration>
+          <GeneralProperties>
+            <Property>
+              <Name>UserName</Name>
+              <Value>SingleQuote2</Value>
+              <Type />
+            </Property>
+          </GeneralProperties>
+          <Destinations>
+            <Destination>
+              <ID>6790f5b5-e371-4600-9542-819b865051cb/a1a9c24a-30ee-47f0-af02-f7973b6119a5</ID>
+            </Destination>
+          </Destinations>
+          <NextDestinations xsi:type="xsd:string">&lt;NextDestinations&gt;&lt;Connector&gt;&lt;DestinationId&gt;6790f5b5-e371-4600-9542-819b865051cb/a1a9c24a-30ee-47f0-af02-f7973b6119a5&lt;/DestinationId&gt;&lt;/Connector&gt;&lt;/NextDestinations&gt;</NextDestinations>
+        </Filter>
+        <Filter>
+          <ID>6790f5b5-e371-4600-9542-819b865051cb/ef0d7456-94d4-4348-920e-027d16186ddd</ID>
+          <Type>SearchAndReplace</Type>
+          <State>stConfigured</State>
+          <Priority>-1</Priority>
+          <Configuration>
+            <Property>
+              <Name>Search</Name>
+              <Value>95</Value>
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>Replace</Name>
+              <Value>2D</Value>
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>Encoding</Name>
+              <Value>1</Value>
+              <Type>ptEnum</Type>
+            </Property>
+          </Configuration>
+          <GeneralProperties>
+            <Property>
+              <Name>UserName</Name>
+              <Value>Replace bullet point with dash</Value>
+              <Type />
+            </Property>
+          </GeneralProperties>
+          <Destinations>
+            <Destination>
+              <ID>6790f5b5-e371-4600-9542-819b865051cb/c9fbf1f4-72d1-4309-bf38-32e9af0c64af</ID>
+            </Destination>
+          </Destinations>
+          <NextDestinations xsi:type="xsd:string">&lt;NextDestinations&gt;&lt;Connector&gt;&lt;DestinationId&gt;6790f5b5-e371-4600-9542-819b865051cb/c9fbf1f4-72d1-4309-bf38-32e9af0c64af&lt;/DestinationId&gt;&lt;/Connector&gt;&lt;/NextDestinations&gt;</NextDestinations>
+        </Filter>
+        <Filter>
+          <ID>6790f5b5-e371-4600-9542-819b865051cb/ff2251fd-88fd-488c-a052-c670fd0fb66b</ID>
+          <Type>SearchAndReplace</Type>
+          <State>stConfigured</State>
+          <Priority>-1</Priority>
+          <Configuration>
+            <Property>
+              <Name>Search</Name>
+              <Value>91</Value>
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>Replace</Name>
+              <Value>27</Value>
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>Encoding</Name>
+              <Value>1</Value>
+              <Type>ptEnum</Type>
+            </Property>
+          </Configuration>
+          <GeneralProperties>
+            <Property>
+              <Name>UserName</Name>
+              <Value>SingleQuote1</Value>
+              <Type />
+            </Property>
+          </GeneralProperties>
+          <Destinations>
+            <Destination>
+              <ID>6790f5b5-e371-4600-9542-819b865051cb/df6f44eb-c2a4-4cbb-bf11-db81387ce680</ID>
+            </Destination>
+          </Destinations>
+          <NextDestinations xsi:type="xsd:string">&lt;NextDestinations&gt;&lt;Connector&gt;&lt;DestinationId&gt;6790f5b5-e371-4600-9542-819b865051cb/df6f44eb-c2a4-4cbb-bf11-db81387ce680&lt;/DestinationId&gt;&lt;/Connector&gt;&lt;/NextDestinations&gt;</NextDestinations>
+        </Filter>
+      </Filters>
+      <InputCommPoints>
+        <InputCommPoint>
+          <ID>f13e1ee6-19c6-4b89-aedf-89095b3097d2</ID>
+          <FirstFilters>
+            <ID>6790f5b5-e371-4600-9542-819b865051cb/17a0a53c-2b58-4e94-9bb7-6135f03f1473</ID>
+          </FirstFilters>
+        </InputCommPoint>
+      </InputCommPoints>
+      <OutputCommPoints>
+        <ID>6cb89abb-5c94-43c4-ae92-c8028201dbe9</ID>
+      </OutputCommPoints>
+      <RouteProperties>
+        <ExtractedProperties />
+        <RoutePropertiesDefinitions>
+          <RoutePropertiesDefinition>
+            <Name>CRIS3 v1.s3d</Name>
+            <DefinitionProperties />
+          </RoutePropertiesDefinition>
+        </RoutePropertiesDefinitions>
+        <RepeatedResponse>brIgnore</RepeatedResponse>
+        <UnsolicitedResponse>brIgnore</UnsolicitedResponse>
+      </RouteProperties>
+      <GeneralProperties>
+        <Property>
+          <Name>_03225fdf-9fc3-48fd-8bbf-fd7f7a1452c1__Position</Name>
+          <Value>(796,630,904,723)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_48f88641-79ad-46d6-aca7-c8912557967e_I_Position</Name>
+          <Value>(4,283,76,369)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_501508a9-42d3-4053-a9f8-f1c34d94feaf__Position</Name>
+          <Value>(661,300,739,373)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_55156b5d-1abe-4ada-bf83-efa0a93cbb3a__Position</Name>
+          <Value>(690,180,730,253)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_5580a5d2-7191-4293-a1ae-988fd72b72e9_I_Position</Name>
+          <Value>(2,147,74,220)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_61e7d8b6-f8f2-4684-9cde-574ac0e4d4b0__Position</Name>
+          <Value>(699,369,739,442)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_626be131-b45f-4c52-996c-4521cf5dc421__Position</Name>
+          <Value>(883,380,983,486)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_6790f5b5-e371-4600-9542-819b865051cb/17a0a53c-2b58-4e94-9bb7-6135f03f1473__Position</Name>
+          <Value>(111,420,209,539)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_6790f5b5-e371-4600-9542-819b865051cb/1e2bbaa9-90b3-4dcc-ae95-a5b9061176ae__Position</Name>
+          <Value>(413,180,507,273)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_6790f5b5-e371-4600-9542-819b865051cb/28e504d9-c8ff-4d49-a957-aaa2c33bb55e__Position</Name>
+          <Value>(515,170,565,263)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_6790f5b5-e371-4600-9542-819b865051cb/2ee8e663-470b-4f08-9ecf-840384c088ad__Position</Name>
+          <Value>(114,84,191,170)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_6790f5b5-e371-4600-9542-819b865051cb/2eec4bc0-1aa2-408b-aa6f-2414d55ca939__Position</Name>
+          <Value>(485,290,555,383)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_6790f5b5-e371-4600-9542-819b865051cb/50d2d198-edc7-4c8c-a00f-664ac3f9fb53__Position</Name>
+          <Value>(325,359,400,445)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_6790f5b5-e371-4600-9542-819b865051cb/64d4c1be-b880-4cae-9e12-91b04d076cfb__Position</Name>
+          <Value>(675,120,769,226)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_6790f5b5-e371-4600-9542-819b865051cb/65809129-7a1a-4432-ab79-f78c8d8cd011__Position</Name>
+          <Value>(700,470,780,563)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_6790f5b5-e371-4600-9542-819b865051cb/65dca1ce-26bf-403c-b5d2-a292d9506914__Position</Name>
+          <Value>(240,80,340,173)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_6790f5b5-e371-4600-9542-819b865051cb/73c21f61-fe8c-4f18-8e72-b254a5333678__Position</Name>
+          <Value>(353,60,430,146)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_6790f5b5-e371-4600-9542-819b865051cb/a1a9c24a-30ee-47f0-af02-f7973b6119a5__Position</Name>
+          <Value>(222,160,278,253)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_6790f5b5-e371-4600-9542-819b865051cb/aada72a8-7bbd-4e7a-b751-facbc903853b__Position</Name>
+          <Value>(330,50,430,143)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_6790f5b5-e371-4600-9542-819b865051cb/b4992aba-0564-44f6-baca-a798c2306288__Position</Name>
+          <Value>(436,50,504,143)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_6790f5b5-e371-4600-9542-819b865051cb/bb689d33-690a-4aa4-a0ec-4cb517174fef__Position</Name>
+          <Value>(581,50,659,143)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_6790f5b5-e371-4600-9542-819b865051cb/bf543f4c-c50f-453d-8207-99de62ca4d33__Position</Name>
+          <Value>(559,280,621,373)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_6790f5b5-e371-4600-9542-819b865051cb/c9fbf1f4-72d1-4309-bf38-32e9af0c64af__Position</Name>
+          <Value>(330,260,430,379)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_6790f5b5-e371-4600-9542-819b865051cb/df6f44eb-c2a4-4cbb-bf11-db81387ce680__Position</Name>
+          <Value>(103,170,197,263)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_6790f5b5-e371-4600-9542-819b865051cb/dfd1d966-a1ae-4f45-a63c-cee0cfd2fae0__Position</Name>
+          <Value>(668,396,762,502)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_6790f5b5-e371-4600-9542-819b865051cb/e6738d6b-75ea-4489-bdb0-4c92c21eef9c__Position</Name>
+          <Value>(504,288,576,361)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_6790f5b5-e371-4600-9542-819b865051cb/ef0d7456-94d4-4348-920e-027d16186ddd__Position</Name>
+          <Value>(231,270,329,389)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_6790f5b5-e371-4600-9542-819b865051cb/ff2251fd-88fd-488c-a052-c670fd0fb66b__Position</Name>
+          <Value>(133,280,227,373)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_6bc05f8c-89fa-4262-881e-84067eac0ebe__Position</Name>
+          <Value>(690,220,730,293)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_6cb89abb-5c94-43c4-ae92-c8028201dbe9__Position</Name>
+          <Value>(1117,170,1208,276)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_7a35da10-b517-4392-9e8f-94d5714e9e01_I_Position</Name>
+          <Value>(0,368,109,441)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_c95a4c19-e9fd-4f84-9d3d-72a0bc7c630d_I_Position</Name>
+          <Value>(0,520,99,626)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_d25d7bc7-e44b-45af-a170-226a96d8d6cc__Position</Name>
+          <Value>(796,530,881,623)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_f13e1ee6-19c6-4b89-aedf-89095b3097d2_I_Position</Name>
+          <Value>(0,440,86,546)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_f2facd51-0ae1-4af2-b18b-9e7d1f38ecf4__Position</Name>
+          <Value>(883,120,983,226)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_InputWidth</Name>
+          <Value>92</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_OutputStart</Name>
+          <Value>1116</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>NotificationSchemes</Name>
+          <Value>[c169afd9-315c-481f-a94b-63f5866887b8]</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>StartupState</Name>
+          <Value>START_LEVEL_1</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>StartupStateTracking</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UserName</Name>
+          <Value>CharacterReplacementThingy</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>PersistenceMode</Name>
+          <Value>False</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>FifoMode</Name>
+          <Value>InputOrder</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>RouteErrorHandlerName</Name>
+          <Value>Route Error Handler</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>RouteErrorHandlerVisible</Name>
+          <Value>False</Value>
+          <Type />
+        </Property>
+      </GeneralProperties>
+      <Priority>2</Priority>
+      <State>stRunning</State>
+    </Route>
+  </Routes>
+  <Variables>
+    <Variable>
+      <Name>RouteCode</Name>
+      <Value>AA</Value>
+    </Variable>
+  </Variables>
+  <GlobalDeliveryAgentSettings>
+    <delivery-agents>
+      <delivery-agent-global-settings>
+        <type name="Email" id="email" />
+        <property id="EmailDelieveryAgent.ssl">
+          <name>SSL Mode</name>
+          <value>None</value>
+        </property>
+        <property id="EmailDeliveryAgent.auth">
+          <name>Use authentication?</name>
+          <value>false</value>
+        </property>
+        <property id="EmailDeliveryAgent.debug">
+          <name>Debug Mode</name>
+          <value>false</value>
+        </property>
+        <property id="EmailDeliveryAgent.from">
+          <name>Sender Email Address</name>
+          <value>
+          </value>
+        </property>
+        <property id="EmailDeliveryAgent.host">
+          <name>Outgoing Server</name>
+          <value>
+          </value>
+        </property>
+        <property id="EmailDeliveryAgent.password">
+          <name>Password</name>
+          <password>
+          </password>
+        </property>
+        <property id="EmailDeliveryAgent.port">
+          <name>Port</name>
+          <value>25</value>
+        </property>
+        <property id="EmailDeliveryAgent.testReceiver">
+          <name>Test receiver address</name>
+          <value>
+          </value>
+        </property>
+        <property id="EmailDeliveryAgent.userName">
+          <name>User name</name>
+          <value>
+          </value>
+        </property>
+        <instance-property id="EmailDeliveryAgent.recipient">
+          <name>Email Address</name>
+        </instance-property>
+      </delivery-agent-global-settings>
+      <delivery-agent-global-settings>
+        <type name="SNMP" id="snmp" />
+        <instance-property id="SNMPDeliveryAgent.address">
+          <name>SNMP Target Address</name>
+        </instance-property>
+        <instance-property id="SNMPDeliveryAgent.community">
+          <name>SNMP Community</name>
+        </instance-property>
+      </delivery-agent-global-settings>
+      <delivery-agent-global-settings>
+        <type name="Windows Event Log" id="windows_event_logger" />
+      </delivery-agent-global-settings>
+    </delivery-agents>
+  </GlobalDeliveryAgentSettings>
+  <WebServices>
+    <WebService>
+      <Name>dgsdg</Name>
+      <Configuration>&lt;WebService guid="a1f0398e-d353-4a54-9016-30e33bbccd0b" id="47" version="4"&gt;&lt;serviceName&gt;&lt;name&gt;dgsdg&lt;/name&gt;&lt;namespace&gt;sdfgsdfg&lt;/namespace&gt;&lt;/serviceName&gt;&lt;description /&gt;&lt;binding&gt;&lt;soap12 /&gt;&lt;protocol&gt;HTTP&lt;/protocol&gt;&lt;port&gt;1026&lt;/port&gt;&lt;/binding&gt;&lt;security&gt;&lt;securityBinding&gt;NO_SECURITY_BINDING&lt;/securityBinding&gt;&lt;authenticationMode&gt;NO_AUTHENTICATION&lt;/authenticationMode&gt;&lt;includeTimestamp&gt;true&lt;/includeTimestamp&gt;&lt;algorithmSuite&gt;BASIC_256&lt;/algorithmSuite&gt;&lt;protectionOrder&gt;SIGN_THEN_ENCRYPT&lt;/protectionOrder&gt;&lt;headerLayout&gt;STRICT&lt;/headerLayout&gt;&lt;onlySignEntireHeadersAndBody&gt;true&lt;/onlySignEntireHeadersAndBody&gt;&lt;signingAndEncryption&gt;&lt;encryptionMode&gt;DO_NOT_SIGN_ENCRYPT&lt;/encryptionMode&gt;&lt;signingMode&gt;DO_NOT_SIGN_ENCRYPT&lt;/signingMode&gt;&lt;/signingAndEncryption&gt;&lt;/security&gt;&lt;addressing&gt;&lt;addressingEnabled required="false" /&gt;&lt;/addressing&gt;&lt;operation&gt;&lt;name&gt;adfasdfasf&lt;/name&gt;&lt;description /&gt;&lt;soapAction&gt;urn:adfasdfasf&lt;/soapAction&gt;&lt;mode&gt;IN_ONLY&lt;/mode&gt;&lt;input&gt;&lt;style&gt;EXISTING_TYPE&lt;/style&gt;&lt;existingType&gt;&lt;name&gt;string&lt;/name&gt;&lt;namespace&gt;http://www.w3.org/2001/XMLSchema&lt;/namespace&gt;&lt;/existingType&gt;&lt;/input&gt;&lt;adminProperty&gt;&lt;key&gt;inputType&lt;/key&gt;&lt;value&gt;STANDARD_XML_TYPE&lt;/value&gt;&lt;/adminProperty&gt;&lt;adminProperty&gt;&lt;key&gt;outputType&lt;/key&gt;&lt;value&gt;STANDARD_XML_TYPE&lt;/value&gt;&lt;/adminProperty&gt;&lt;adminProperty&gt;&lt;key&gt;faultType&lt;/key&gt;&lt;value&gt;STANDARD_XML_TYPE&lt;/value&gt;&lt;/adminProperty&gt;&lt;/operation&gt;&lt;/WebService&gt;</Configuration>
+    </WebService>
+  </WebServices>
+</Engine>

@@ -1,0 +1,81 @@
+    <Route>
+      <ID>7a588c92-ffd2-4854-9a11-4103dcbdbe27</ID>
+      <Folder>Test;Spacelabs</Folder>
+      <Filters>    
+        <Filter>
+          <ID>7a588c92-ffd2-4854-9a11-4103dcbdbe27/fc72cc40-ee57-49de-847d-9e6281d556a0</ID>
+          <Type>AckGenerationFilter</Type>
+          <State>stConfigured</State>
+          <Priority>-1</Priority>
+          <Configuration>
+            <Property>
+              <Name>FieldLength</Name>
+              <Value>0</Value>
+              <Type>ptEnum</Type>
+            </Property>
+            <Property>
+              <Name>CopyFields</Name>
+              <Value>[[MSH.SendingApplication,MSH.ReceivingApplication],[MSH.SendingFacility,MSH.ReceivingFacility],[MSH.ReceivingApplication,MSH.SendingApplication],[MSH.ReceivingFacility,MSH.SendingFacility],[MSH.MessageControlId,MSA.MessageControlId],[MSH.ProcessingID,MSH.ProcessingID]]</Value>
+              <Type>ptArray</Type>
+            </Property>
+          </Configuration>
+          <GeneralProperties>
+            <Property>
+              <Name>UserName</Name>
+              <Value>HL7 Acknowledgement Generation</Value>
+              <Type />
+            </Property>
+          </GeneralProperties>
+          <Destinations>
+            <Destination>
+              <ID>b580930b-d402-4b02-bffe-5eb291c96f2b</ID>
+            </Destination>
+          </Destinations>
+          <NextDestinations xsi:type="xsd:string">&lt;NextDestinations&gt;&lt;Connector&gt;&lt;DestinationId&gt;b580930b-d402-4b02-bffe-5eb291c96f2b&lt;/DestinationId&gt;&lt;/Connector&gt;&lt;/NextDestinations&gt;</NextDestinations>
+        </Filter>
+      </Filters>
+      <InputCommPoints>
+        <InputCommPoint>
+          <ID>b580930b-d402-4b02-bffe-5eb291c96f2b</ID>
+          <FirstFilters>
+            <ID>7a588c92-ffd2-4854-9a11-4103dcbdbe27/c5f5a986-037d-4a1b-b6c5-0cd1a54bc7d6</ID>
+          </FirstFilters>
+        </InputCommPoint>
+        <InputCommPoint>
+          <ID>fbca924d-771e-4217-9739-74e188014686</ID>
+          <FirstFilters>
+            <ID>7a588c92-ffd2-4854-9a11-4103dcbdbe27/022cbfed-e9f4-45f3-8691-5713aea9b1a8</ID>
+          </FirstFilters>
+        </InputCommPoint>
+      </InputCommPoints>
+      <OutputCommPoints>
+        <ID>b580930b-d402-4b02-bffe-5eb291c96f2b</ID>
+        <ID>fbca924d-771e-4217-9739-74e188014686</ID>
+        <ID>4ee16606-a1bd-4f1f-95ed-7b74989b6004</ID>
+      </OutputCommPoints>
+      <RouteProperties>
+        <ExtractedProperties />
+        <RoutePropertiesDefinitions>
+          <RoutePropertiesDefinition>
+            <Name>HL7v2.3_bmdi.s3d</Name>
+            <DefinitionProperties />
+          </RoutePropertiesDefinition>
+        </RoutePropertiesDefinitions>
+        <RepeatedResponse>brIgnore</RepeatedResponse>
+        <UnsolicitedResponse>brIgnore</UnsolicitedResponse>
+      </RouteProperties>
+      <GeneralProperties>
+        <Property>
+          <Name>RouteErrorHandlerName</Name>
+          <Value>Route Error Handler</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>RouteErrorHandlerVisible</Name>
+          <Value>False</Value>
+          <Type />
+        </Property>
+      </GeneralProperties>
+      <Priority>3</Priority>
+      <State>stStopped</State>
+    </Route>
