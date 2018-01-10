@@ -232,7 +232,10 @@ public class RLCDataCollector {
 		for (final RLCDataStore store : dataStores) {
 			for (final CommunicationPoint communicationPoint : communicationPoints) {
 				final String type = communicationPoint.getType();
+				// add comm point type to total type counts
 				store.addCommunicationPointTypeCounts(type);
+				// collect general properties about the comm point:
+				store.retrieveGeneralProperties(communicationPoint);
 
 				final List<String> inputRouteIds = communicationPoint.getInputRouteIds();
 				if (inputRouteIds != null) {

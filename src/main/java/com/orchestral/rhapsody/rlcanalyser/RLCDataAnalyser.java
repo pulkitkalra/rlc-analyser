@@ -17,6 +17,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
+import com.orchestral.rhapsody.rlcanalyser.store.GeneralTabType;
 import com.orchestral.rhapsody.rlcanalyser.store.RLCDataStore;
 
 /**
@@ -35,7 +36,7 @@ public class RLCDataAnalyser {
 	}
 
 	public List<TypeCountData> getMostUsedCommunicationPoints(final int maxResult) {
-		return getMostUsed(this.dataStore.getCommunicationPointTypeCounts(), maxResult);
+		return getCommPointProperties(this.dataStore.getCommunicationPointGeneralProperties(), maxResult);
 	}
 
 	public long getNumberOfCommunicationPoints() {
@@ -93,8 +94,24 @@ public class RLCDataAnalyser {
 	}
 
 	private List<TypeCountData> getMostUsed(final Map<String, TypeCountData> countMap,
-			final int maxResult) {
+	                                        final int maxResult) {
 		final List<TypeCountData> countList = new ArrayList<TypeCountData>(countMap.values());
+		Collections.sort(countList);
+		if (maxResult > 0 && maxResult < countList.size()) {
+			return countList.subList(0, maxResult);
+		}
+		return countList;
+	}
+	/**
+	 * Method is used get most used CommPoint given an input generalproperties type map.
+	 * @param countMap
+	 * @param maxResult
+	 * @return
+	 */
+	private List<TypeCountData> getCommPointProperties(final Map<String, Map<GeneralTabType, TypeCountData>> countMap, final int maxResult) {
+		final List<TypeCountData> countList = new ArrayList<TypeCountData>();
+		countMap.values().forEach(value -> countList.add(value.get(GeneralTabType.TotalCounts)));
+
 		Collections.sort(countList);
 		if (maxResult > 0 && maxResult < countList.size()) {
 			return countList.subList(0, maxResult);

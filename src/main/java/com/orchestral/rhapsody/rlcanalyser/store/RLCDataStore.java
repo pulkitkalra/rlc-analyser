@@ -11,12 +11,15 @@
  * $Id$
  */
 package com.orchestral.rhapsody.rlcanalyser.store;
+
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
 import com.orchestral.rhapsody.rlcanalyser.TypeCountData;
+import com.orchestral.rhapsody.rlcanalyser.io.CommunicationPoint;
 import com.orchestral.rhapsody.rlcanalyser.io.Definition.DefinitionType;
+import com.orchestral.rhapsody.rlcanalyser.io.Property;
 import com.orchestral.rhapsody.rlcanalyser.io.RhapsodyVersion;
 import com.orchestral.rhapsody.rlcanalyser.io.RhapsodyVersion.VersionNumber;
 
@@ -46,6 +49,14 @@ public class RLCDataStore {
 	 * Stores number of communication points per each different types
 	 */
 	private final Map<String, TypeCountData> communicationPointTypeCounts = Collections.synchronizedMap(new HashMap<String, TypeCountData>());
+
+	/**
+	 * Store number of general tab drop down occurrences per comm point. The key
+	 * of the map is the type of the comm point and the value is a map of Enums
+	 * representing a general tab property and the corresponding counts.
+	 */
+	private final Map<String, Map<GeneralTabType, TypeCountData>> communicationPointGeneralTabTypeCounts = Collections
+			.synchronizedMap(new HashMap<String, Map<GeneralTabType, TypeCountData>>());
 
 	/**
 	 * Stores number of input communication points per each different types
@@ -123,7 +134,7 @@ public class RLCDataStore {
 
 	/**
 	 * Method for retrieving the Rhapsody Version that belongs to the datastore
-	 * 
+	 *
 	 * @return
 	 */
 	public RhapsodyVersion getRhapsodyVersion() {
@@ -132,7 +143,7 @@ public class RLCDataStore {
 
 	/**
 	 * Method for setting the new Rhapsody Version number
-	 * 
+	 *
 	 * @param rhapsodyVersion
 	 */
 	public void setRhapsodyVersion(final RhapsodyVersion rhapsodyVersion) {
@@ -142,7 +153,7 @@ public class RLCDataStore {
 	public void addCommunicationPointTypeCounts(final String type) {
 		// get correct type
 		final String correctType = RLCNameConverter.getCorrectComponentTypeName(type);
-		addCounts(this.communicationPointTypeCounts, correctType, 1);
+		addCountsCommunicationPoint(this.communicationPointGeneralTabTypeCounts, correctType, 1);
 	}
 
 	public void addInputCommunicationPointTypeCounts(final String type, final int count) {
@@ -203,6 +214,97 @@ public class RLCDataStore {
 		countMap.put(type, countData);
 	}
 
+	/**
+	 * Method is used to add counts for the total number of comm point given an
+	 * input of the general properties map.
+	 * 
+	 * @param countMap
+	 * @param type
+	 * @param count
+	 */
+	private void addCountsCommunicationPoint(final Map<String, Map<GeneralTabType, TypeCountData>> countMap, final String type, final int count) {
+		if (type == null) {
+			return;
+		}
+		// Adding total counts for each comm point type
+		Map<GeneralTabType, TypeCountData> countDataMap = countMap.get(type);
+
+		if (countDataMap == null) {
+			countDataMap = new HashMap<GeneralTabType, TypeCountData>();
+			countDataMap.put(GeneralTabType.TotalCounts, new TypeCountData(type));
+		}
+
+		TypeCountData countData = countDataMap.get(GeneralTabType.TotalCounts);
+		if (countData == null) {
+			countData = new TypeCountData(type);
+		}
+		countData.setCounts(countData.getCounts() + count);
+		countDataMap.put(GeneralTabType.TotalCounts, countData);
+		countMap.put(type, countDataMap);
+	}
+
+	/**
+	 * Method is called to retrieve and count general tab property information
+	 * for each comm point type. general properties for each comm point type.
+	 *
+	 * @param communicationPoint The CommPoint for which general tab information
+	 *            is required to be collected.
+	 * @param type Type for the comm point, must be the correct comm point type.
+	 */
+	public void retrieveGeneralProperties(final CommunicationPoint communicationPoint) {
+		final String type = RLCNameConverter.getCorrectComponentTypeName(communicationPoint.getType());
+		if (this.communicationPointGeneralTabTypeCounts.containsKey(type)) {
+			final Map<GeneralTabType, TypeCountData> generalPropertiesMap = this.communicationPointGeneralTabTypeCounts.get(type);
+
+			String startUpState = "";
+			/* Get startup mode from general properties: */
+			for (final Property property : communicationPoint.getGeneralProperties()) {
+				if (property.getName().equals("StartupState")) {
+					startUpState = property.getValue();
+					break;
+				}
+			}
+
+			if (!startUpState.isEmpty()) {
+				updateGeneralTabTypeMap(generalPropertiesMap, startUpState, communicationPoint);
+			}
+
+			/* Getting start up state */
+			updateGeneralTabTypeMap(generalPropertiesMap, communicationPoint.getMode(), communicationPoint);
+
+			/* Getting Retry type */
+			updateGeneralTabTypeMap(generalPropertiesMap, communicationPoint.getRetryType(), communicationPoint);
+			// update overall map.
+			this.communicationPointGeneralTabTypeCounts.put(type, generalPropertiesMap);
+		}
+	}
+
+	/**
+	 * Helper method used to update the general properties map.
+	 *
+	 * @param generalPropertiesMap Map containing all the general properties for
+	 *            a given comm point type.
+	 * @param tabTypeEnum the string representation of the enum representing the
+	 *            property we register in the map and count.
+	 * @param communicationPoint The communication point obbject from which the
+	 *            properties will be extracted.
+	 */
+	private void updateGeneralTabTypeMap(	final Map<GeneralTabType, TypeCountData> generalPropertiesMap,
+	                                     	final String tabTypeEnum,
+	                                     	final CommunicationPoint communicationPoint) {
+		// get enum based on start up state type defined in the comm point general properties
+		final GeneralTabType tabType = GeneralTabType.valueOf(tabTypeEnum);
+		// setup key in map if it doesn't already exist.
+		if (generalPropertiesMap.get(tabType) == null) {
+			final TypeCountData data = new TypeCountData(communicationPoint.getMode());
+			generalPropertiesMap.put(tabType, data);
+		}
+		// update the map counts to reflect that another starup state was detected.
+		final TypeCountData updatedData = generalPropertiesMap.get(tabType);
+		updatedData.setCounts(updatedData.getCounts() + 1);
+		generalPropertiesMap.put(tabType, updatedData);
+	}
+
 	public synchronized void incrementTotalCounts(final TotalCountDataType type, final long increment) {
 		final Long currentCount = this.totalCounts.get(type);
 		if (currentCount != null) {
@@ -217,6 +319,16 @@ public class RLCDataStore {
 	 */
 	public Map<String, TypeCountData> getCommunicationPointTypeCounts() {
 		return this.communicationPointTypeCounts;
+	}
+
+	/**
+	 * Returns the General Properties map. The key of the map is the type of
+	 * commpoint and the values are general tab dropdowns.
+	 *
+	 * @return
+	 */
+	public Map<String, Map<GeneralTabType, TypeCountData>> getCommunicationPointGeneralProperties() {
+		return this.communicationPointGeneralTabTypeCounts;
 	}
 
 	/**
