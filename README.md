@@ -66,7 +66,13 @@ Note: A warning should appear in the Eclipse console on first start due to the i
 7. Click "Apply" -> "Run".
 
 #### 4.3 Start Maven build
-1. From the "Run" menu, hover over "Run As", then select "Maven Build". Errors may occur if Java JDK and JRE are not properly installed.
+1. Right click on your project and select Run As > Maven build..
+2. In the Goals text field, type 'install', apply and run.
+
+If you get a compilation error such as: "No Compiler is provided in this environment. Perhaps you are running a JRE rather than a JDK?" after running the Maven Goal, try this:
+
+- Run Menu > Run Configurations > Maven Build > Select an existing build or create a new one > Under the JRE tab ensure that the default Workspace JRE is checked > Uncheck and check this checkbox.
+- Return to the main tab and run again with the install goal.
 
 
 ## Contributing to the Project
