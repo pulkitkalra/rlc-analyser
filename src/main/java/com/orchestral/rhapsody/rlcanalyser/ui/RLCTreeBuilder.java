@@ -56,9 +56,12 @@ public class RLCTreeBuilder {
 		final DefaultMutableTreeNode top = new DefaultMutableTreeNode("root");
 
 		final RLCDataAnalyser dataAnalyser = new RLCDataAnalyser(dataStore);
-
-		addResultTreeNode(top, "Most used communication points", dataAnalyser.getMostUsedCommunicationPoints(-1),
-		                  dataAnalyser.getNumberOfCommunicationPoints());
+		// To restrict the maximum number of components to count for,
+		// change the maxResult integer parameter for the getMostUsed methods.
+		addResultTreeNode(	top,
+		                  	"Most used communication points",
+		                  	dataAnalyser.getMostUsedCommunicationPoints(-1),
+		                  	dataAnalyser.getNumberOfCommunicationPoints());
 		addResultTreeNode(top, "Most used input communication points",
 		                  dataAnalyser.getMostUsedInputCommunicationPoints(-1),
 		                  dataAnalyser.getNumberOfInputCommunicationPoints());
@@ -171,7 +174,7 @@ public class RLCTreeBuilder {
 
 			top.add(commPointNode);
 		}
-		// TODO: add filters
+
 		return new JScrollPane(manipulateJTree(top));
 
 	}
@@ -191,9 +194,9 @@ public class RLCTreeBuilder {
 	 * @return
 	 */
 	private Map<String, Long> generateCountMap(final String startPhrase, final Entry<String, Map<GeneralTabType, TypeCountData>> entry) {
-		final Map<String, Long> countMap = new HashMap<String, Long>();
+		final Map<String, Long> countMap = new HashMap<>();
 
-		final List<GeneralTabType> tabTypeList = new ArrayList<GeneralTabType>();
+		final List<GeneralTabType> tabTypeList = new ArrayList<>();
 		// add enum types to list based on start/ end characters input.
 		for (final GeneralTabType tabType : GeneralTabType.values()) {
 			// StartupState, need starts with and ends with 'START'

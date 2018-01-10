@@ -39,8 +39,8 @@ public class RLCDataStoreTest {
 	@Before
 	public void setUp() {
 		this.dataStore = new RLCDataStore();
-		final List<CommunicationPointConfigurationDataStore> communicationPointConfigurationStores = new ArrayList<CommunicationPointConfigurationDataStore>();
-		final List<FilterConfigurationDataStore> filterConfigurationStores = new ArrayList<FilterConfigurationDataStore>();
+		final List<CommunicationPointConfigurationDataStore> communicationPointConfigurationStores = new ArrayList<>();
+		final List<FilterConfigurationDataStore> filterConfigurationStores = new ArrayList<>();
 		this.configurationDataStore = new ConfigurationDataStore(communicationPointConfigurationStores, filterConfigurationStores);
 		this.dataCollector = new RLCDataCollector(this.dataStore, this.configurationDataStore);
 		this.xstream = new XStreamInstance();

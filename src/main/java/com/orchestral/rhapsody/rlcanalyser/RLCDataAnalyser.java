@@ -35,6 +35,13 @@ public class RLCDataAnalyser {
 		this.dataStore = dataStore;
 	}
 
+	/**
+	 * Gets the most commonly used comm points.
+	 * 
+	 * @param maxResult if -1, then all possible communication points will be
+	 *            shown.
+	 * @return
+	 */
 	public List<TypeCountData> getMostUsedCommunicationPoints(final int maxResult) {
 		return getCommPointProperties(this.dataStore.getCommunicationPointGeneralProperties(), maxResult);
 	}
@@ -102,20 +109,27 @@ public class RLCDataAnalyser {
 		}
 		return countList;
 	}
+
 	/**
-	 * Method is used get most used CommPoint given an input generalproperties type map.
+	 * Method is used get most used CommPoint given an input general properties
+	 * type map.
+	 *
 	 * @param countMap
 	 * @param maxResult
 	 * @return
 	 */
 	private List<TypeCountData> getCommPointProperties(final Map<String, Map<GeneralTabType, TypeCountData>> countMap, final int maxResult) {
 		final List<TypeCountData> countList = new ArrayList<TypeCountData>();
-		countMap.values().forEach(value -> countList.add(value.get(GeneralTabType.TotalCounts)));
+		// if max result is -1, that means that we don't wish to apply the max result parameter.
+		for (final Map<GeneralTabType, TypeCountData> value : countMap.values()) {
+			if (maxResult == -1 || maxResult > countList.size()) {
+				countList.add(value.get(GeneralTabType.TotalCounts));
+			} else {
+				break; // stop adding values to map.
+			}
+		}
 
 		Collections.sort(countList);
-		if (maxResult > 0 && maxResult < countList.size()) {
-			return countList.subList(0, maxResult);
-		}
 		return countList;
 	}
 

@@ -74,8 +74,6 @@ public enum GeneralTabType {
 			}
 		}
 		// If we've reached this far, an unexpected Enum value was encountered.
-		// We could either throw an exception or simply log it and move on.
-		logger.error("No General Tab Type Enum corresponds to " + correctName);
 		throw new IllegalArgumentException("No General Tab Type Enum corresponds to " + correctName);
 	}
 }

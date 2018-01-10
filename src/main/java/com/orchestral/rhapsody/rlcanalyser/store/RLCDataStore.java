@@ -16,6 +16,8 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.apache.commons.lang3.StringUtils;
+
 import com.orchestral.rhapsody.rlcanalyser.TypeCountData;
 import com.orchestral.rhapsody.rlcanalyser.io.CommunicationPoint;
 import com.orchestral.rhapsody.rlcanalyser.io.Definition.DefinitionType;
@@ -217,7 +219,7 @@ public class RLCDataStore {
 	/**
 	 * Method is used to add counts for the total number of comm point given an
 	 * input of the general properties map.
-	 * 
+	 *
 	 * @param countMap
 	 * @param type
 	 * @param count
@@ -256,7 +258,7 @@ public class RLCDataStore {
 		if (this.communicationPointGeneralTabTypeCounts.containsKey(type)) {
 			final Map<GeneralTabType, TypeCountData> generalPropertiesMap = this.communicationPointGeneralTabTypeCounts.get(type);
 
-			String startUpState = "";
+			String startUpState = StringUtils.EMPTY;
 			/* Get startup mode from general properties: */
 			for (final Property property : communicationPoint.getGeneralProperties()) {
 				if (property.getName().equals("StartupState")) {

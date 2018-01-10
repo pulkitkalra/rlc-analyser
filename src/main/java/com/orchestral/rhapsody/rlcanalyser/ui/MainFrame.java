@@ -289,7 +289,6 @@ public class MainFrame extends JFrame {
 	private void processingDone(final RLCDataStore dataStore, final ConfigurationDataStore configurationDataStore) {
 		this.currentDataStore = dataStore;
 		this.currentConfigDataStore = configurationDataStore;
-		//final Map<String, Map<GeneralTabType, TypeCountData>> mapTemp = this.currentDataStore.getCommunicationPointGeneralProperties();
 		final RLCTreeBuilder builder = new RLCTreeBuilder();
 
 		// Processing the multiple tabs of data
