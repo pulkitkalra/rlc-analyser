@@ -5,7 +5,7 @@ When the RLC Analyser is started the user is prompted to browse to search for a 
 ## User Set Up
 
 ### 1. Download the JAR file
-Navigate to the Release tab on GitHub. Download the latest release version - current version is **v0.1-beta**. This JAR file contains the latest built version of the RLC Analyser.
+Navigate to the Release tab on GitHub. Download the latest release version - current version is **v1.0**. This JAR file contains the latest built version of the RLC Analyser.
 
 
 ### 2. Run the JAR
@@ -16,7 +16,7 @@ In order to run the JAR file, Java 8 needs to be installed. To run the JAR doubl
 
 ### 1. Eclipse Development Environment Set Up
 #### 1.1. Install Eclipse and Create Workspace
-1. Download the latest [Eclipse Oxygen - Eclipse for RCP ans RAP Developers](http://www.eclipse.org/downloads/packages/eclipse-rcp-and-rap-developers/oxygen1a)
+1. Download the latest [Eclipse Oxygen - Eclipse for RCP and RAP Developers](http://www.eclipse.org/downloads/packages/eclipse-rcp-and-rap-developers/oxygen1a)
 2. Install Eclipse
 3. Start Eclipse and create a workspace for the RLC Analyser Project
 #### 1.2. Set Up JUnit
@@ -70,7 +70,9 @@ Note: A warning should appear in the Eclipse console on first start due to the i
 
 
 ## Contributing to the Project
+To ensure that the code is maintained to a satisfactory standard, all changes made to the program should undergo an approval process before merging to the master branch. 
+
 1. Fork the orionhealth/rlc-analyser repository.
-2. Create a new pull request when you want to push changes.
-// TO BE COMPLETED: 
-3. The pull request must pass the build and the code review process (at least 1 approval?).
+2. Create a new pull request when you want to push changes. 
+3. Await approval
+4. The pull request must pass the build and the code review process.
