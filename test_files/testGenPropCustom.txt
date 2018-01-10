@@ -1,0 +1,4140 @@
+<?xml version="1.0"?>
+<Engine xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" FileVersion="10" CompatibleDownToFileVersion="10" xmlns="urn:www.yourcompany.com/Rhapsody/Schema.xml">
+  <CommPoints>
+    <CommPoint>
+      <ID>de71dbeb-fa9b-4f6b-9422-955ae39337af</ID>
+      <Type>E-mail</Type>
+      <InputRoutes />
+      <OutputRoutes />
+      <Configuration>
+        <Property>
+          <Name>ConnectionErrorRetriesIncludedMessages</Name>
+          <Value>0</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>INCOMING_HOST</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>STORE_PROTOCOL</Name>
+          <Value>1</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>POP3_PORT</Name>
+          <Value />
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>IMAP_PORT</Name>
+          <Value>143</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>IN_SECURE</Name>
+          <Value>true</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>IN_SSL_PROTOCOL</Name>
+          <Value>6</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>IN_SSL_CIPHER_SUITES</Name>
+          <Value>FIPS</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>IN_SECURE_TRUSTS</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>IN_READ_TIMEOUT</Name>
+          <Value>10000</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>IN_CONNECTION_TIMEOUT</Name>
+          <Value>30000</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>IN_USER</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>IN_PASSWORD</Name>
+          <Value />
+          <Type>ptPassword</Type>
+        </Property>
+        <Property>
+          <Name>FOLDER</Name>
+          <Value>INBOX</Value>
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>FOLDER_REFRESH_RATE</Name>
+          <Value>60000</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>DELETE_MESSAGE</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>RECEIVING_MODE</Name>
+          <Value>NORMAL</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>MESSAGE_AS_ATTACHMENT</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>EXTRACTED_HEADERS</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>JAVA_MAIL_OUTPUT_DEBUGGING_KEY</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>OUTGOING_HOST</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>TRANSPORT_PROTOCOL</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>PORT</Name>
+          <Value />
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>OUT_SECURE</Name>
+          <Value />
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>OUT_SSL_PROTOCOL</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>OUT_SSL_CIPHER_SUITES</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>OUT_SECURE_TRUSTS</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>OUT_READ_TIMEOUT</Name>
+          <Value />
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>OUT_CONNECTION_TIMEOUT</Name>
+          <Value />
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>USER</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>PASSWORD</Name>
+          <Value />
+          <Type>ptPassword</Type>
+        </Property>
+        <Property>
+          <Name>SENDING_MODE</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>FROM</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>REPLY_TO</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>TO</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>CC</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>SUBJECT</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>SEND_RHAPSODY_MESSAGE</Name>
+          <Value />
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>REPLACEMENT_BODY_TEXT</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>SEND_AS_ATTACHMENT</Name>
+          <Value />
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>ATTACHMENT_NAME</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>BODY_TEXT</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>CONTENT_TYPE</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>SMIME</Name>
+          <Value />
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>SMIME_OPTION</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>SIGN_OPTION</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>PRIVATE_KEY</Name>
+          <Value />
+          <Type>ptKey</Type>
+        </Property>
+        <Property>
+          <Name>SIGN_ALG</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>RECI_CERT</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>ENCRYPTION_ALG</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>PRIORITY</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>EMAIL_HEADERS</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>JAVA_MAIL_INPUT_DEBUGGING</Name>
+          <Value />
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>InputCharacterEncoding</Name>
+          <Value>151</Value>
+          <Type />
+        </Property>
+      </Configuration>
+      <GeneralProperties>
+        <Property>
+          <Name>StartupState</Name>
+          <Value>DONT_START</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>StartupStateTracking</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UseNotesAsSupportNotes</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UserName</Name>
+          <Value>E-mail Client</Value>
+          <Type />
+        </Property>
+      </GeneralProperties>
+      <Priority>-1</Priority>
+      <Mode>cpmInput</Mode>
+      <NumConnections>1</NumConnections>
+      <IdleTimeout>0</IdleTimeout>
+      <Autotrack>0</Autotrack>
+      <RetryType>rtLinear</RetryType>
+      <NumRetries>5</NumRetries>
+      <NotificationRetries>5</NotificationRetries>
+      <RetryDelay>5000</RetryDelay>
+      <State>stNotConfigured</State>
+      <Folder>Locker</Folder>
+      <NotificationThresholds>&lt;NotificationThresholds xmlns="http://www.orionhealth.com/rhapsody/2010/12/notifications/notificationThresholds" componentGuid="de71dbeb-fa9b-4f6b-9422-955ae39337af"&gt;
+  &lt;ResendPeriods warnings="0" alarms="0" escalations="0"/&gt;
+&lt;/NotificationThresholds&gt;</NotificationThresholds>
+      <MaxRetryDelayForExponential>300000</MaxRetryDelayForExponential>
+      <MessageRetryDelay>1000</MessageRetryDelay>
+    </CommPoint>
+    <CommPoint>
+      <ID>6d59b450-0868-42ff-930e-2e8cacb33099</ID>
+      <Type>rhapsody:RestClient</Type>
+      <InputRoutes>
+        <ID>85f49cc3-7def-4904-9f0d-6413924d5b46</ID>
+      </InputRoutes>
+      <OutputRoutes />
+      <Configuration>
+        <Property>
+          <Name>ConnectionErrorRetriesIncludedMessages</Name>
+          <Value>0</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>RestClient</Name>
+          <Value />
+          <Type>ptRestClient</Type>
+        </Property>
+        <Property>
+          <Name>JavascriptRequest</Name>
+          <Value>/**
+Perform a GET request with the default options.
+*/
+
+var config = {};
+var response = client.get(config);
+
+/**
+Example configuration using all the options available. All options are optional.
+*/
+/**
+var config = {
+	// Overrides the default accept-type header for this request.
+	'accept-type': 'application/xml+fhir',
+	
+	// The relative url for the request. It is concatenated onto the REST Client's url.
+	'relative-url': '/patient/1',
+	
+	// The headers to send. These will overwrite matching headers from the REST Client configuration.
+	'headers': [
+		{'header':'a','value':'a'},
+		{'header':'b','value':'b'}
+	],
+	
+	// The request parameters to send.
+	'parameters': [
+		{'parameter':'a','value':'a'},
+		{'parameter':'b','value':'b'}
+	],
+	
+	// Overrides the default content-type header for this request.
+	'content-type': 'application/xml',
+	
+	// Whether to handle responses as defined in the REST Client configuration.
+	'enable-response-handling': 'false',
+	
+	// Headers defined by the REST Client to be removed during this request.
+	'remove-headers': ['c','d']
+};
+
+var response = client.get(config);
+// var response = client.post(config, data);
+// var response = client.put(config, data);
+// var response = client.destroy(config);
+// var response = client.head(config);
+// var response = client.options(config);
+
+// Note 'output' object is only available when the communication point is in Out-&gt;In mode.
+output.setProperty('statusCode', response.status);
+output.setText(response.response, 'UTF8');
+
+// Copying values from the response headers.
+output.setProperty('Response-Header-Count', response.headers.length);
+output.setProperty('First-Header-Name', response.headers[0]);
+if (response.headers['Date']) {
+	output.setProperty('Date-Header-Value', response.headers['Date']);
+}
+
+// Parsing a JSON response
+var data = JSON.parse(response.response);
+*/
+</Value>
+          <Type>ptJScript</Type>
+        </Property>
+        <Property>
+          <Name>ReadTimeout</Name>
+          <Value>10000</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>InputCharacterEncoding</Name>
+          <Value>151</Value>
+          <Type />
+        </Property>
+      </Configuration>
+      <GeneralProperties>
+        <Property>
+          <Name>StartupState</Name>
+          <Value>DONT_START</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>StartupStateTracking</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UseNotesAsSupportNotes</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UserName</Name>
+          <Value>JavaScript REST Client</Value>
+          <Type />
+        </Property>
+      </GeneralProperties>
+      <Priority>-1</Priority>
+      <Mode>cpmInput</Mode>
+      <NumConnections>1</NumConnections>
+      <IdleTimeout>0</IdleTimeout>
+      <Autotrack>0</Autotrack>
+      <RetryType>rtLinear</RetryType>
+      <NumRetries>5</NumRetries>
+      <NotificationRetries>5</NotificationRetries>
+      <RetryDelay>5000</RetryDelay>
+      <State>stNotConfigured</State>
+      <Folder>Locker</Folder>
+      <NotificationThresholds>&lt;NotificationThresholds xmlns="http://www.orionhealth.com/rhapsody/2010/12/notifications/notificationThresholds" componentGuid="6d59b450-0868-42ff-930e-2e8cacb33099"&gt;
+  &lt;ResendPeriods warnings="0" alarms="0" escalations="0"/&gt;
+&lt;/NotificationThresholds&gt;</NotificationThresholds>
+      <MaxRetryDelayForExponential>300000</MaxRetryDelayForExponential>
+      <MessageRetryDelay>1000</MessageRetryDelay>
+    </CommPoint>
+    <CommPoint>
+      <ID>4297b659-417e-4270-8a4c-af1f0bcfa493</ID>
+      <Type>ScriptTCPClient</Type>
+      <InputRoutes />
+      <OutputRoutes />
+      <Configuration>
+        <Property>
+          <Name>ConnectionErrorRetriesIncludedMessages</Name>
+          <Value>0</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>HOST</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>PORT</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>LOCALHOST</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>LOCALPORT</Name>
+          <Value />
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>SECURE</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>SSL_MODE</Name>
+          <Value>6</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>SSL_CIPHER_SUITES</Name>
+          <Value>FIPS</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>SSL_CLIENT_MODE</Name>
+          <Value>true</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>SECURE_KEYS</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>SECURE_TRUSTS</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>CONNECTION_TIMEOUT</Name>
+          <Value>300000</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>DYNAMIC_LOGIC</Name>
+          <Value>MESSAGE_ERROR</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>init</Name>
+          <Value>//initialisation
+var x = 3;
+log.warn("init, x ="+x);
+</Value>
+          <Type>ptJScript</Type>
+        </Property>
+        <Property>
+          <Name>LOGCONNECTIONS</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>LOGDATA</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>DATAHEX</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>CONNECTIONLOG</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>LOGTIME</Name>
+          <Value>1</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>receive</Name>
+          <Value>//receive
+</Value>
+          <Type>ptJScript</Type>
+        </Property>
+        <Property>
+          <Name>received</Name>
+          <Value>//done receive</Value>
+          <Type>ptJScript</Type>
+        </Property>
+        <Property>
+          <Name>send</Name>
+          <Value>//send
+var y = 6;
+log.warn("send, x ="+x+" x+y = "+(x+y));
+</Value>
+          <Type>ptJScript</Type>
+        </Property>
+        <Property>
+          <Name>InputCharacterEncoding</Name>
+          <Value>151</Value>
+          <Type />
+        </Property>
+      </Configuration>
+      <GeneralProperties>
+        <Property>
+          <Name>StartupState</Name>
+          <Value>DONT_START</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>StartupStateTracking</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UseNotesAsSupportNotes</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UserName</Name>
+          <Value>JavaScript TCP Client</Value>
+          <Type />
+        </Property>
+      </GeneralProperties>
+      <Priority>-1</Priority>
+      <Mode>cpmBidirectional</Mode>
+      <NumConnections>1</NumConnections>
+      <IdleTimeout>0</IdleTimeout>
+      <Autotrack>0</Autotrack>
+      <RetryType>rtLinear</RetryType>
+      <NumRetries>5</NumRetries>
+      <NotificationRetries>5</NotificationRetries>
+      <RetryDelay>5000</RetryDelay>
+      <State>stNotConfigured</State>
+      <Folder>Locker</Folder>
+      <NotificationThresholds>&lt;NotificationThresholds xmlns="http://www.orionhealth.com/rhapsody/2010/12/notifications/notificationThresholds" componentGuid="4297b659-417e-4270-8a4c-af1f0bcfa493"&gt;
+  &lt;ResendPeriods warnings="0" alarms="0" escalations="0"/&gt;
+&lt;/NotificationThresholds&gt;</NotificationThresholds>
+      <MaxRetryDelayForExponential>300000</MaxRetryDelayForExponential>
+      <MessageRetryDelay>1000</MessageRetryDelay>
+    </CommPoint>
+    <CommPoint>
+      <ID>b281b893-1ba1-4f14-89f4-2ac225b40a28</ID>
+      <Type>FTPClient</Type>
+      <InputRoutes />
+      <OutputRoutes />
+      <Configuration>
+        <Property>
+          <Name>ConnectionErrorRetriesIncludedMessages</Name>
+          <Value>0</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>FailAction</Name>
+          <Value>0</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>MaxRecvTries</Name>
+          <Value>-1</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>OnlineModeAction</Name>
+          <Value>0</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>ResponseTimeout</Name>
+          <Value>60000</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>TtlRemoveAttributeOnReceivedMessages</Name>
+          <Value>False</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>Server</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>Port</Name>
+          <Value>0</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>Username</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>Password</Name>
+          <Value />
+          <Type>ptPassword</Type>
+        </Property>
+        <Property>
+          <Name>Passive</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>ReadTimeout</Name>
+          <Value>30000</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>TransferType</Name>
+          <Value>0</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>ConnectionMode</Name>
+          <Value>0</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>ConnectionType</Name>
+          <Value>1</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>DataChannelProtectionLevel</Name>
+          <Value>1</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>FTPSMode</Name>
+          <Value>1</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>DisableStandardClosure</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>ServerValidation</Name>
+          <Value>true</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>ServerCertificates</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>CheckHostNames</Name>
+          <Value>true</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>ClientAuthentication</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>ClientKey</Name>
+          <Value />
+          <Type>ptKey</Type>
+        </Property>
+        <Property>
+          <Name>ClientCertificate</Name>
+          <Value />
+          <Type>ptCertificate</Type>
+        </Property>
+        <Property>
+          <Name>InputDir</Name>
+          <Value />
+          <Type>ptDir</Type>
+        </Property>
+        <Property>
+          <Name>ListParam</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>Pattern</Name>
+          <Value>*</Value>
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>RefreshRate</Name>
+          <Value>60000</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>DeleteAfterReceive</Name>
+          <Value>true</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>BeforeReceive</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>OutputDir</Name>
+          <Value />
+          <Type>ptDir</Type>
+        </Property>
+        <Property>
+          <Name>OutputDirCreate</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>BaseFilename</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>Suffix</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>AppendDate</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>CheckName</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>UseTempFile</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>AppendKey</Name>
+          <Value>true</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>BeforeSend</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>InputCharacterEncoding</Name>
+          <Value>151</Value>
+          <Type />
+        </Property>
+      </Configuration>
+      <GeneralProperties>
+        <Property>
+          <Name>StartupState</Name>
+          <Value>START_LEVEL_5</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>StartupStateTracking</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UseNotesAsSupportNotes</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UserName</Name>
+          <Value>FTP Client</Value>
+          <Type />
+        </Property>
+      </GeneralProperties>
+      <Priority>-1</Priority>
+      <Mode>cpmOutIn</Mode>
+      <NumConnections>1</NumConnections>
+      <IdleTimeout>0</IdleTimeout>
+      <Autotrack>0</Autotrack>
+      <RetryType>rtLinear</RetryType>
+      <NumRetries>5</NumRetries>
+      <NotificationRetries>5</NotificationRetries>
+      <RetryDelay>5000</RetryDelay>
+      <State>stNotConfigured</State>
+      <Folder>Locker</Folder>
+      <NotificationThresholds>&lt;NotificationThresholds xmlns="http://www.orionhealth.com/rhapsody/2010/12/notifications/notificationThresholds" componentGuid="b281b893-1ba1-4f14-89f4-2ac225b40a28"&gt;
+  &lt;ResendPeriods warnings="0" alarms="0" escalations="0"/&gt;
+&lt;/NotificationThresholds&gt;</NotificationThresholds>
+      <MaxRetryDelayForExponential>300000</MaxRetryDelayForExponential>
+      <MessageRetryDelay>1000</MessageRetryDelay>
+    </CommPoint>
+    <CommPoint>
+      <ID>7449fbe4-54da-4419-8c45-a22e1a8e734a</ID>
+      <Type>Sink</Type>
+      <InputRoutes />
+      <OutputRoutes>
+        <ID>85f49cc3-7def-4904-9f0d-6413924d5b46</ID>
+      </OutputRoutes>
+      <Configuration>
+        <Property>
+          <Name>ConnectionErrorRetriesIncludedMessages</Name>
+          <Value>0</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>InputCharacterEncoding</Name>
+          <Value>151</Value>
+          <Type />
+        </Property>
+      </Configuration>
+      <GeneralProperties>
+        <Property>
+          <Name>StartupState</Name>
+          <Value>DONT_START</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>StartupStateTracking</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UseNotesAsSupportNotes</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UserName</Name>
+          <Value>Sink</Value>
+          <Type />
+        </Property>
+      </GeneralProperties>
+      <Priority>-1</Priority>
+      <Mode>cpmOutput</Mode>
+      <NumConnections>1</NumConnections>
+      <IdleTimeout>0</IdleTimeout>
+      <Autotrack>0</Autotrack>
+      <RetryType>rtLinear</RetryType>
+      <NumRetries>5</NumRetries>
+      <NotificationRetries>5</NotificationRetries>
+      <RetryDelay>5000</RetryDelay>
+      <State>stStopped</State>
+      <Folder>Locker</Folder>
+      <NotificationThresholds>&lt;NotificationThresholds xmlns="http://www.orionhealth.com/rhapsody/2010/12/notifications/notificationThresholds" componentGuid="7449fbe4-54da-4419-8c45-a22e1a8e734a"&gt;
+  &lt;ResendPeriods warnings="0" alarms="0" escalations="0"/&gt;
+&lt;/NotificationThresholds&gt;</NotificationThresholds>
+      <MaxRetryDelayForExponential>300000</MaxRetryDelayForExponential>
+      <MessageRetryDelay>1000</MessageRetryDelay>
+    </CommPoint>
+    <CommPoint>
+      <ID>b8fcf1a8-a141-42e1-8119-f843a3ce2704</ID>
+      <Type>rhapsodyConnector</Type>
+      <InputRoutes />
+      <OutputRoutes />
+      <Configuration>
+        <Property>
+          <Name>ConnectionErrorRetriesIncludedMessages</Name>
+          <Value>0</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>MODE</Name>
+          <Value>SERVER</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>HOST</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>PORT</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>LOCALPORT</Name>
+          <Value>0</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>LOCALHOST</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>SSL_MODE</Name>
+          <Value>TLSv1.2</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>SSL_CIPHER_SUITES</Name>
+          <Value>FIPS</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>SECURE_KEYS</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>SECURE_TRUSTS</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>SECURE_ISSUERS</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>SERVERSOCKET_LISTEN_BACKLOG</Name>
+          <Value>0</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>REQUIREDCAPABILITIES</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>OPTIONALCAPABILITIES</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>CONNECTIONRESPONSETIMEOUT</Name>
+          <Value>60</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>CONNECTIONESTABLISHMENTTIMEOUT</Name>
+          <Value />
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>KEEPALIVEPERIOD</Name>
+          <Value>300</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>CONNECTION_IDENTIFIERS</Name>
+          <Value>AUTO</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>InputCharacterEncoding</Name>
+          <Value>151</Value>
+          <Type />
+        </Property>
+      </Configuration>
+      <GeneralProperties>
+        <Property>
+          <Name>StartupState</Name>
+          <Value>DONT_START</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>StartupStateTracking</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UseNotesAsSupportNotes</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UserName</Name>
+          <Value>Rhapsody Connector</Value>
+          <Type />
+        </Property>
+      </GeneralProperties>
+      <Priority>-1</Priority>
+      <Mode>cpmBidirectional</Mode>
+      <NumConnections>1</NumConnections>
+      <IdleTimeout>0</IdleTimeout>
+      <Autotrack>0</Autotrack>
+      <RetryType>rtLinear</RetryType>
+      <NumRetries>5</NumRetries>
+      <NotificationRetries>5</NotificationRetries>
+      <RetryDelay>5000</RetryDelay>
+      <State>stNotConfigured</State>
+      <Folder>Locker</Folder>
+      <NotificationThresholds>&lt;NotificationThresholds xmlns="http://www.orionhealth.com/rhapsody/2010/12/notifications/notificationThresholds" componentGuid="b8fcf1a8-a141-42e1-8119-f843a3ce2704"&gt;
+  &lt;ResendPeriods warnings="0" alarms="0" escalations="0"/&gt;
+&lt;/NotificationThresholds&gt;</NotificationThresholds>
+      <MaxRetryDelayForExponential>300000</MaxRetryDelayForExponential>
+      <MessageRetryDelay>1000</MessageRetryDelay>
+    </CommPoint>
+    <CommPoint>
+      <ID>70cfc3ae-71f6-48e4-8fed-3f28834da431</ID>
+      <Type>rhapsody:FileTransfer</Type>
+      <InputRoutes />
+      <OutputRoutes />
+      <Configuration>
+        <Property>
+          <Name>ConnectionErrorRetriesIncludedMessages</Name>
+          <Value>0</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>OnlineModeAction</Name>
+          <Value>0</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>ConfigSourceMode</Name>
+          <Value>static</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>XmlConfigurationTemplates</Name>
+          <Value />
+          <Type>ptFile</Type>
+        </Property>
+        <Property>
+          <Name>ConnectionType</Name>
+          <Value>SFTP</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>Server</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>Port</Name>
+          <Value>0</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>ReadTimeout</Name>
+          <Value>30000</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>ConnectionMode</Name>
+          <Value>active</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>TransferMode</Name>
+          <Value>ascii</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>ServerValidationMode</Name>
+          <Value>requirePreconfiguredKeys</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>ServerCertificates</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>SslHostnameValidation</Name>
+          <Value>disabled</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>SslCipherSuites</Name>
+          <Value>FIPS</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>SslClientPrivateKey</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>SshServerPublicKey</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>SshClientAuthenticationMode</Name>
+          <Value>password</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>SshClientPrivateKey</Name>
+          <Value />
+          <Type>ptSshPrivateKey</Type>
+        </Property>
+        <Property>
+          <Name>SshCompressionAlgorithms</Name>
+          <Value>[0,1,2]</Value>
+          <Type>ptGroupOfEnum</Type>
+        </Property>
+        <Property>
+          <Name>SshConfigFlags</Name>
+          <Value />
+          <Type>ptGroupOfEnum</Type>
+        </Property>
+        <Property>
+          <Name>SshRemoteEol</Name>
+          <Value>autoDetect</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>Username</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>Password</Name>
+          <Value />
+          <Type>ptPassword</Type>
+        </Property>
+        <Property>
+          <Name>CharacterEncoding</Name>
+          <Value>0</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>ConnectionEstablishmentMode</Name>
+          <Value>maintainConnection</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>ActiveModeIpAddress</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>ActiveModePortRange</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>FtpOptions</Name>
+          <Value />
+          <Type>ptGroupOfEnum</Type>
+        </Property>
+        <Property>
+          <Name>FtpsOptions</Name>
+          <Value>[0]</Value>
+          <Type>ptGroupOfEnum</Type>
+        </Property>
+        <Property>
+          <Name>ProxyServerType</Name>
+          <Value>none</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>ProxyServerAddress</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>ProxyServerPort</Name>
+          <Value />
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>ProxyServerPublicAddress</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>ProxyServerUsername</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>ProxyServerPassword</Name>
+          <Value />
+          <Type>ptPassword</Type>
+        </Property>
+        <Property>
+          <Name>GenerateResponseMessage</Name>
+          <Value>disabled</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>InputDirectory</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>RefreshRate</Name>
+          <Value>60000</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>InputPatternType</Name>
+          <Value>wildcard</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>InputPattern</Name>
+          <Value>*</Value>
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>DirectoryTraversalMode</Name>
+          <Value>inputDirOnly</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>FollowSymlinks</Name>
+          <Value>ignore</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>PostDownloadAction</Name>
+          <Value>leave</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>RenameTo</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>InputLocales</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>DirectoryListingParser</Name>
+          <Value>autoDetect</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>JavaScriptDirectoryParser</Name>
+          <Value />
+          <Type>ptJScript</Type>
+        </Property>
+        <Property>
+          <Name>BeforeReceiveCommands</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>AfterReceiveCommands</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>ArchivingStrategy</Name>
+          <Value>normal</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>OutputDir</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>BaseFilename</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>Suffix</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>DuplicateBehaviour</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>AppendDate</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>UseTempFile</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>BeforeSendCommands</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>AfterSendCommands</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>InputCharacterEncoding</Name>
+          <Value>151</Value>
+          <Type />
+        </Property>
+      </Configuration>
+      <GeneralProperties>
+        <Property>
+          <Name>StartupState</Name>
+          <Value>DONT_START</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>StartupStateTracking</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UseNotesAsSupportNotes</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UserName</Name>
+          <Value>(S)FTP Client</Value>
+          <Type />
+        </Property>
+      </GeneralProperties>
+      <Priority>-1</Priority>
+      <Mode>cpmInput</Mode>
+      <NumConnections>1</NumConnections>
+      <IdleTimeout>0</IdleTimeout>
+      <Autotrack>0</Autotrack>
+      <RetryType>rtNone</RetryType>
+      <NumRetries>5</NumRetries>
+      <NotificationRetries>5</NotificationRetries>
+      <RetryDelay>5000</RetryDelay>
+      <State>stNotConfigured</State>
+      <Folder>Locker</Folder>
+      <NotificationThresholds>&lt;NotificationThresholds xmlns="http://www.orionhealth.com/rhapsody/2010/12/notifications/notificationThresholds" componentGuid="70cfc3ae-71f6-48e4-8fed-3f28834da431"&gt;
+  &lt;ResendPeriods warnings="0" alarms="0" escalations="0"/&gt;
+&lt;/NotificationThresholds&gt;</NotificationThresholds>
+      <MaxRetryDelayForExponential>300000</MaxRetryDelayForExponential>
+      <MessageRetryDelay>1000</MessageRetryDelay>
+    </CommPoint>
+    <CommPoint>
+      <ID>d7df02c5-eb87-4dde-bb74-40c07871acfe</ID>
+      <Type>TCPServer</Type>
+      <InputRoutes />
+      <OutputRoutes />
+      <Configuration>
+        <Property>
+          <Name>ConnectionErrorRetriesIncludedMessages</Name>
+          <Value>0</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>LOCALPORT</Name>
+          <Value>0</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>LOCALHOST</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>SERVERSOCKET_LISTEN_BACKLOG</Name>
+          <Value>10</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>SECURE</Name>
+          <Value>true</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>SSL_MODE</Name>
+          <Value>6</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>SSL_CIPHER_SUITES</Name>
+          <Value>FIPS</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>SSL_CLIENT_MODE</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>SECURE_KEYS</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>SECURE_TRUSTS</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>STALE_CONNECTION_RECOVERY</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>STALE_CONNECTION_TIMEOUT</Name>
+          <Value />
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>LOGCONNECTIONS</Name>
+          <Value>true</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>LOGDATA</Name>
+          <Value>true</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>DATAHEX</Name>
+          <Value>true</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>CONNECTIONLOG</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>LOGTIME</Name>
+          <Value>1</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>INCOMING_WRAPPER</Name>
+          <Value>0</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>INCOMING_STRIP_WRAPPERS</Name>
+          <Value>true</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>INCOMING_HEADER</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>INCOMING_TRAILER</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>INCOMING_ENDIAN</Name>
+          <Value>0</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>IN_OUT_TIMEOUT_ACTION</Name>
+          <Value>RECEIVE_NEXT_MESSAGE</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>IN_OUT_STATIC_TIMEOUT_RESPONSE</Name>
+          <Value />
+          <Type>ptFile</Type>
+        </Property>
+        <Property>
+          <Name>OUTGOING_WRAPPER</Name>
+          <Value>0</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>OUTGOING_HEADER</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>OUTGOING_TRAILER</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>OUTGOING_ENDIAN</Name>
+          <Value>0</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>OUTGOING_TCP_PACKETS</Name>
+          <Value>WRAPPER_IN_SAME_TCP_PACKET</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>InputCharacterEncoding</Name>
+          <Value>151</Value>
+          <Type />
+        </Property>
+      </Configuration>
+      <GeneralProperties>
+        <Property>
+          <Name>StartupState</Name>
+          <Value>DONT_START</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>StartupStateTracking</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UseNotesAsSupportNotes</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UserName</Name>
+          <Value>TCP Server</Value>
+          <Type />
+        </Property>
+      </GeneralProperties>
+      <Priority>-1</Priority>
+      <Mode>cpmBidirectional</Mode>
+      <NumConnections>1</NumConnections>
+      <IdleTimeout>0</IdleTimeout>
+      <Autotrack>0</Autotrack>
+      <RetryType>rtLinear</RetryType>
+      <NumRetries>5</NumRetries>
+      <NotificationRetries>5</NotificationRetries>
+      <RetryDelay>5000</RetryDelay>
+      <State>stNotConfigured</State>
+      <Folder>Locker</Folder>
+      <NotificationThresholds>&lt;NotificationThresholds xmlns="http://www.orionhealth.com/rhapsody/2010/12/notifications/notificationThresholds" componentGuid="d7df02c5-eb87-4dde-bb74-40c07871acfe"&gt;
+  &lt;ResendPeriods warnings="0" alarms="0" escalations="0"/&gt;
+&lt;/NotificationThresholds&gt;</NotificationThresholds>
+      <MaxRetryDelayForExponential>300000</MaxRetryDelayForExponential>
+      <MessageRetryDelay>1000</MessageRetryDelay>
+    </CommPoint>
+    <CommPoint>
+      <ID>80198d38-2f0d-42cc-a325-5043f9a53a8b</ID>
+      <Type>Directory</Type>
+      <InputRoutes />
+      <OutputRoutes />
+      <Configuration>
+        <Property>
+          <Name>ConnectionErrorRetriesIncludedMessages</Name>
+          <Value>0</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>OnlineModeAction</Name>
+          <Value>2</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>ResponseTimeout</Name>
+          <Value>60000</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>TtlDiscardExpiredMessages</Name>
+          <Value>False</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>INPUT_DIRECTORY_NAME</Name>
+          <Value />
+          <Type>ptDir</Type>
+        </Property>
+        <Property>
+          <Name>InputControlFileMode</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>InputControlFileSuffix</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>FILTER_PATTERN</Name>
+          <Value>*</Value>
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>EXCLUDE_PATTERN</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>InputOrder</Name>
+          <Value>0</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>JavaScriptComparator</Name>
+          <Value />
+          <Type>ptJScript</Type>
+        </Property>
+        <Property>
+          <Name>DIR_REFRESH_RATE</Name>
+          <Value>5000</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>RECEIVE_RATE</Name>
+          <Value>0</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>MOVE_PROCCESSED_FILES</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>MOVE_TO_DIRECTORY_NAME</Name>
+          <Value />
+          <Type>ptDir</Type>
+        </Property>
+        <Property>
+          <Name>ZIP_FILE_INPUT_MODE</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>INPUT_DEBATCH_MODE</Name>
+          <Value>true</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>InputHeaderRegex</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>InputTrailerRegex</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>InputSeparatorType</Name>
+          <Value>0</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>InputSeparatorRegex</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>OUTPUT_DIRECTORY_NAME</Name>
+          <Value />
+          <Type>ptDir</Type>
+        </Property>
+        <Property>
+          <Name>OutputControlFileMode</Name>
+          <Value>0</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>OutputControlFileSuffix</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>OUTPUT_BASE_FILENAME</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>OUTPUT_FILENAME_SUFFIX</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>OUTPUT_FILENAME_APPENDDATE</Name>
+          <Value>true</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>OUTPUT_OVERWRITE_FILES</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>USE_TEMP</Name>
+          <Value>0</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>OUTPUT_BATCH_MODE</Name>
+          <Value>true</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>COMPRESS_BATCHFILE</Name>
+          <Value>true</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>INDIVIDUAL_FILES_IN_ZIP</Name>
+          <Value>true</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>OUTPUT_WRAPPER</Name>
+          <Value>1</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>OUTPUT_HEADER</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>OUTPUT_TRAILER</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>ENDIAN</Name>
+          <Value>0</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>BATCHFILE_ROLLOVER</Name>
+          <Value>2</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>BATCHFILE_ROLLOVERSIZE</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>InputCharacterEncoding</Name>
+          <Value>151</Value>
+          <Type />
+        </Property>
+      </Configuration>
+      <GeneralProperties>
+        <Property>
+          <Name>StartupState</Name>
+          <Value>START_LEVEL_3</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>StartupStateTracking</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UseNotesAsSupportNotes</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UserName</Name>
+          <Value>Directory 2</Value>
+          <Type />
+        </Property>
+      </GeneralProperties>
+      <Priority>-1</Priority>
+      <Mode>cpmInOut</Mode>
+      <NumConnections>1</NumConnections>
+      <IdleTimeout>0</IdleTimeout>
+      <Autotrack>1</Autotrack>
+      <RetryType>rtExponential</RetryType>
+      <NumRetries>5</NumRetries>
+      <NotificationRetries>5</NotificationRetries>
+      <RetryDelay>5000</RetryDelay>
+      <State>stNotConfigured</State>
+      <Folder>Locker</Folder>
+      <NotificationThresholds>&lt;NotificationThresholds xmlns="http://www.orionhealth.com/rhapsody/2010/12/notifications/notificationThresholds" componentGuid="80198d38-2f0d-42cc-a325-5043f9a53a8b"&gt;
+  &lt;ResendPeriods warnings="0" alarms="0" escalations="0"/&gt;
+&lt;/NotificationThresholds&gt;</NotificationThresholds>
+      <MaxRetryDelayForExponential>300000</MaxRetryDelayForExponential>
+      <MessageRetryDelay>1000</MessageRetryDelay>
+    </CommPoint>
+    <CommPoint>
+      <ID>920768d5-5161-4bd0-966c-bcb7836e571d</ID>
+      <Type>E-mail</Type>
+      <InputRoutes />
+      <OutputRoutes />
+      <Configuration>
+        <Property>
+          <Name>ConnectionErrorRetriesIncludedMessages</Name>
+          <Value>0</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>INCOMING_HOST</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>STORE_PROTOCOL</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>POP3_PORT</Name>
+          <Value />
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>IMAP_PORT</Name>
+          <Value />
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>IN_SECURE</Name>
+          <Value />
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>IN_SSL_PROTOCOL</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>IN_SSL_CIPHER_SUITES</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>IN_SECURE_TRUSTS</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>IN_READ_TIMEOUT</Name>
+          <Value />
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>IN_CONNECTION_TIMEOUT</Name>
+          <Value />
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>IN_USER</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>IN_PASSWORD</Name>
+          <Value />
+          <Type>ptPassword</Type>
+        </Property>
+        <Property>
+          <Name>FOLDER</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>FOLDER_REFRESH_RATE</Name>
+          <Value />
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>DELETE_MESSAGE</Name>
+          <Value />
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>RECEIVING_MODE</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>MESSAGE_AS_ATTACHMENT</Name>
+          <Value />
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>EXTRACTED_HEADERS</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>JAVA_MAIL_OUTPUT_DEBUGGING_KEY</Name>
+          <Value />
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>OUTGOING_HOST</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>TRANSPORT_PROTOCOL</Name>
+          <Value>0</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>PORT</Name>
+          <Value>25</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>OUT_SECURE</Name>
+          <Value>true</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>OUT_SSL_PROTOCOL</Name>
+          <Value>6</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>OUT_SSL_CIPHER_SUITES</Name>
+          <Value>FIPS</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>OUT_SECURE_TRUSTS</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>OUT_READ_TIMEOUT</Name>
+          <Value>10000</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>OUT_CONNECTION_TIMEOUT</Name>
+          <Value>30000</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>USER</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>PASSWORD</Name>
+          <Value />
+          <Type>ptPassword</Type>
+        </Property>
+        <Property>
+          <Name>SENDING_MODE</Name>
+          <Value>NORMAL</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>FROM</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>REPLY_TO</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>TO</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>CC</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>SUBJECT</Name>
+          <Value>Rhapsody Mail Message</Value>
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>SEND_RHAPSODY_MESSAGE</Name>
+          <Value>true</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>REPLACEMENT_BODY_TEXT</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>SEND_AS_ATTACHMENT</Name>
+          <Value>true</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>ATTACHMENT_NAME</Name>
+          <Value>Rhapsody Message</Value>
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>BODY_TEXT</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>CONTENT_TYPE</Name>
+          <Value>text/plain</Value>
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>SMIME</Name>
+          <Value>true</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>SMIME_OPTION</Name>
+          <Value>1</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>SIGN_OPTION</Name>
+          <Value>1</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>PRIVATE_KEY</Name>
+          <Value />
+          <Type>ptKey</Type>
+        </Property>
+        <Property>
+          <Name>SIGN_ALG</Name>
+          <Value>1</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>RECI_CERT</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>ENCRYPTION_ALG</Name>
+          <Value>0</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>PRIORITY</Name>
+          <Value>2</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>EMAIL_HEADERS</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>JAVA_MAIL_INPUT_DEBUGGING</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>InputCharacterEncoding</Name>
+          <Value>151</Value>
+          <Type />
+        </Property>
+      </Configuration>
+      <GeneralProperties>
+        <Property>
+          <Name>StartupState</Name>
+          <Value>DONT_START</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>StartupStateTracking</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UseNotesAsSupportNotes</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UserName</Name>
+          <Value>E-mail Client 2</Value>
+          <Type />
+        </Property>
+      </GeneralProperties>
+      <Priority>-1</Priority>
+      <Mode>cpmOutput</Mode>
+      <NumConnections>1</NumConnections>
+      <IdleTimeout>0</IdleTimeout>
+      <Autotrack>0</Autotrack>
+      <RetryType>rtLinear</RetryType>
+      <NumRetries>5</NumRetries>
+      <NotificationRetries>5</NotificationRetries>
+      <RetryDelay>5000</RetryDelay>
+      <State>stNotConfigured</State>
+      <Folder>Locker</Folder>
+      <NotificationThresholds>&lt;NotificationThresholds xmlns="http://www.orionhealth.com/rhapsody/2010/12/notifications/notificationThresholds" componentGuid="920768d5-5161-4bd0-966c-bcb7836e571d"&gt;
+  &lt;ResendPeriods warnings="0" alarms="0" escalations="0"/&gt;
+&lt;/NotificationThresholds&gt;</NotificationThresholds>
+      <MaxRetryDelayForExponential>300000</MaxRetryDelayForExponential>
+      <MessageRetryDelay>1000</MessageRetryDelay>
+    </CommPoint>
+    <CommPoint>
+      <ID>ac62527f-fe4e-41cd-88e7-ee3929547cc3</ID>
+      <Type>HTTPClient</Type>
+      <InputRoutes />
+      <OutputRoutes />
+      <Configuration>
+        <Property>
+          <Name>ConnectionErrorRetriesIncludedMessages</Name>
+          <Value>0</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>URL</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>Method</Name>
+          <Value>0</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>RequestHeaders</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>FollowRedirects</Name>
+          <Value>true</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>Secure</Name>
+          <Value>true</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>SecureMode</Name>
+          <Value>6</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>SpecifyExactTlsVersion</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>SecureCipherSuites</Name>
+          <Value>FIPS</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>SecureTrusts</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>SecureKeys</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>HostnameVerification</Name>
+          <Value>true</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>Username</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>Password</Name>
+          <Value />
+          <Type>ptPassword</Type>
+        </Property>
+        <Property>
+          <Name>ProtocolSupport</Name>
+          <Value>0</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>ReadTimeout</Name>
+          <Value>10000</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>ConnectTimeout</Name>
+          <Value>60000</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>RefreshRate</Name>
+          <Value>60000</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>UseIfModifiedSince</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>ResponseHeaders</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>MessageContent</Name>
+          <Value>2</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>ContentType</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>ContentEncoding</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>FormEncodingScheme</Name>
+          <Value>0</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>Definition</Name>
+          <Value />
+          <Type>ptMsgDefn</Type>
+        </Property>
+        <Property>
+          <Name>MessageRequestHeaders</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>MessageRequestParams</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>FormValues</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>OnClientErred</Name>
+          <Value>0</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>OnServerErred</Name>
+          <Value>0</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>Copyheaders</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>REtoMatchHeaders</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>InputCharacterEncoding</Name>
+          <Value>151</Value>
+          <Type />
+        </Property>
+      </Configuration>
+      <GeneralProperties>
+        <Property>
+          <Name>StartupState</Name>
+          <Value>DONT_START</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>StartupStateTracking</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UseNotesAsSupportNotes</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UserName</Name>
+          <Value>HTTP Client</Value>
+          <Type />
+        </Property>
+      </GeneralProperties>
+      <Priority>-1</Priority>
+      <Mode>cpmInOut</Mode>
+      <NumConnections>1</NumConnections>
+      <IdleTimeout>0</IdleTimeout>
+      <Autotrack>0</Autotrack>
+      <RetryType>rtLinear</RetryType>
+      <NumRetries>5</NumRetries>
+      <NotificationRetries>5</NotificationRetries>
+      <RetryDelay>5000</RetryDelay>
+      <State>stNotConfigured</State>
+      <Folder>Locker</Folder>
+      <NotificationThresholds>&lt;NotificationThresholds xmlns="http://www.orionhealth.com/rhapsody/2010/12/notifications/notificationThresholds" componentGuid="ac62527f-fe4e-41cd-88e7-ee3929547cc3"&gt;
+  &lt;ResendPeriods warnings="0" alarms="0" escalations="0"/&gt;
+&lt;/NotificationThresholds&gt;</NotificationThresholds>
+      <MaxRetryDelayForExponential>300000</MaxRetryDelayForExponential>
+      <MessageRetryDelay>1000</MessageRetryDelay>
+    </CommPoint>
+    <CommPoint>
+      <ID>e1a62454-9a18-4b91-aeae-589f357554f1</ID>
+      <Type>TCPClient</Type>
+      <InputRoutes />
+      <OutputRoutes />
+      <Configuration>
+        <Property>
+          <Name>ConnectionErrorRetriesIncludedMessages</Name>
+          <Value>0</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>HOST</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>PORT</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>LOCALHOST</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>LOCALPORT</Name>
+          <Value>0</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>SECURE</Name>
+          <Value>true</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>SSL_MODE</Name>
+          <Value>6</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>SSL_CIPHER_SUITES</Name>
+          <Value>FIPS</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>SSL_CLIENT_MODE</Name>
+          <Value>true</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>SECURE_KEYS</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>SECURE_TRUSTS</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>CONNECTION_TIMEOUT</Name>
+          <Value>300000</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>DYNAMIC_LOGIC</Name>
+          <Value>MESSAGE_ERROR</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>LOGCONNECTIONS</Name>
+          <Value>true</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>LOGDATA</Name>
+          <Value>true</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>DATAHEX</Name>
+          <Value>true</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>CONNECTIONLOG</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>LOGTIME</Name>
+          <Value>1</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>ConnectionMode</Name>
+          <Value>0</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>INCOMING_WRAPPER</Name>
+          <Value>1</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>INCOMING_STRIP_WRAPPERS</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>INCOMING_HEADER</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>INCOMING_TRAILER</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>INCOMING_ENDIAN</Name>
+          <Value>0</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>OUTGOING_WRAPPER</Name>
+          <Value>1</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>OUTGOING_HEADER</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>OUTGOING_TRAILER</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>OUTGOING_ENDIAN</Name>
+          <Value>0</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>OUTGOING_TCP_PACKETS</Name>
+          <Value>WRAPPER_IN_SAME_TCP_PACKET</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>InputCharacterEncoding</Name>
+          <Value>151</Value>
+          <Type />
+        </Property>
+      </Configuration>
+      <GeneralProperties>
+        <Property>
+          <Name>StartupState</Name>
+          <Value>DONT_START</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>StartupStateTracking</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UseNotesAsSupportNotes</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UserName</Name>
+          <Value>TCP Client</Value>
+          <Type />
+        </Property>
+      </GeneralProperties>
+      <Priority>-1</Priority>
+      <Mode>cpmBidirectional</Mode>
+      <NumConnections>1</NumConnections>
+      <IdleTimeout>0</IdleTimeout>
+      <Autotrack>0</Autotrack>
+      <RetryType>rtLinear</RetryType>
+      <NumRetries>5</NumRetries>
+      <NotificationRetries>5</NotificationRetries>
+      <RetryDelay>5000</RetryDelay>
+      <State>stNotConfigured</State>
+      <Folder>Locker</Folder>
+      <NotificationThresholds>&lt;NotificationThresholds xmlns="http://www.orionhealth.com/rhapsody/2010/12/notifications/notificationThresholds" componentGuid="e1a62454-9a18-4b91-aeae-589f357554f1"&gt;
+  &lt;ResendPeriods warnings="0" alarms="0" escalations="0"/&gt;
+&lt;/NotificationThresholds&gt;</NotificationThresholds>
+      <MaxRetryDelayForExponential>300000</MaxRetryDelayForExponential>
+      <MessageRetryDelay>1000</MessageRetryDelay>
+    </CommPoint>
+    <CommPoint>
+      <ID>0d228a4f-32d4-40e6-a37e-5ff4439af679</ID>
+      <Type>rhapsody:router</Type>
+      <InputRoutes />
+      <OutputRoutes />
+      <Configuration>
+        <Property>
+          <Name>ConnectionErrorRetries</Name>
+          <Value>0</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>ConnectionErrorRetriesExceededAction</Name>
+          <Value>1</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>ConnectionErrorRetriesIncludedMessages</Name>
+          <Value>0</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>OnlineModeAction</Name>
+          <Value>0</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>TargetName</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>UniqueTargetName</Name>
+          <Value />
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>DeliveryMode</Name>
+          <Value>dynamicDestination</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>OnMissingDynamicDestination</Name>
+          <Value>errorQueue</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>OnInvalidDynamicDestination</Name>
+          <Value>errorQueue</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>StaticDestination</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>IndexMessageProperties</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>InputCharacterEncoding</Name>
+          <Value>151</Value>
+          <Type />
+        </Property>
+      </Configuration>
+      <GeneralProperties>
+        <Property>
+          <Name>StartupState</Name>
+          <Value>START_LEVEL_4</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>StartupStateTracking</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UseNotesAsSupportNotes</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UserName</Name>
+          <Value>Dynamic Router</Value>
+          <Type />
+        </Property>
+      </GeneralProperties>
+      <Priority>-1</Priority>
+      <Mode>cpmOutput</Mode>
+      <NumConnections>1</NumConnections>
+      <IdleTimeout>0</IdleTimeout>
+      <Autotrack>0</Autotrack>
+      <RetryType>rtExponential</RetryType>
+      <NumRetries>5</NumRetries>
+      <NotificationRetries>5</NotificationRetries>
+      <RetryDelay>5000</RetryDelay>
+      <State>stStopped</State>
+      <Folder>Locker</Folder>
+      <NotificationThresholds>&lt;NotificationThresholds xmlns="http://www.orionhealth.com/rhapsody/2010/12/notifications/notificationThresholds" componentGuid="0d228a4f-32d4-40e6-a37e-5ff4439af679"&gt;
+  &lt;ResendPeriods warnings="0" alarms="0" escalations="0"/&gt;
+&lt;/NotificationThresholds&gt;</NotificationThresholds>
+      <MaxRetryDelayForExponential>300000</MaxRetryDelayForExponential>
+      <MessageRetryDelay>1000</MessageRetryDelay>
+    </CommPoint>
+    <CommPoint>
+      <ID>9f5182aa-7fc9-4a03-9061-92e4730a0209</ID>
+      <Type>HTTPServer</Type>
+      <InputRoutes />
+      <OutputRoutes />
+      <Configuration>
+        <Property>
+          <Name>ConnectionErrorRetriesIncludedMessages</Name>
+          <Value>0</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>LocalHost</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>LocalPort</Name>
+          <Value>80</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>ContextPath</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>Timeout</Name>
+          <Value>0</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>Secure</Name>
+          <Value>true</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>SslMode</Name>
+          <Value>6</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>SslCipherSuites</Name>
+          <Value>FIPS</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>ClientAuth</Name>
+          <Value>true</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>SecureKeys</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>SecureTrusts</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>GetAction</Name>
+          <Value>1</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>PutAction</Name>
+          <Value>5</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>PostAction</Name>
+          <Value>5</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>HeadAction</Name>
+          <Value>4</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>TraceAction</Name>
+          <Value>5</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>DeleteAction</Name>
+          <Value>5</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>OptionsAction</Name>
+          <Value>5</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>RedirectURL</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>Template</Name>
+          <Value />
+          <Type>ptFile</Type>
+        </Property>
+        <Property>
+          <Name>RequestParams</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>MessageParamName</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>NullMessage</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>ProtocolSupport</Name>
+          <Value>1</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>RequestHeaders</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>ContentType</Name>
+          <Value>text/plain</Value>
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>ContentEncoding</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>ResponseHeaders</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>Copyheaders</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>REtoMatchHeaders</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>InputCharacterEncoding</Name>
+          <Value>151</Value>
+          <Type />
+        </Property>
+      </Configuration>
+      <GeneralProperties>
+        <Property>
+          <Name>StartupState</Name>
+          <Value>DONT_START</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>StartupStateTracking</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UseNotesAsSupportNotes</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UserName</Name>
+          <Value>HTTP Server</Value>
+          <Type />
+        </Property>
+      </GeneralProperties>
+      <Priority>-1</Priority>
+      <Mode>cpmInOut</Mode>
+      <NumConnections>1</NumConnections>
+      <IdleTimeout>0</IdleTimeout>
+      <Autotrack>0</Autotrack>
+      <RetryType>rtLinear</RetryType>
+      <NumRetries>5</NumRetries>
+      <NotificationRetries>5</NotificationRetries>
+      <RetryDelay>5000</RetryDelay>
+      <State>stNotConfigured</State>
+      <Folder>Locker</Folder>
+      <NotificationThresholds>&lt;NotificationThresholds xmlns="http://www.orionhealth.com/rhapsody/2010/12/notifications/notificationThresholds" componentGuid="9f5182aa-7fc9-4a03-9061-92e4730a0209"&gt;
+  &lt;ResendPeriods warnings="0" alarms="0" escalations="0"/&gt;
+&lt;/NotificationThresholds&gt;</NotificationThresholds>
+      <MaxRetryDelayForExponential>300000</MaxRetryDelayForExponential>
+      <MessageRetryDelay>1000</MessageRetryDelay>
+    </CommPoint>
+    <CommPoint>
+      <ID>e393f8ef-4ced-4b5e-bfb4-2a5d2d61ab4d</ID>
+      <Type>Directory</Type>
+      <InputRoutes />
+      <OutputRoutes />
+      <Configuration>
+        <Property>
+          <Name>ConnectionErrorRetriesIncludedMessages</Name>
+          <Value>0</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>OnlineModeAction</Name>
+          <Value>0</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>INPUT_DIRECTORY_NAME</Name>
+          <Value />
+          <Type>ptDir</Type>
+        </Property>
+        <Property>
+          <Name>InputControlFileMode</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>InputControlFileSuffix</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>FILTER_PATTERN</Name>
+          <Value>*</Value>
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>EXCLUDE_PATTERN</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>InputOrder</Name>
+          <Value>0</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>JavaScriptComparator</Name>
+          <Value />
+          <Type>ptJScript</Type>
+        </Property>
+        <Property>
+          <Name>DIR_REFRESH_RATE</Name>
+          <Value>5000</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>RECEIVE_RATE</Name>
+          <Value>0</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>MOVE_PROCCESSED_FILES</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>MOVE_TO_DIRECTORY_NAME</Name>
+          <Value />
+          <Type>ptDir</Type>
+        </Property>
+        <Property>
+          <Name>ZIP_FILE_INPUT_MODE</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>INPUT_DEBATCH_MODE</Name>
+          <Value>true</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>InputHeaderRegex</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>InputTrailerRegex</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>InputSeparatorType</Name>
+          <Value>0</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>InputSeparatorRegex</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>OUTPUT_DIRECTORY_NAME</Name>
+          <Value />
+          <Type>ptDir</Type>
+        </Property>
+        <Property>
+          <Name>OutputControlFileMode</Name>
+          <Value>2</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>OutputControlFileSuffix</Name>
+          <Value>ok</Value>
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>OUTPUT_BASE_FILENAME</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>OUTPUT_FILENAME_SUFFIX</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>OUTPUT_FILENAME_APPENDDATE</Name>
+          <Value>true</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>OUTPUT_OVERWRITE_FILES</Name>
+          <Value>true</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>USE_TEMP</Name>
+          <Value>0</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>OUTPUT_BATCH_MODE</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>COMPRESS_BATCHFILE</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>INDIVIDUAL_FILES_IN_ZIP</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>OUTPUT_WRAPPER</Name>
+          <Value>1</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>OUTPUT_HEADER</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>OUTPUT_TRAILER</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>ENDIAN</Name>
+          <Value>0</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>BATCHFILE_ROLLOVER</Name>
+          <Value>2</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>BATCHFILE_ROLLOVERSIZE</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>InputCharacterEncoding</Name>
+          <Value>151</Value>
+          <Type />
+        </Property>
+      </Configuration>
+      <GeneralProperties>
+        <Property>
+          <Name>StartupState</Name>
+          <Value>START_LEVEL_2</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>StartupStateTracking</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UseNotesAsSupportNotes</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UserName</Name>
+          <Value>Directory</Value>
+          <Type />
+        </Property>
+      </GeneralProperties>
+      <Priority>-1</Priority>
+      <Mode>cpmBidirectional</Mode>
+      <NumConnections>1</NumConnections>
+      <IdleTimeout>0</IdleTimeout>
+      <Autotrack>0</Autotrack>
+      <RetryType>rtLinear</RetryType>
+      <NumRetries>5</NumRetries>
+      <NotificationRetries>5</NotificationRetries>
+      <RetryDelay>5000</RetryDelay>
+      <State>stNotConfigured</State>
+      <Folder>Locker</Folder>
+      <NotificationThresholds>&lt;NotificationThresholds xmlns="http://www.orionhealth.com/rhapsody/2010/12/notifications/notificationThresholds" componentGuid="e393f8ef-4ced-4b5e-bfb4-2a5d2d61ab4d"&gt;
+  &lt;ResendPeriods warnings="0" alarms="0" escalations="0"/&gt;
+&lt;/NotificationThresholds&gt;</NotificationThresholds>
+      <MaxRetryDelayForExponential>300000</MaxRetryDelayForExponential>
+      <MessageRetryDelay>1000</MessageRetryDelay>
+    </CommPoint>
+    <CommPoint>
+      <ID>3a050ed7-97c2-4161-9305-958361ac8708</ID>
+      <Type>Database</Type>
+      <InputRoutes />
+      <OutputRoutes />
+      <Configuration>
+        <Property>
+          <Name>ConnectionErrorRetries</Name>
+          <Value>0</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>ConnectionErrorRetriesExceededAction</Name>
+          <Value>1</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>ConnectionErrorRetriesIncludedMessages</Name>
+          <Value>0</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>OnlineModeAction</Name>
+          <Value>0</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>DatabaseSetting</Name>
+          <Value>1</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>Host</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>Port</Name>
+          <Value>0</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>DatabaseName</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>Username</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>Password</Name>
+          <Value />
+          <Type>ptPassword</Type>
+        </Property>
+        <Property>
+          <Name>ConfigFile</Name>
+          <Value />
+          <Type>ptFile</Type>
+        </Property>
+        <Property>
+          <Name>QueryTimeout</Name>
+          <Value>0</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>SocketTimeout</Name>
+          <Value>0</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>MessageBodyColumn</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>MessageType</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>Definition</Name>
+          <Value />
+          <Type>ptMsgDefn</Type>
+        </Property>
+        <Property>
+          <Name>MessageErrorHandlingMode</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>Deadlock</Name>
+          <Value />
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>QueryTimeoutConnectionError</Name>
+          <Value />
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>InputCharacterEncoding</Name>
+          <Value>151</Value>
+          <Type />
+        </Property>
+      </Configuration>
+      <GeneralProperties>
+        <Property>
+          <Name>StartupState</Name>
+          <Value>START_LEVEL_1</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>StartupStateTracking</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UseNotesAsSupportNotes</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UserName</Name>
+          <Value>Database</Value>
+          <Type />
+        </Property>
+      </GeneralProperties>
+      <Priority>-1</Priority>
+      <Mode>cpmOutput</Mode>
+      <NumConnections>1</NumConnections>
+      <IdleTimeout>0</IdleTimeout>
+      <Autotrack>0</Autotrack>
+      <RetryType>rtImmediate</RetryType>
+      <NumRetries>5</NumRetries>
+      <NotificationRetries>5</NotificationRetries>
+      <RetryDelay>5000</RetryDelay>
+      <State>stNotConfigured</State>
+      <Folder>Locker</Folder>
+      <NotificationThresholds>&lt;NotificationThresholds xmlns="http://www.orionhealth.com/rhapsody/2010/12/notifications/notificationThresholds" componentGuid="3a050ed7-97c2-4161-9305-958361ac8708"&gt;
+  &lt;ResendPeriods warnings="0" alarms="0" escalations="0"/&gt;
+&lt;/NotificationThresholds&gt;</NotificationThresholds>
+      <MaxRetryDelayForExponential>300000</MaxRetryDelayForExponential>
+      <MessageRetryDelay>1000</MessageRetryDelay>
+    </CommPoint>
+  </CommPoints>
+  <Routes>
+    <Route>
+      <ID>85f49cc3-7def-4904-9f0d-6413924d5b46</ID>
+      <Folder>Locker</Folder>
+      <Filters>
+        <Filter>
+          <ID>85f49cc3-7def-4904-9f0d-6413924d5b46/1f6ac8f8-508d-4162-bf5e-4121d2e441c2</ID>
+          <Type>ExecuteScript</Type>
+          <State>stConfigured</State>
+          <Priority>-1</Priority>
+          <Configuration>
+            <Property>
+              <Name>Script</Name>
+              <Value>/* Single input message case */
+// Create the output message 
+var next = output.append(input[0]);
+
+// Get current date/time, and save it in a property as a string
+//var now = new Date();
+//now = now.toString();
+//next.setProperty("timestamp", now);
+
+// Get the body of the input message
+//var body = input[0].text;
+
+// Set the body if the body is updated
+//next.text = body;
+
+/* Multiple input messages */
+/*
+// Loop through all the input messages
+for (var i = 0; i &lt; input.length; i++) {
+    var next = output.append(input[i]);
+    // Get the body of the current input message
+    //var body = input[i].text;
+    // Set the body
+    //next.text = body + "\r\nPlus some new stuff.";
+    // Set a property
+    //next.setProperty("PropertyName", "PropertyValue");
+}
+*/
+
+/* Calling a Shared JavaScript library */
+/*
+//Call require with the Libraries name
+var library = require("LibraryName");
+//Call the Function by its name on the resulting object, passing in any parameters required
+var result = library.FunctionName(1, 2, 3);
+*/
+
+// Parsing JSON messages
+//var data = JSON.parse(next.text);
+
+// Serializing to JSON
+//next.text = JSON.stringify(data);</Value>
+              <Type>ptJScript</Type>
+            </Property>
+          </Configuration>
+          <GeneralProperties>
+            <Property>
+              <Name>UseNotesAsSupportNotes</Name>
+              <Value>false</Value>
+              <Type />
+            </Property>
+            <Property>
+              <Name>UserName</Name>
+              <Value>JavaScript</Value>
+              <Type />
+            </Property>
+            <Property>
+              <Name>ConnectorLabels</Name>
+              <Value>{7449fbe4-54da-4419-8c45-a22e1a8e734a=JSFunction}</Value>
+              <Type />
+            </Property>
+          </GeneralProperties>
+          <Destinations>
+            <Destination>
+              <ID>7449fbe4-54da-4419-8c45-a22e1a8e734a</ID>
+            </Destination>
+          </Destinations>
+          <NextDestinations xsi:type="xsd:string">&lt;NextDestinations&gt;&lt;Connector&gt;&lt;DestinationId&gt;7449fbe4-54da-4419-8c45-a22e1a8e734a&lt;/DestinationId&gt;&lt;/Connector&gt;&lt;/NextDestinations&gt;</NextDestinations>
+        </Filter>
+      </Filters>
+      <InputCommPoints>
+        <InputCommPoint>
+          <ID>6d59b450-0868-42ff-930e-2e8cacb33099</ID>
+          <FirstFilters>
+            <ID>85f49cc3-7def-4904-9f0d-6413924d5b46/1f6ac8f8-508d-4162-bf5e-4121d2e441c2</ID>
+          </FirstFilters>
+        </InputCommPoint>
+      </InputCommPoints>
+      <OutputCommPoints>
+        <ID>7449fbe4-54da-4419-8c45-a22e1a8e734a</ID>
+      </OutputCommPoints>
+      <RouteProperties>
+        <ExtractedProperties />
+        <RoutePropertiesDefinitions />
+        <RepeatedResponse>brIgnore</RepeatedResponse>
+        <UnsolicitedResponse>brIgnore</UnsolicitedResponse>
+      </RouteProperties>
+      <GeneralProperties>
+        <Property>
+          <Name>_6d59b450-0868-42ff-930e-2e8cacb33099_I_Position</Name>
+          <Value>(6,110,94,216)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_7449fbe4-54da-4419-8c45-a22e1a8e734a__Position</Name>
+          <Value>(916,120,967,213)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_85f49cc3-7def-4904-9f0d-6413924d5b46/1f6ac8f8-508d-4162-bf5e-4121d2e441c2__Position</Name>
+          <Value>(150,120,230,213)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_InputWidth</Name>
+          <Value>108</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_OutputStart</Name>
+          <Value>906</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>StartupState</Name>
+          <Value>DONT_START</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>StartupStateTracking</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UseNotesAsSupportNotes</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UserName</Name>
+          <Value>NewRoute</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>FifoMode</Name>
+          <Value>InputOrder</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>RouteErrorHandlerName</Name>
+          <Value>Route Error Handler</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>RouteErrorHandlerVisible</Name>
+          <Value>False</Value>
+          <Type />
+        </Property>
+      </GeneralProperties>
+      <Priority>3</Priority>
+      <State>stStopped</State>
+      <NotificationThresholds>&lt;NotificationThresholds xmlns="http://www.orionhealth.com/rhapsody/2010/12/notifications/notificationThresholds" componentGuid="85f49cc3-7def-4904-9f0d-6413924d5b46"&gt;
+  &lt;ResendPeriods warnings="0" alarms="0" escalations="0"/&gt;
+&lt;/NotificationThresholds&gt;</NotificationThresholds>
+    </Route>
+    <Route>
+      <ID>dde84611-7c70-44e4-906e-43b717c984d4</ID>
+      <Folder>Locker</Folder>
+      <Filters>
+        <Filter>
+          <ID>dde84611-7c70-44e4-906e-43b717c984d4/1e84048f-92df-47cb-8ee7-bf070828f816</ID>
+          <Type>ExecuteCmd</Type>
+          <State>stNotConfigured</State>
+          <Priority>-1</Priority>
+          <Configuration>
+            <Property>
+              <Name>Cmd</Name>
+              <Value />
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>StdErr</Name>
+              <Value>0</Value>
+              <Type>ptMap</Type>
+            </Property>
+          </Configuration>
+          <GeneralProperties>
+            <Property>
+              <Name>UseNotesAsSupportNotes</Name>
+              <Value>false</Value>
+              <Type />
+            </Property>
+            <Property>
+              <Name>UserName</Name>
+              <Value>Execute Process</Value>
+              <Type />
+            </Property>
+          </GeneralProperties>
+          <Destinations />
+          <NextDestinations xsi:type="xsd:string">&lt;NextDestinations /&gt;</NextDestinations>
+        </Filter>
+        <Filter>
+          <ID>dde84611-7c70-44e4-906e-43b717c984d4/2024cff3-5f69-4bc9-85bc-97549528d454</ID>
+          <Type>ExecuteScript</Type>
+          <State>stConfigured</State>
+          <Priority>-1</Priority>
+          <Configuration>
+            <Property>
+              <Name>Script</Name>
+              <Value>/* Single input message case */
+// Create the output message 
+var next = output.append(input[0]);
+
+// Get current date/time, and save it in a property as a string
+//var now = new Date();
+//now = now.toString();
+//next.setProperty("timestamp", now);
+
+// Get the body of the input message
+//var body = input[0].text;
+
+// Set the body if the body is updated
+//next.text = body;
+
+/* Multiple input messages */
+/*
+// Loop through all the input messages
+for (var i = 0; i &lt; input.length; i++) {
+    var next = output.append(input[i]);
+    // Get the body of the current input message
+    //var body = input[i].text;
+    // Set the body
+    //next.text = body + "\r\nPlus some new stuff.";
+    // Set a property
+    //next.setProperty("PropertyName", "PropertyValue");
+}
+*/
+
+/* Calling a Shared JavaScript library */
+/*
+//Call require with the Libraries name
+var library = require("LibraryName");
+//Call the Function by its name on the resulting object, passing in any parameters required
+var result = library.FunctionName(1, 2, 3);
+*/
+
+// Parsing JSON messages
+//var data = JSON.parse(next.text);
+
+// Serializing to JSON
+//next.text = JSON.stringify(data);</Value>
+              <Type>ptJScript</Type>
+            </Property>
+          </Configuration>
+          <GeneralProperties>
+            <Property>
+              <Name>UseNotesAsSupportNotes</Name>
+              <Value>false</Value>
+              <Type />
+            </Property>
+            <Property>
+              <Name>UserName</Name>
+              <Value>JavaScript</Value>
+              <Type />
+            </Property>
+          </GeneralProperties>
+          <Destinations />
+          <NextDestinations xsi:type="xsd:string">&lt;NextDestinations /&gt;</NextDestinations>
+        </Filter>
+        <Filter>
+          <ID>dde84611-7c70-44e4-906e-43b717c984d4/3781360a-8e6f-406e-b340-afb33332a5cf</ID>
+          <Type>DatabaseLookUp</Type>
+          <State>stNotConfigured</State>
+          <Priority>-1</Priority>
+          <Configuration>
+            <Property>
+              <Name>NumberInstances</Name>
+              <Value>0</Value>
+              <Type>ptInteger</Type>
+            </Property>
+            <Property>
+              <Name>DatabaseSetting</Name>
+              <Value>1</Value>
+              <Type>ptMap</Type>
+            </Property>
+            <Property>
+              <Name>Host</Name>
+              <Value />
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>Port</Name>
+              <Value>0</Value>
+              <Type>ptInteger</Type>
+            </Property>
+            <Property>
+              <Name>DatabaseName</Name>
+              <Value />
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>Username</Name>
+              <Value />
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>Password</Name>
+              <Value />
+              <Type>ptPassword</Type>
+            </Property>
+            <Property>
+              <Name>ConfigFile</Name>
+              <Value />
+              <Type>ptFile</Type>
+            </Property>
+            <Property>
+              <Name>MessageType</Name>
+              <Value>0</Value>
+              <Type>ptMap</Type>
+            </Property>
+            <Property>
+              <Name>Definition</Name>
+              <Value />
+              <Type>ptMsgDefn</Type>
+            </Property>
+            <Property>
+              <Name>RetryAttempts</Name>
+              <Value>5</Value>
+              <Type>ptInteger</Type>
+            </Property>
+            <Property>
+              <Name>QueryTimeout</Name>
+              <Value>0</Value>
+              <Type>ptInteger</Type>
+            </Property>
+            <Property>
+              <Name>RetryDelay</Name>
+              <Value>100</Value>
+              <Type>ptInteger</Type>
+            </Property>
+            <Property>
+              <Name>SocketTimeout</Name>
+              <Value>0</Value>
+              <Type>ptInteger</Type>
+            </Property>
+          </Configuration>
+          <GeneralProperties>
+            <Property>
+              <Name>UseNotesAsSupportNotes</Name>
+              <Value>false</Value>
+              <Type />
+            </Property>
+            <Property>
+              <Name>UserName</Name>
+              <Value>Database LookUp</Value>
+              <Type />
+            </Property>
+          </GeneralProperties>
+          <Destinations />
+          <NextDestinations xsi:type="xsd:string">&lt;NextDestinations /&gt;</NextDestinations>
+        </Filter>
+        <Filter>
+          <ID>dde84611-7c70-44e4-906e-43b717c984d4/4047dc77-6416-4447-a046-7c5925a1e86f</ID>
+          <Type>PropertyPopulationFilter</Type>
+          <State>stNotConfigured</State>
+          <Priority>-1</Priority>
+          <Configuration>
+            <Property>
+              <Name>PropertyStrings</Name>
+              <Value />
+              <Type>ptArray</Type>
+            </Property>
+            <Property>
+              <Name>Definition</Name>
+              <Value />
+              <Type>ptMsgDefn</Type>
+            </Property>
+            <Property>
+              <Name>PropertyFields</Name>
+              <Value />
+              <Type>ptArray</Type>
+            </Property>
+            <Property>
+              <Name>OnMissingField</Name>
+              <Value>1</Value>
+              <Type>ptMap</Type>
+            </Property>
+          </Configuration>
+          <GeneralProperties>
+            <Property>
+              <Name>UseNotesAsSupportNotes</Name>
+              <Value>false</Value>
+              <Type />
+            </Property>
+            <Property>
+              <Name>UserName</Name>
+              <Value>Property Population</Value>
+              <Type />
+            </Property>
+          </GeneralProperties>
+          <Destinations />
+          <NextDestinations xsi:type="xsd:string">&lt;NextDestinations /&gt;</NextDestinations>
+        </Filter>
+        <Filter>
+          <ID>dde84611-7c70-44e4-906e-43b717c984d4/87c03fbe-f06a-4654-b5de-3b00b529a4fe</ID>
+          <Type>EDIMessageValidator</Type>
+          <State>stNotConfigured</State>
+          <Priority>-1</Priority>
+          <Configuration>
+            <Property>
+              <Name>NumberInstances</Name>
+              <Value>0</Value>
+              <Type>ptInteger</Type>
+            </Property>
+            <Property>
+              <Name>Definition</Name>
+              <Value />
+              <Type>ptMsgDefn</Type>
+            </Property>
+            <Property>
+              <Name>OnValidationFailure</Name>
+              <Value>2</Value>
+              <Type>ptMap</Type>
+            </Property>
+            <Property>
+              <Name>OnParseFailure</Name>
+              <Value>1</Value>
+              <Type>ptMap</Type>
+            </Property>
+          </Configuration>
+          <GeneralProperties>
+            <Property>
+              <Name>UseNotesAsSupportNotes</Name>
+              <Value>false</Value>
+              <Type />
+            </Property>
+            <Property>
+              <Name>UserName</Name>
+              <Value>EDI Message Validation</Value>
+              <Type />
+            </Property>
+          </GeneralProperties>
+          <Destinations />
+          <NextDestinations xsi:type="xsd:string">&lt;NextDestinations /&gt;</NextDestinations>
+        </Filter>
+        <Filter>
+          <ID>dde84611-7c70-44e4-906e-43b717c984d4/935c80f0-5721-475c-aed5-8b488649c5dd</ID>
+          <Type>AckGenerationFilter</Type>
+          <State>stNotConfigured</State>
+          <Priority>-1</Priority>
+          <Configuration>
+            <Property>
+              <Name>MessageDefintion</Name>
+              <Value />
+              <Type>ptMsgDefn</Type>
+            </Property>
+            <Property>
+              <Name>AckMapping</Name>
+              <Value />
+              <Type>ptArray</Type>
+            </Property>
+            <Property>
+              <Name>Acknowledgment_Mode</Name>
+              <Value>0</Value>
+              <Type>ptMap</Type>
+            </Property>
+            <Property>
+              <Name>NACK Mode</Name>
+              <Value>AR</Value>
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>ErrorDescription</Name>
+              <Value />
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>On message validation failure</Name>
+              <Value>0</Value>
+              <Type>ptMap</Type>
+            </Property>
+            <Property>
+              <Name>On successful validation</Name>
+              <Value>0</Value>
+              <Type>ptMap</Type>
+            </Property>
+            <Property>
+              <Name>Message Errors Property Name</Name>
+              <Value />
+              <Type>ptArray</Type>
+            </Property>
+            <Property>
+              <Name>HL7 version</Name>
+              <Value>0</Value>
+              <Type>ptMap</Type>
+            </Property>
+            <Property>
+              <Name>FieldLength</Name>
+              <Value>0</Value>
+              <Type>ptMap</Type>
+            </Property>
+            <Property>
+              <Name>CopyFields</Name>
+              <Value>[[MSH.SendingApplication,MSH.ReceivingApplication],[MSH.SendingFacility,MSH.ReceivingFacility],[MSH.ReceivingApplication,MSH.SendingApplication],[MSH.ReceivingFacility,MSH.SendingFacility],[MSH.MessageControlId,MSA.MessageControlId],[MSH.ProcessingID,MSH.ProcessingID]]</Value>
+              <Type>ptArray</Type>
+            </Property>
+          </Configuration>
+          <GeneralProperties>
+            <Property>
+              <Name>UseNotesAsSupportNotes</Name>
+              <Value>false</Value>
+              <Type />
+            </Property>
+            <Property>
+              <Name>UserName</Name>
+              <Value>HL7 Acknowledgement Generation</Value>
+              <Type />
+            </Property>
+          </GeneralProperties>
+          <Destinations />
+          <NextDestinations xsi:type="xsd:string">&lt;NextDestinations /&gt;</NextDestinations>
+        </Filter>
+        <Filter>
+          <ID>dde84611-7c70-44e4-906e-43b717c984d4/a52c8af7-d53f-4e2c-a994-c9ea1477a1e7</ID>
+          <Type>Mapper</Type>
+          <State>stNotConfigured</State>
+          <Priority>-1</Priority>
+          <Configuration>
+            <Property>
+              <Name>NumberInstances</Name>
+              <Value>0</Value>
+              <Type>ptInteger</Type>
+            </Property>
+            <Property>
+              <Name>MapperFile</Name>
+              <Value />
+              <Type>ptMapperDefn</Type>
+            </Property>
+            <Property>
+              <Name>OutputEncoding</Name>
+              <Value>2</Value>
+              <Type>ptMap</Type>
+            </Property>
+            <Property>
+              <Name>OutputEncodingName</Name>
+              <Value />
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>OutputBOM</Name>
+              <Value>true</Value>
+              <Type>ptBoolean</Type>
+            </Property>
+            <Property>
+              <Name>FailOnErrors</Name>
+              <Value>true</Value>
+              <Type>ptBoolean</Type>
+            </Property>
+            <Property>
+              <Name>LogErrors</Name>
+              <Value>false</Value>
+              <Type>ptBoolean</Type>
+            </Property>
+            <Property>
+              <Name>PropertyCopyIndex</Name>
+              <Value>0</Value>
+              <Type>ptInteger</Type>
+            </Property>
+            <Property>
+              <Name>ValidateInput</Name>
+              <Value>2</Value>
+              <Type>ptMap</Type>
+            </Property>
+            <Property>
+              <Name>ValidateOutput</Name>
+              <Value>1</Value>
+              <Type>ptMap</Type>
+            </Property>
+            <Property>
+              <Name>CallSubmapsWithNullParameters</Name>
+              <Value>false</Value>
+              <Type>ptBoolean</Type>
+            </Property>
+            <Property>
+              <Name>SkipSubmapsWithEmptyParas</Name>
+              <Value>false</Value>
+              <Type>ptBoolean</Type>
+            </Property>
+          </Configuration>
+          <GeneralProperties>
+            <Property>
+              <Name>UseNotesAsSupportNotes</Name>
+              <Value>false</Value>
+              <Type />
+            </Property>
+            <Property>
+              <Name>UserName</Name>
+              <Value>Mapper</Value>
+              <Type />
+            </Property>
+          </GeneralProperties>
+          <Destinations />
+          <NextDestinations xsi:type="xsd:string">&lt;NextDestinations /&gt;</NextDestinations>
+        </Filter>
+        <Filter>
+          <ID>dde84611-7c70-44e4-906e-43b717c984d4/a67e9f9f-0303-4c70-baa2-33cde9473947</ID>
+          <Type>DatabaseQuery</Type>
+          <State>stNotConfigured</State>
+          <Priority>-1</Priority>
+          <Configuration>
+            <Property>
+              <Name>NumberInstances</Name>
+              <Value>0</Value>
+              <Type>ptInteger</Type>
+            </Property>
+            <Property>
+              <Name>DatabaseSetting</Name>
+              <Value>4</Value>
+              <Type>ptMap</Type>
+            </Property>
+            <Property>
+              <Name>Host</Name>
+              <Value />
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>Port</Name>
+              <Value />
+              <Type>ptInteger</Type>
+            </Property>
+            <Property>
+              <Name>DatabaseName</Name>
+              <Value />
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>Username</Name>
+              <Value />
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>Password</Name>
+              <Value />
+              <Type>ptPassword</Type>
+            </Property>
+            <Property>
+              <Name>ConfigFile</Name>
+              <Value />
+              <Type>ptFile</Type>
+            </Property>
+            <Property>
+              <Name>MessageBodyColumn</Name>
+              <Value />
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>MessageType</Name>
+              <Value>0</Value>
+              <Type>ptMap</Type>
+            </Property>
+            <Property>
+              <Name>Definition</Name>
+              <Value />
+              <Type>ptMsgDefn</Type>
+            </Property>
+            <Property>
+              <Name>RetryAttempts</Name>
+              <Value>5</Value>
+              <Type>ptInteger</Type>
+            </Property>
+            <Property>
+              <Name>QueryTimeout</Name>
+              <Value />
+              <Type>ptInteger</Type>
+            </Property>
+            <Property>
+              <Name>RetryDelay</Name>
+              <Value>100</Value>
+              <Type>ptInteger</Type>
+            </Property>
+            <Property>
+              <Name>SocketTimeout</Name>
+              <Value>0</Value>
+              <Type>ptInteger</Type>
+            </Property>
+          </Configuration>
+          <GeneralProperties>
+            <Property>
+              <Name>UseNotesAsSupportNotes</Name>
+              <Value>false</Value>
+              <Type />
+            </Property>
+            <Property>
+              <Name>UserName</Name>
+              <Value>Database Message Extraction</Value>
+              <Type />
+            </Property>
+          </GeneralProperties>
+          <Destinations />
+          <NextDestinations xsi:type="xsd:string">&lt;NextDestinations /&gt;</NextDestinations>
+        </Filter>
+        <Filter>
+          <ID>dde84611-7c70-44e4-906e-43b717c984d4/e2c19ce7-b262-461d-8fa1-7d99ac1d010d</ID>
+          <Type>Batcher</Type>
+          <State>stConfigured</State>
+          <Priority>-1</Priority>
+          <Configuration>
+            <Property>
+              <Name>Mode</Name>
+              <Value>1</Value>
+              <Type>ptMap</Type>
+            </Property>
+            <Property>
+              <Name>Header</Name>
+              <Value />
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>Separator</Name>
+              <Value />
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>Trailer</Name>
+              <Value />
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>HeaderExpr</Name>
+              <Value />
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>TrailerExpr</Name>
+              <Value />
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>MarkerOrSeparator</Name>
+              <Value>0</Value>
+              <Type>ptMap</Type>
+            </Property>
+            <Property>
+              <Name>SeparatorExpr</Name>
+              <Value />
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>SetIdentifier</Name>
+              <Value />
+              <Type>ptString</Type>
+            </Property>
+            <Property>
+              <Name>IndexBase</Name>
+              <Value>0</Value>
+              <Type>ptMap</Type>
+            </Property>
+          </Configuration>
+          <GeneralProperties>
+            <Property>
+              <Name>UseNotesAsSupportNotes</Name>
+              <Value>false</Value>
+              <Type />
+            </Property>
+            <Property>
+              <Name>UserName</Name>
+              <Value>Batch / De-batch</Value>
+              <Type />
+            </Property>
+          </GeneralProperties>
+          <Destinations />
+          <NextDestinations xsi:type="xsd:string">&lt;NextDestinations /&gt;</NextDestinations>
+        </Filter>
+      </Filters>
+      <InputCommPoints />
+      <OutputCommPoints />
+      <RouteProperties>
+        <ExtractedProperties />
+        <RoutePropertiesDefinitions />
+        <RepeatedResponse>brIgnore</RepeatedResponse>
+        <UnsolicitedResponse>brIgnore</UnsolicitedResponse>
+      </RouteProperties>
+      <GeneralProperties>
+        <Property>
+          <Name>_dde84611-7c70-44e4-906e-43b717c984d4/1e84048f-92df-47cb-8ee7-bf070828f816__Position</Name>
+          <Value>(615,170,685,276)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_dde84611-7c70-44e4-906e-43b717c984d4/2024cff3-5f69-4bc9-85bc-97549528d454__Position</Name>
+          <Value>(690,180,770,273)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_dde84611-7c70-44e4-906e-43b717c984d4/3781360a-8e6f-406e-b340-afb33332a5cf__Position</Name>
+          <Value>(422,170,498,276)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_dde84611-7c70-44e4-906e-43b717c984d4/4047dc77-6416-4447-a046-7c5925a1e86f__Position</Name>
+          <Value>(350,170,430,276)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_dde84611-7c70-44e4-906e-43b717c984d4/87c03fbe-f06a-4654-b5de-3b00b529a4fe__Position</Name>
+          <Value>(483,170,577,276)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_dde84611-7c70-44e4-906e-43b717c984d4/935c80f0-5721-475c-aed5-8b488649c5dd__Position</Name>
+          <Value>(241,170,359,289)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_dde84611-7c70-44e4-906e-43b717c984d4/a52c8af7-d53f-4e2c-a994-c9ea1477a1e7__Position</Name>
+          <Value>(117,170,183,263)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_dde84611-7c70-44e4-906e-43b717c984d4/a67e9f9f-0303-4c70-baa2-33cde9473947__Position</Name>
+          <Value>(551,170,629,289)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_dde84611-7c70-44e4-906e-43b717c984d4/e2c19ce7-b262-461d-8fa1-7d99ac1d010d__Position</Name>
+          <Value>(183,170,257,276)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_InputWidth</Name>
+          <Value>70</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_OutputStart</Name>
+          <Value>926</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>StartupState</Name>
+          <Value>DONT_START</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>StartupStateTracking</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UseNotesAsSupportNotes</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UserName</Name>
+          <Value>New Route</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>FifoMode</Name>
+          <Value>InputOrder</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>RouteErrorHandlerName</Name>
+          <Value>Route Error Handler</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>RouteErrorHandlerVisible</Name>
+          <Value>False</Value>
+          <Type />
+        </Property>
+      </GeneralProperties>
+      <Priority>3</Priority>
+      <State>stNotConfigured</State>
+      <NotificationThresholds>&lt;NotificationThresholds xmlns="http://www.orionhealth.com/rhapsody/2010/12/notifications/notificationThresholds" componentGuid="dde84611-7c70-44e4-906e-43b717c984d4"&gt;
+  &lt;ResendPeriods warnings="0" alarms="0" escalations="0"/&gt;
+&lt;/NotificationThresholds&gt;</NotificationThresholds>
+    </Route>
+  </Routes>
+  <Lockers>
+    <Locker Id="e9a6e520-d3c0-11e7-88a0-080027b7761a" Name="Locker" />
+  </Lockers>
+</Engine>
