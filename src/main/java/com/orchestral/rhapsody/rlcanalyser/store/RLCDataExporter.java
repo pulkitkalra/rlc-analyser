@@ -75,17 +75,17 @@ public class RLCDataExporter {
 
 		final FileWriter writer = new FileWriter(csvFilePath);
 		try {
-			this.currentStore.getCommunicationPointTypeCounts();
-			this.currentStore.getTotalCounts(TotalCountDataType.CommunicationPoints);
-
 			// Total Number of Components
 			writeHeader(writer, "Component Summary");
 			totalCounts(writer);
 
 			CSVUtils.writeLine(writer, Arrays.asList("")); // empty line
+
 			// Total Number of sub-types of the Components such as Comm Points, Routes, Filters and Definitions.
 			writeHeader(writer, "Total Number of types of Components");
 			totalCommPointTypes(writer);
+			// general properties of each comm point:
+			generalProperties(writer);
 			totalFilterTypes(writer);
 			totalFilterCountsPerRoute(writer);
 			totalDefinitionsCountsPerRoute(writer);
@@ -268,6 +268,63 @@ public class RLCDataExporter {
 	}
 
 	/**
+	 * The method is used to write the general properties of each comm point
+	 * across all RLCs to the export format.
+	 *
+	 * The format is to first write the type of comm point and then go through
+	 * all general tab type properties for the overall DataStore and then for
+	 * each individual DataStore.
+	 *
+	 * @param writer
+	 * @throws IOException
+	 */
+	private void generalProperties(final FileWriter writer) throws IOException {
+		CSVUtils.writeLine(writer, Arrays.asList("")); // empty line
+		writeHeader(writer, "General Properties for Communiation Points and Filters");
+		// All Files map:
+		final Map<String, Map<GeneralTabType, TypeCountData>> generalPropMap = this.currentStore.getCommunicationPointGeneralProperties();
+		// Iterate through all the types of comm points in the generalPropMap
+		for (final String commPointType : generalPropMap.keySet()) {
+			// title for the comm point type.
+			CSVUtils.writeLine(writer, Arrays.asList(commPointType + " General Properties:"));
+			// overall map: for all files
+			final Map<GeneralTabType, TypeCountData> overallMap = generalPropMap.get(commPointType);
+			// Iterate through all
+			for (final GeneralTabType tabType : GeneralTabType.values()) {
+				final List<String> stringWrite = new ArrayList<String>();
+				// writing the type of component.
+				if (tabType.getPropertyType().isEmpty()) {
+					// for Total Counts to be displayed:
+					stringWrite.add(tabType.getType());
+				} else {
+					stringWrite.add(tabType.getPropertyType() + ": " + tabType.getType());
+				}
+
+				final TypeCountData overallCount = overallMap.get(tabType);
+				// if count is 0, then overallCount will be null.
+				if (overallCount == null) {
+					// in this case, we don't need to iterate through the other maps either. We can omit this particular tabType.
+					continue;
+				}
+				stringWrite.add(String.valueOf(overallMap.get(tabType).getCounts())); // writing counts for overall map
+				// writing counts for all other maps:
+				for (final RLCDataStore dataStore : this.dataStoreMap.values()) {
+					final Map<GeneralTabType, TypeCountData> singleFileMap = dataStore.getCommunicationPointGeneralProperties().get(commPointType);
+					// if map is null or count is null implies that either the DataStore does not contain that particular comm point
+					// or there are zero general property types for that comm point if it exists.
+					if (singleFileMap == null || singleFileMap.get(tabType) == null) {
+						stringWrite.add(String.valueOf(0));
+					} else {
+						stringWrite.add(String.valueOf(singleFileMap.get(tabType).getCounts()));
+					}
+				}
+				CSVUtils.writeLine(writer, stringWrite);
+			}
+
+		}
+	}
+
+	/**
 	 * Used to write total types of each Filter in an RLC.
 	 *
 	 * @param writer
@@ -301,9 +358,9 @@ public class RLCDataExporter {
 		CSVUtils.writeLine(writer, Arrays.asList("")); // empty line
 		writeHeader(writer, "Filters per route");
 		final int[] overallCounts = this.currentStore.getFilterCountsPerRoute();
-		final List<String> stringWrite = new ArrayList<String>();
+
 		for (int i = 0; i < overallCounts.length; i++) {
-			stringWrite.clear();
+			final List<String> stringWrite = new ArrayList<String>();
 			// final index needs to have different name: e.g. 30 or more
 			if (i == overallCounts.length - 1) {
 				stringWrite.add("Filters per Route: " + i + " or more");
@@ -348,7 +405,7 @@ public class RLCDataExporter {
 
 	/**
 	 * Used to write the Rhapsody engine version number
-	 * 
+	 *
 	 * @param writer
 	 * @throws IOException
 	 */
