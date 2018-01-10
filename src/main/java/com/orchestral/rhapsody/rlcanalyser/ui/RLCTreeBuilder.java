@@ -12,8 +12,10 @@ package com.orchestral.rhapsody.rlcanalyser.ui;
 
 import java.awt.Insets;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 
 import javax.swing.JScrollPane;
 import javax.swing.JTree;
@@ -24,6 +26,7 @@ import com.orchestral.rhapsody.rlcanalyser.ModifiedPropertyCountData;
 import com.orchestral.rhapsody.rlcanalyser.RLCDataAnalyser;
 import com.orchestral.rhapsody.rlcanalyser.TypeCountData;
 import com.orchestral.rhapsody.rlcanalyser.store.ConfigurationDataStore;
+import com.orchestral.rhapsody.rlcanalyser.store.GeneralTabType;
 import com.orchestral.rhapsody.rlcanalyser.store.RLCDataStore;
 import com.orchestral.rhapsody.rlcanalyser.store.RLCDataStore.TotalCountDataType;
 
@@ -49,23 +52,23 @@ public class RLCTreeBuilder {
 	 * @return JScrollPane
 	 */
 	public JScrollPane createMostUsedResultsTree(final RLCDataStore dataStore,
-			final ConfigurationDataStore configurationDataStore) {
+	                                             final ConfigurationDataStore configurationDataStore) {
 		final DefaultMutableTreeNode top = new DefaultMutableTreeNode("root");
 
 		final RLCDataAnalyser dataAnalyser = new RLCDataAnalyser(dataStore);
 
 		addResultTreeNode(top, "Most used communication points", dataAnalyser.getMostUsedCommunicationPoints(-1),
-				dataAnalyser.getNumberOfCommunicationPoints());
+		                  dataAnalyser.getNumberOfCommunicationPoints());
 		addResultTreeNode(top, "Most used input communication points",
-				dataAnalyser.getMostUsedInputCommunicationPoints(-1),
-				dataAnalyser.getNumberOfInputCommunicationPoints());
+		                  dataAnalyser.getMostUsedInputCommunicationPoints(-1),
+		                  dataAnalyser.getNumberOfInputCommunicationPoints());
 		addResultTreeNode(top, "Most used output communication points",
-				dataAnalyser.getMostUsedOutputCommunicationPoints(-1),
-				dataAnalyser.getNumberOfOutputCommunicationPoints());
+		                  dataAnalyser.getMostUsedOutputCommunicationPoints(-1),
+		                  dataAnalyser.getNumberOfOutputCommunicationPoints());
 		addResultTreeNode(top, "Most used filters", dataAnalyser.getMostUsedFilters(-1),
-				dataAnalyser.getNumberOfFilters());
+		                  dataAnalyser.getNumberOfFilters());
 		addResultTreeNode(top, "Most used definition types", dataAnalyser.getMostUsedDefinitionTypes(-1),
-				dataStore.getTotalCounts(TotalCountDataType.Definitions));
+		                  dataStore.getTotalCounts(TotalCountDataType.Definitions));
 
 		return new JScrollPane(manipulateJTree(top));
 	}
@@ -85,7 +88,7 @@ public class RLCTreeBuilder {
 	 * @return JScrollPane
 	 */
 	public JScrollPane createResultTree(final RLCDataStore dataStore,
-			final ConfigurationDataStore configurationDataStore, final Map<String, RLCDataStore> dataStoreMap) {
+	                                    final ConfigurationDataStore configurationDataStore, final Map<String, RLCDataStore> dataStoreMap) {
 		final DefaultMutableTreeNode top = new DefaultMutableTreeNode("root");
 
 		final RLCDataAnalyser dataAnalyser = new RLCDataAnalyser(dataStore);
@@ -98,19 +101,19 @@ public class RLCTreeBuilder {
 		addATreeNode(summary, "Total number of Lockers", dataStore.getTotalCounts(TotalCountDataType.Lockers));
 		addATreeNode(summary, "Total number of Routes", dataStore.getTotalCounts(TotalCountDataType.Routes));
 		addATreeNode(summary, "Total number of Communication Points",
-				dataStore.getTotalCounts(TotalCountDataType.CommunicationPoints));
+		             dataStore.getTotalCounts(TotalCountDataType.CommunicationPoints));
 
 		addATreeNode(summary, "Total number of Filters", dataAnalyser.getNumberOfFilters());
 		addATreeNode(summary, "Total number of Web Services", dataStore.getTotalCounts(TotalCountDataType.WebServices));
 		addATreeNode(summary, "Total number of Definitions", dataStore.getTotalCounts(TotalCountDataType.Definitions));
 		addATreeNode(summary, "Total number of Message Tracking Schemes",
-				dataStore.getTotalCounts(TotalCountDataType.MessageTrackingSchemes));
+		             dataStore.getTotalCounts(TotalCountDataType.MessageTrackingSchemes));
 		addATreeNode(summary, "Total number of REST Clients", dataStore.getTotalCounts(TotalCountDataType.RESTClients));
 		addATreeNode(summary, "Total number of Variables", dataStore.getTotalCounts(TotalCountDataType.Variables));
 		addATreeNode(summary, "Total number of Lookup Tables",
-				dataStore.getTotalCounts(TotalCountDataType.LookupTables));
+		             dataStore.getTotalCounts(TotalCountDataType.LookupTables));
 		addATreeNode(summary, "Total number of Shared JavaScript Libraries",
-				dataStore.getTotalCounts(TotalCountDataType.SharedJSLibraries));
+		             dataStore.getTotalCounts(TotalCountDataType.SharedJSLibraries));
 
 		fileNameHeaderList = new ArrayList<String>(dataStoreMap.keySet());
 		fileNameHeaderList.replaceAll(fileName -> fileName.substring(fileName.indexOf(":") + 1));
@@ -126,11 +129,93 @@ public class RLCTreeBuilder {
 	}
 
 	/**
+	 * Method is used to create a tree with general properties for each comm
+	 * point/ filter to be shown.
+	 *
+	 * @param generalPropMap
+	 * @return
+	 */
+	public JScrollPane createGeneralPropertiesTree(final Map<String, Map<GeneralTabType, TypeCountData>> generalPropMap) {
+		final DefaultMutableTreeNode top = new DefaultMutableTreeNode("root");
+		// Iterate through general properties map, to access each type of comm point.
+		for (final Map.Entry<String, Map<GeneralTabType, TypeCountData>> entry : generalPropMap.entrySet()) {
+
+			final DefaultMutableTreeNode commPointNode = new DefaultMutableTreeNode(entry.getKey());
+			// Total Counts
+			addATreeNode(commPointNode, "Total Counts", entry.getValue().get(GeneralTabType.TotalCounts).getCounts());
+			// Connection Mode
+			final DefaultMutableTreeNode connectionModeNode = new DefaultMutableTreeNode("Connection Mode");
+
+			final Map<String, Long> countMap = generateCountMap("cpm", entry);
+			for (final Entry<String, Long> mapEntry : countMap.entrySet()) {
+				addATreeNode(connectionModeNode, mapEntry.getKey(), mapEntry.getValue());
+			}
+
+			// Startup State
+			final DefaultMutableTreeNode startupStateNode = new DefaultMutableTreeNode("Startup State");
+			final Map<String, Long> countMap1 = generateCountMap("START", entry);
+			for (final Entry<String, Long> mapEntry : countMap1.entrySet()) {
+				addATreeNode(startupStateNode, mapEntry.getKey(), mapEntry.getValue());
+			}
+
+			// Retry Type
+			final DefaultMutableTreeNode retryTypeNode = new DefaultMutableTreeNode("Retry Type");
+			final Map<String, Long> countMap2 = generateCountMap("rt", entry);
+			for (final Entry<String, Long> mapEntry : countMap2.entrySet()) {
+				addATreeNode(retryTypeNode, mapEntry.getKey(), mapEntry.getValue());
+			}
+
+			commPointNode.add(connectionModeNode);
+			commPointNode.add(startupStateNode);
+			commPointNode.add(retryTypeNode);
+
+			top.add(commPointNode);
+		}
+		// TODO: add filters
+		return new JScrollPane(manipulateJTree(top));
+
+	}
+
+	/**
+	 * Helper method to generate a Map<String, Long> where the key is the string
+	 * representation of the enum and the long is the corresponding long value
+	 * for the TypeCountData of the GeneralTabType property.
+	 *
+	 * The map generated is for a particular class of general properties.
+	 *
+	 * E.g. use "rt" as the startPhrase paramater to get a Map of Retry Type
+	 * with the corresponding counts.
+	 *
+	 * @param startPhrase
+	 * @param entry
+	 * @return
+	 */
+	private Map<String, Long> generateCountMap(final String startPhrase, final Entry<String, Map<GeneralTabType, TypeCountData>> entry) {
+		final Map<String, Long> countMap = new HashMap<String, Long>();
+
+		final List<GeneralTabType> tabTypeList = new ArrayList<GeneralTabType>();
+		// add enum types to list based on start/ end characters input.
+		for (final GeneralTabType tabType : GeneralTabType.values()) {
+			// StartupState, need starts with and ends with 'START'
+			if (tabType.name().startsWith(startPhrase) || tabType.name().endsWith(startPhrase)) {
+				tabTypeList.add(tabType);
+			}
+		}
+
+		for (final GeneralTabType tabType : tabTypeList) {
+			final TypeCountData countData = entry.getValue().get(tabType);
+			if (countData != null) {
+				countMap.put(tabType.getType(), (long) countData.getCounts());
+			}
+		}
+		return countMap;
+	}
+
+	/**
 	 * This method creates the breakdown of the total components within each RLC
 	 *
-	 * @param dataStoreMap
-	 *            - used to collect information from each RLC and display them
-	 *            accordingly
+	 * @param dataStoreMap - used to collect information from each RLC and
+	 *            display them accordingly
 	 * @return JScrollPane
 	 */
 	public JScrollPane createTotalPerRLCResultsTree(final Map<String, RLCDataStore> dataStoreMap) {
@@ -153,7 +238,7 @@ public class RLCTreeBuilder {
 
 			// Add the tree structure to the root
 			addResultsTreeNode(totalPerRLC, "Total number of " + configTypes.toString() + " per RLC",
-					totalObjectRLCList);
+			                   totalObjectRLCList);
 
 			totalObjectRLCList.clear();
 		}
@@ -174,7 +259,7 @@ public class RLCTreeBuilder {
 	 * @return JScrollPane
 	 */
 	public JScrollPane createConfigurationResultsTree(final RLCDataStore dataStore,
-			final ConfigurationDataStore configurationDataStore) {
+	                                                  final ConfigurationDataStore configurationDataStore) {
 		final DefaultMutableTreeNode top = new DefaultMutableTreeNode("root");
 
 		final ConfigurationAnalyser configurationAnalyser = new ConfigurationAnalyser(configurationDataStore);
@@ -203,7 +288,7 @@ public class RLCTreeBuilder {
 	 * @return JScrollPane
 	 */
 	public JScrollPane createFilterResultsTree(final RLCDataStore dataStore,
-			final ConfigurationDataStore configurationDataStore) {
+	                                           final ConfigurationDataStore configurationDataStore) {
 		final DefaultMutableTreeNode top = new DefaultMutableTreeNode("root");
 
 		final ConfigurationAnalyser configurationAnalyser = new ConfigurationAnalyser(configurationDataStore);
@@ -233,10 +318,10 @@ public class RLCTreeBuilder {
 		final RLCDataAnalyser dataAnalyser = new RLCDataAnalyser(dataStore);
 
 		addResultsTreeNode(top, "Number of filters per route", dataAnalyser.getFilterCountsPerRoute(),
-				dataAnalyser.getNumberOfRoutes());
+		                   dataAnalyser.getNumberOfRoutes());
 
 		addResultsTreeNode(top, "Number of definitions per route", dataAnalyser.getDefinitionCountsPerRoute(),
-				dataAnalyser.getNumberOfRoutes());
+		                   dataAnalyser.getNumberOfRoutes());
 
 		return new JScrollPane(manipulateJTree(top));
 	}
@@ -296,13 +381,13 @@ public class RLCTreeBuilder {
 	 *            - the total number of RLCs
 	 */
 	private void addResultTreeNode(final DefaultMutableTreeNode node, final String categoryName,
-			final List<TypeCountData> counts, final long total) {
+	                               final List<TypeCountData> counts, final long total) {
 		final DefaultMutableTreeNode category = new DefaultMutableTreeNode(categoryName);
 		node.add(category);
 
 		for (final TypeCountData count : counts) {
 			final DefaultMutableTreeNode childNode = new DefaultMutableTreeNode(
-					ResultsFormatter.formatCount(count, total));
+			                                                                    ResultsFormatter.formatCount(count, total));
 			category.add(childNode);
 		}
 	}
@@ -318,7 +403,7 @@ public class RLCTreeBuilder {
 	 *            - list of counts values
 	 */
 	private void addResultTreeNode(final DefaultMutableTreeNode node, final String categoryName,
-			final List<ModifiedPropertyCountData> counts) {
+	                               final List<ModifiedPropertyCountData> counts) {
 		final DefaultMutableTreeNode category = new DefaultMutableTreeNode(categoryName);
 		node.add(category);
 
@@ -339,7 +424,7 @@ public class RLCTreeBuilder {
 	 *            - the list of strings to be displayed under the node
 	 */
 	private void addResultsTreeNode(final DefaultMutableTreeNode node, final String categoryName,
-			final List<String> names) {
+	                                final List<String> names) {
 		final DefaultMutableTreeNode category = new DefaultMutableTreeNode(categoryName);
 		node.add(category);
 
@@ -363,7 +448,7 @@ public class RLCTreeBuilder {
 	 *            - the total number of RLCs used for calculating the percentage
 	 */
 	private void addResultsTreeNode(final DefaultMutableTreeNode root, final String categoryName,
-			final int[] numFiltersPerRoute, final long total) {
+	                                final int[] numFiltersPerRoute, final long total) {
 		final DefaultMutableTreeNode category = new DefaultMutableTreeNode(categoryName);
 		root.add(category);
 		for (int i = 0; i < numFiltersPerRoute.length; i++) {
