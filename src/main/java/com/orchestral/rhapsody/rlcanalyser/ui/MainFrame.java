@@ -80,14 +80,14 @@ public class MainFrame extends JFrame {
 			try {
 				this.dataStore = new RLCDataStore();
 				this.configurationDataStore = new ConfigurationDataStore(
-						ConfigurationDataStoreFactory.get().createAllCommunicationPointStores(),
-						ConfigurationDataStoreFactory.get().createAllFilterStores());
+				                                                         ConfigurationDataStoreFactory.get().createAllCommunicationPointStores(),
+				                                                         ConfigurationDataStoreFactory.get().createAllFilterStores());
 				final RLCDataCollector dataCollector = new RLCDataCollector(this.dataStore, this.configurationDataStore);
 
 				final RlcAnalyser rlcAnalyser = new RlcAnalyser(dataCollector);
 
 				final File file = new File(
-						MainFrame.this.contentPanel.getFolderText().getText());
+				                           MainFrame.this.contentPanel.getFolderText().getText());
 
 				try {
 					rlcAnalyser.analysePath(file);
@@ -241,8 +241,8 @@ public class MainFrame extends JFrame {
 		// Check to see if user wants to export the file if they haven't already
 		if (this.contentPanel.getResultsTab().getComponentCount() > 0 && !this.contentPanel.getExportStatus()) {
 			final int result = JOptionPane.showConfirmDialog(	this,
-					"Processing new files will remove the previous analysis.\nDo you wish to export the data first?",
-					"Export", JOptionPane.YES_NO_OPTION);
+			                                                 	"Processing new files will remove the previous analysis.\nDo you wish to export the data first?",
+			                                                 	"Export", JOptionPane.YES_NO_OPTION);
 			if (result == JOptionPane.YES_OPTION) {
 				this.contentPanel.getExportButton().doClick();
 			}
@@ -289,25 +289,25 @@ public class MainFrame extends JFrame {
 	private void processingDone(final RLCDataStore dataStore, final ConfigurationDataStore configurationDataStore) {
 		this.currentDataStore = dataStore;
 		this.currentConfigDataStore = configurationDataStore;
-
 		final RLCTreeBuilder builder = new RLCTreeBuilder();
 
 		// Processing the multiple tabs of data
 		final JScrollPane resultsTreeView = builder.createResultTree(dataStore, configurationDataStore,
-				this.dataStoreMap);
+		                                                             this.dataStoreMap);
 		final JScrollPane mostUsedTreeView = builder.createMostUsedResultsTree(dataStore,
-				configurationDataStore);
+		                                                                       configurationDataStore);
 		final JScrollPane configurationTreeView = builder.createConfigurationResultsTree(dataStore,
-				configurationDataStore);
+		                                                                                 configurationDataStore);
 		final JScrollPane filterTreeView = builder.createFilterResultsTree(dataStore,
-				configurationDataStore);
+		                                                                   configurationDataStore);
 		final JScrollPane routeTreeView = builder.createRouteResultsTree(dataStore);
 		final JScrollPane totalsTreeView = builder.createTotalPerRLCResultsTree(this.dataStoreMap);
-
+		final JScrollPane generalPropertiesTreeView = builder.createGeneralPropertiesTree(dataStore.getCommunicationPointGeneralProperties());
 
 		// Add to the results tree
 		this.contentPanel.addResultTree("General Summary", resultsTreeView);
 		this.contentPanel.addResultTree("Most Used Summary", mostUsedTreeView);
+		this.contentPanel.addResultTree("General Properties", generalPropertiesTreeView);
 		this.contentPanel.addResultTree("Totals Per RLC", totalsTreeView);
 		this.contentPanel.addResultTree("Communication Point Summary", configurationTreeView);
 		this.contentPanel.addResultTree("Filter Summary", filterTreeView);
@@ -353,7 +353,7 @@ public class MainFrame extends JFrame {
 		if (fileChooser.getSelectedFile().getName().contains(".")) {
 			// delimit by the .
 			filename = fileChooser.getSelectedFile().getName().substring(0,
-					fileChooser.getSelectedFile().getName().lastIndexOf("."));
+			                                                             fileChooser.getSelectedFile().getName().lastIndexOf("."));
 		} else {
 			filename = fileChooser.getSelectedFile().getName();
 		}

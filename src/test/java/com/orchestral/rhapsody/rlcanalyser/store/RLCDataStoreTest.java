@@ -10,9 +10,25 @@
  */
 package com.orchestral.rhapsody.rlcanalyser.store;
 
+import static org.junit.Assert.assertEquals;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
+
+import org.junit.Before;
+import org.junit.Test;
+
 import com.orchestral.rhapsody.rlcanalyser.RLCDataCollector;
+import com.orchestral.rhapsody.rlcanalyser.TypeCountData;
+import com.orchestral.rhapsody.rlcanalyser.io.Engine;
+import com.orchestral.rhapsody.rlcanalyser.io.XStreamInstance;
 
 public class RLCDataStoreTest {
+	private XStreamInstance xstream;
 
 	private RLCDataStore dataStore;
 
@@ -20,180 +36,104 @@ public class RLCDataStoreTest {
 
 	private RLCDataCollector dataCollector;
 
-	//	@Before
-	//	public void setUp() {
-	//		this.dataStore = new RLCDataStore();
-	//		final List<CommunicationPointConfigurationDataStore> communicationPointConfigurationStores = new ArrayList<CommunicationPointConfigurationDataStore>();
-	//		final List<FilterConfigurationDataStore> filterConfigurationStores = new ArrayList<FilterConfigurationDataStore>();
-	//		this.configurationDataStore = ConfigurationDataStore.getConfigStoreInstance();
-	//		this.dataCollector = new RLCDataCollector(this.dataStore, this.configurationDataStore);
-	//	}
+	@Before
+	public void setUp() {
+		this.dataStore = new RLCDataStore();
+		final List<CommunicationPointConfigurationDataStore> communicationPointConfigurationStores = new ArrayList<>();
+		final List<FilterConfigurationDataStore> filterConfigurationStores = new ArrayList<>();
+		this.configurationDataStore = new ConfigurationDataStore(communicationPointConfigurationStores, filterConfigurationStores);
+		this.dataCollector = new RLCDataCollector(this.dataStore, this.configurationDataStore);
+		this.xstream = new XStreamInstance();
+	}
 
-	//	@Test
-	//	public void testCommunicationPointData() {
-	//		final List<CommunicationPoint> communicationPoints = new ArrayList<CommunicationPoint>();
-	//		communicationPoints.add(createTCPClientCommunicationPoint(
-	//				new String[]{"route-one", "route-two", "route-three", "route-four"},
-	//				new String[]{"route-one", "route-two", "route-three", "route-four"}));
-	//		communicationPoints.add(createTCPClientCommunicationPoint(
-	//				new String[]{"route-one", "route-two", "route-three", "route-four"},
-	//				new String[]{"route-one", "route-two", "route-three", "route-four"}));
-	//		communicationPoints.add(createDatabaseCommunicationPoint(
-	//				new String[]{"route-one", "route-two"},
-	//				new String[]{"route-one", "route-two"}));
-	//		communicationPoints.add(createDirectoryCommunicationPoint(
-	//				new String[]{},
-	//				new String[]{"route-one", "route-two", "route-three", "route-four"}));
-	//		communicationPoints.add(createDirectoryCommunicationPoint(
-	//				new String[]{"route-one"},
-	//				new String[]{}));
-	//		communicationPoints.add(createDirectoryCommunicationPoint(
-	//				new String[]{},
-	//				new String[]{"route-four"}));
-	//
-	//		final List<Route> routes = new ArrayList<Route>();
-	//		this.dataCollector.collectData(communicationPoints, routes);
-	//
-	//		final RLCDataAnalyser dataAnalyser = new RLCDataAnalyser(dataStore);
-	//
-	//		final List<TypeCountData> typeCounts = dataAnalyser.getMostUsedCommunicationPoints(10);
-	//		Assert.assertEquals(3, typeCounts.size());
-	//		Assert.assertEquals("Directory", typeCounts.get(0).getType());
-	//		Assert.assertEquals(3, typeCounts.get(0).getCounts());
-	//		Assert.assertEquals("TCPClient", typeCounts.get(1).getType());
-	//		Assert.assertEquals(2, typeCounts.get(1).getCounts());
-	//		Assert.assertEquals("Database", typeCounts.get(2).getType());
-	//		Assert.assertEquals(1, typeCounts.get(2).getCounts());
-	//
-	//		Assert.assertEquals(6, dataAnalyser.getNumberOfCommunicationPoints());
-	//
-	//		final List<TypeCountData> inputCounts = dataAnalyser.getMostUsedInputCommunicationPoints(10);
-	//		Assert.assertEquals(3, inputCounts.size());
-	//		Assert.assertEquals("TCPClient", inputCounts.get(0).getType());
-	//		Assert.assertEquals(8, inputCounts.get(0).getCounts());
-	//		Assert.assertEquals("Database", inputCounts.get(1).getType());
-	//		Assert.assertEquals(2, inputCounts.get(1).getCounts());
-	//		Assert.assertEquals("Directory", inputCounts.get(2).getType());
-	//		Assert.assertEquals(1, inputCounts.get(2).getCounts());
-	//
-	//		Assert.assertEquals(11, dataAnalyser.getNumberOfInputCommunicationPoints());
-	//
-	//		final List<TypeCountData> outputCounts = dataAnalyser.getMostUsedOutputCommunicationPoints(10);
-	//		Assert.assertEquals(3, outputCounts.size());
-	//		Assert.assertEquals("TCPClient", outputCounts.get(0).getType());
-	//		Assert.assertEquals(8, outputCounts.get(0).getCounts());
-	//		Assert.assertEquals("Directory", outputCounts.get(1).getType());
-	//		Assert.assertEquals(5, outputCounts.get(1).getCounts());
-	//		Assert.assertEquals("Database", outputCounts.get(2).getType());
-	//		Assert.assertEquals(2, outputCounts.get(2).getCounts());
-	//
-	//		Assert.assertEquals(15, dataAnalyser.getNumberOfOutputCommunicationPoints());
-	//	}
+	@Test
+	public void testCommunicationPointGeneralData() {
+		Object o1 = null;
+		String inputString = "";
 
-	//	@Test
-	//	public void testRouteData() {
-	//		final List<CommunicationPoint> communicationPoints = new ArrayList<CommunicationPoint>();
-	//		communicationPoints.add(createTCPClientCommunicationPoint(
-	//				new String[]{"route-one", "route-two", "route-three", "route-four"},
-	//				new String[]{"route-one", "route-two", "route-three", "route-four"}));
-	//
-	//		final List<Route> routes = new ArrayList<Route>();
-	//		routes.add(createRoute(new String[]{"Mapper"}));
-	//		routes.add(createRoute(new String[]{"Batcher", "Mapper", "ExecuteScript", "XSD Validation Filter"}));
-	//		routes.add(createRoute(new String[]{"Batcher", "No-op", "DatabaseLookup", "Mapper"}));
-	//		routes.add(createRoute(new String[]{}));
-	//		routes.add(createRoute(new String[]{"Batcher", "Mapper"}));
-	//		routes.add(createRoute(new String[]{"ExecuteScript"}));
-	//		routes.add(createRoute(new String[]{"No-op"}));
-	//		this.dataCollector.collectData(communicationPoints, routes);
-	//
-	//		final RLCDataAnalyser dataAnalyser = new RLCDataAnalyser(dataStore);
-	//
-	//		final List<TypeCountData> typeCounts = dataAnalyser.getMostUsedFilters(10);
-	//		Assert.assertEquals(6, typeCounts.size());
-	//		Assert.assertEquals("Mapper", typeCounts.get(0).getType());
-	//		Assert.assertEquals(4, typeCounts.get(0).getCounts());
-	//		Assert.assertEquals("Batcher", typeCounts.get(1).getType());
-	//		Assert.assertEquals(3, typeCounts.get(1).getCounts());
-	//		Assert.assertEquals("No-op", typeCounts.get(2).getType());
-	//		Assert.assertEquals(2, typeCounts.get(2).getCounts());
-	//		Assert.assertEquals("ExecuteScript", typeCounts.get(3).getType());
-	//		Assert.assertEquals(2, typeCounts.get(3).getCounts());
-	//		Assert.assertEquals("XSD Validation Filter", typeCounts.get(4).getType());
-	//		Assert.assertEquals(1, typeCounts.get(4).getCounts());
-	//		Assert.assertEquals("DatabaseLookup", typeCounts.get(5).getType());
-	//		Assert.assertEquals(1, typeCounts.get(5).getCounts());
-	//
-	//		final int[] filterCounts = dataAnalyser.getFilterCountsPerRoute();
-	//		Assert.assertEquals(1, filterCounts[0]);
-	//		Assert.assertEquals(3, filterCounts[1]);
-	//		Assert.assertEquals(1, filterCounts[2]);
-	//		Assert.assertEquals(0, filterCounts[3]);
-	//		Assert.assertEquals(2, filterCounts[4]);
-	//		for (int i=5; i<filterCounts.length; i++) {
-	//			Assert.assertEquals(0, filterCounts[i]);
-	//		}
-	//		Assert.assertEquals(13, dataAnalyser.getNumberOfFilters());
-	//	}
-	//
-	//	private CommunicationPoint createTCPClientCommunicationPoint(final String[] inputRouteIDs,
-	//																 final String[] outputRouteIDs) {
-	//		int random = (int) Math.random();
-	//		return createCommunicationPoint("testTcp-"+random, "TCPClient", inputRouteIDs, outputRouteIDs);
-	//	}
-	//
-	//	private CommunicationPoint createDirectoryCommunicationPoint(final String[] inputRouteIDs,
-	//																 final String[] outputRouteIDs) {
-	//		int random = (int) Math.random();
-	//		return createCommunicationPoint("directory-"+random, "Directory", inputRouteIDs, outputRouteIDs);
-	//	}
-	//
-	//	private CommunicationPoint createDatabaseCommunicationPoint(final String[] inputRouteIDs,
-	//																final String[] outputRouteIDs) {
-	//		int random = (int) Math.random();
-	//		return createCommunicationPoint("database-"+random, "Database", inputRouteIDs, outputRouteIDs);
-	//	}
-	//
-	//	private CommunicationPoint createCommunicationPoint(final String id, final String type,
-	//														final String[] inputRouteIDs,
-	//														final String[] outputRouteIDs) {
-	//
-	//		return new CommunicationPoint(id, type,
-	//				Arrays.asList(inputRouteIDs),
-	//				Arrays.asList(outputRouteIDs),
-	//				Collections.EMPTY_LIST,
-	//				Collections.EMPTY_LIST,
-	//				0,
-	//				"INPUT",
-	//				5,
-	//				5,
-	//				-1,
-	//				"",
-	//				-1,
-	//				-1,
-	//				-1,
-	//				"Runnint",
-	//				"/");
-	//	}
+		try {
+			final File file = new File("test_files/commPointGenPropTest.txt");
+			final Scanner input = new Scanner(file);
+			inputString = input.useDelimiter("\\A").next();
+			o1 = this.xstream.fromXML(inputString);
+			input.close();
+		} catch (final FileNotFoundException e) {
+			e.printStackTrace();
+		}
 
-	//	private Route createRoute(final String[] filterTypes) {
-	//		final List<Filter> filters = new ArrayList<Filter>();
-	//		for (final String type : filterTypes) {
-	//			filters.add(createFilter(type));
-	//		}
-	//		int random = (int) Math.random();
-	//		Route route = new Route();
-	//		route.setId("route-"+random);
-	//		route.setFilters(filters);
-	//		return route;
-	//	}
-	//
-	//	private Filter createFilter(final String type) {
-	//		int random = (int) Math.random();
-	//		Filter filter = new Filter();
-	//		filter.setId("filter-"+random);
-	//		filter.setType(type);
-	//		filter.setConfiguration(new ArrayList<Property>());
-	//		return filter;
-	//	}
+		final Engine testEngine = (Engine) o1;
+		this.dataCollector.collectData(testEngine);
+		// getDataStoreMap is used when there are defined filenames as input.
+		// for testing, we pass in a .txt file instead of an RLC so the DataStoreMap
+		// uses a null key to store the RLCDataStore.
+		final RLCDataStore map = this.dataCollector.getDataStoreMap().get(null);
+		final Map<String, Map<GeneralTabType, TypeCountData>> generalPropertyMap = map.getCommunicationPointGeneralProperties();
+		// Test that there are 3 sinks
+		assertEquals(generalPropertyMap.get("Sink").get(GeneralTabType.TotalCounts).getCounts(), 3);
+		// Test that there are correct Start States for all Sinks:
+		assertEquals(generalPropertyMap.get("Sink").get(GeneralTabType.DONT_START).getCounts(), 1);
+		assertEquals(generalPropertyMap.get("Sink").get(GeneralTabType.START_LEVEL_2).getCounts(), 1);
+		assertEquals(generalPropertyMap.get("Sink").get(GeneralTabType.START_LEVEL_3).getCounts(), 1);
+		// Test that there is 1 AmazonSNS comm point
+		assertEquals(generalPropertyMap.get("Amazon SNS").get(GeneralTabType.TotalCounts).getCounts(), 1);
+		// test that the SNS Comm point has only one startup state of START_LEVEL_3
+		assertEquals(generalPropertyMap.get("Amazon SNS").get(GeneralTabType.START_LEVEL_3).getCounts(), 1);
+		// Test 5 email comm points and 2 totals DONT_STARTs among them
+		assertEquals(generalPropertyMap.get("E-mail").get(GeneralTabType.TotalCounts).getCounts(), 5);
+		assertEquals(generalPropertyMap.get("E-mail").get(GeneralTabType.DONT_START).getCounts(), 2);
+		// Test 4 Input Connection Mode in Email:
+		assertEquals(generalPropertyMap.get("E-mail").get(GeneralTabType.cpmInput).getCounts(), 4);
+		// Test HTTP Server and Amazon SNS
+		assertEquals(generalPropertyMap.get("HTTP Server").get(GeneralTabType.cpmInput).getCounts(), 1);
+		assertEquals(generalPropertyMap.get("Amazon SNS").get(GeneralTabType.cpmOutput).getCounts(), 1);
+
+	}
+
+	@Test
+	public void testAllGeneralData() {
+		Object o1 = null;
+		String inputString = "";
+
+		try {
+			final File file = new File("test_files/testGenPropCustom.txt");
+			final Scanner input = new Scanner(file);
+			inputString = input.useDelimiter("\\A").next();
+			o1 = this.xstream.fromXML(inputString);
+			input.close();
+		} catch (final FileNotFoundException e) {
+			e.printStackTrace();
+		}
+
+		final Engine testEngine = (Engine) o1;
+		this.dataCollector.collectData(testEngine);
+		// getDataStoreMap is used when there are defined filenames as input.
+		// for testing, we pass in a .txt file instead of an RLC so the DataStoreMap
+		// uses a null key to store the RLCDataStore.
+		final RLCDataStore map = this.dataCollector.getDataStoreMap().get(null);
+		final Map<String, Map<GeneralTabType, TypeCountData>> generalPropertyMap = map.getCommunicationPointGeneralProperties();
+		// Test Email
+		assertEquals(generalPropertyMap.get("E-mail").get(GeneralTabType.TotalCounts).getCounts(), 2);
+		assertEquals(generalPropertyMap.get("E-mail").get(GeneralTabType.DONT_START).getCounts(), 2);
+		assertEquals(generalPropertyMap.get("E-mail").get(GeneralTabType.cpmInput).getCounts(), 1);
+		assertEquals(generalPropertyMap.get("E-mail").get(GeneralTabType.cpmOutput).getCounts(), 1);
+		assertEquals(generalPropertyMap.get("E-mail").get(GeneralTabType.rtLinear).getCounts(), 2);
+		// Test FTP Client
+		assertEquals(generalPropertyMap.get("FTP Client (deprecated)").get(GeneralTabType.TotalCounts).getCounts(), 1);
+		assertEquals(generalPropertyMap.get("FTP Client (deprecated)").get(GeneralTabType.START_LEVEL_5).getCounts(), 1);
+		assertEquals(generalPropertyMap.get("FTP Client (deprecated)").get(GeneralTabType.cpmOutIn).getCounts(), 1);
+		assertEquals(generalPropertyMap.get("FTP Client (deprecated)").get(GeneralTabType.rtLinear).getCounts(), 1);
+		// Test Directory
+		assertEquals(generalPropertyMap.get("Directory").get(GeneralTabType.TotalCounts).getCounts(), 2);
+		assertEquals(generalPropertyMap.get("Directory").get(GeneralTabType.START_LEVEL_2).getCounts(), 1);
+		assertEquals(generalPropertyMap.get("Directory").get(GeneralTabType.START_LEVEL_3).getCounts(), 1);
+		assertEquals(generalPropertyMap.get("Directory").get(GeneralTabType.cpmBidirectional).getCounts(), 1);
+		assertEquals(generalPropertyMap.get("Directory").get(GeneralTabType.cpmInOut).getCounts(), 1);
+		assertEquals(generalPropertyMap.get("Directory").get(GeneralTabType.rtExponential).getCounts(), 1);
+		// Test Database
+		assertEquals(generalPropertyMap.get("Database").get(GeneralTabType.TotalCounts).getCounts(), 1);
+		assertEquals(generalPropertyMap.get("Database").get(GeneralTabType.START_LEVEL_1).getCounts(), 1);
+		assertEquals(generalPropertyMap.get("Database").get(GeneralTabType.cpmOutput).getCounts(), 1);
+		assertEquals(generalPropertyMap.get("Database").get(GeneralTabType.rtImmediate).getCounts(), 1);
+
+	}
 }

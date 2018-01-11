@@ -1,0 +1,2403 @@
+<?xml version="1.0"?>
+<Engine xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" FileVersion="10" CompatibleDownToFileVersion="10" xmlns="urn:www.yourcompany.com/Rhapsody/Schema.xml">
+  <CommPoints>
+    <CommPoint>
+      <ID>04ade750-64be-4ef6-a5b4-eb7bfe1a7581</ID>
+      <Type>Sink</Type>
+      <InputRoutes />
+      <OutputRoutes>
+        <ID>286bec66-0b5d-409f-92f9-02dd5ffcf394</ID>
+      </OutputRoutes>
+      <Configuration>
+        <Property>
+          <Name>ConnectionErrorRetriesIncludedMessages</Name>
+          <Value>0</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>InputCharacterEncoding</Name>
+          <Value>151</Value>
+          <Type />
+        </Property>
+      </Configuration>
+      <GeneralProperties>
+        <Property>
+          <Name>StartupState</Name>
+          <Value>DONT_START</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>StartupStateTracking</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UseNotesAsSupportNotes</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UserName</Name>
+          <Value>Sink</Value>
+          <Type />
+        </Property>
+      </GeneralProperties>
+      <Priority>-1</Priority>
+      <Mode>cpmOutput</Mode>
+      <NumConnections>1</NumConnections>
+      <IdleTimeout>0</IdleTimeout>
+      <Autotrack>0</Autotrack>
+      <RetryType>rtLinear</RetryType>
+      <NumRetries>5</NumRetries>
+      <NotificationRetries>5</NotificationRetries>
+      <RetryDelay>5000</RetryDelay>
+      <State>stStopped</State>
+      <Folder>Locker</Folder>
+      <NotificationThresholds>&lt;NotificationThresholds xmlns="http://www.orionhealth.com/rhapsody/2010/12/notifications/notificationThresholds" componentGuid="04ade750-64be-4ef6-a5b4-eb7bfe1a7581"&gt;
+  &lt;ResendPeriods warnings="0" alarms="0" escalations="0"/&gt;
+&lt;/NotificationThresholds&gt;</NotificationThresholds>
+      <MaxRetryDelayForExponential>300000</MaxRetryDelayForExponential>
+      <MessageRetryDelay>1000</MessageRetryDelay>
+    </CommPoint>
+    <CommPoint>
+      <ID>e030bf7e-3c4d-4eba-977d-f6ff83499cae</ID>
+      <Type>Database</Type>
+      <InputRoutes>
+        <ID>286bec66-0b5d-409f-92f9-02dd5ffcf394</ID>
+      </InputRoutes>
+      <OutputRoutes />
+      <Configuration>
+        <Property>
+          <Name>ConnectionErrorRetriesIncludedMessages</Name>
+          <Value>0</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>OnlineModeAction</Name>
+          <Value>0</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>DatabaseSetting</Name>
+          <Value>4</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>Host</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>Port</Name>
+          <Value />
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>DatabaseName</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>Username</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>Password</Name>
+          <Value />
+          <Type>ptPassword</Type>
+        </Property>
+        <Property>
+          <Name>ConfigFile</Name>
+          <Value />
+          <Type>ptFile</Type>
+        </Property>
+        <Property>
+          <Name>QueryTimeout</Name>
+          <Value>0</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>SocketTimeout</Name>
+          <Value>0</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>MessageBodyColumn</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>MessageType</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>Definition</Name>
+          <Value />
+          <Type>ptMsgDefn</Type>
+        </Property>
+        <Property>
+          <Name>MessageErrorHandlingMode</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>Deadlock</Name>
+          <Value />
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>QueryTimeoutConnectionError</Name>
+          <Value />
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>InputCharacterEncoding</Name>
+          <Value>151</Value>
+          <Type />
+        </Property>
+      </Configuration>
+      <GeneralProperties>
+        <Property>
+          <Name>StartupState</Name>
+          <Value>DONT_START</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>StartupStateTracking</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UseNotesAsSupportNotes</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UserName</Name>
+          <Value>Database</Value>
+          <Type />
+        </Property>
+      </GeneralProperties>
+      <Priority>-1</Priority>
+      <Mode>cpmInput</Mode>
+      <NumConnections>2</NumConnections>
+      <IdleTimeout>0</IdleTimeout>
+      <Autotrack>0</Autotrack>
+      <RetryType>rtLinear</RetryType>
+      <NumRetries>5</NumRetries>
+      <NotificationRetries>5</NotificationRetries>
+      <RetryDelay>5000</RetryDelay>
+      <State>stNotConfigured</State>
+      <Folder>Locker</Folder>
+      <NotificationThresholds>&lt;NotificationThresholds xmlns="http://www.orionhealth.com/rhapsody/2010/12/notifications/notificationThresholds" componentGuid="e030bf7e-3c4d-4eba-977d-f6ff83499cae"&gt;
+  &lt;ResendPeriods warnings="0" alarms="0" escalations="0"/&gt;
+&lt;/NotificationThresholds&gt;</NotificationThresholds>
+      <MaxRetryDelayForExponential>300000</MaxRetryDelayForExponential>
+      <MessageRetryDelay>1000</MessageRetryDelay>
+    </CommPoint>
+    <CommPoint>
+      <ID>5cb23ebf-a819-4d77-a4be-0c612102069a</ID>
+      <Type>E-mail</Type>
+      <InputRoutes />
+      <OutputRoutes />
+      <Configuration>
+        <Property>
+          <Name>ConnectionErrorRetriesIncludedMessages</Name>
+          <Value>0</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>OnlineModeAction</Name>
+          <Value>0</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>INCOMING_HOST</Name>
+          <Value>server13</Value>
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>STORE_PROTOCOL</Name>
+          <Value>1</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>POP3_PORT</Name>
+          <Value />
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>IMAP_PORT</Name>
+          <Value>143</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>IN_SECURE</Name>
+          <Value>true</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>IN_SSL_PROTOCOL</Name>
+          <Value>6</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>IN_SSL_CIPHER_SUITES</Name>
+          <Value>STRONG</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>IN_SECURE_TRUSTS</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>IN_READ_TIMEOUT</Name>
+          <Value>10000</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>IN_CONNECTION_TIMEOUT</Name>
+          <Value>30000</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>IN_USER</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>IN_PASSWORD</Name>
+          <Value />
+          <Type>ptPassword</Type>
+        </Property>
+        <Property>
+          <Name>FOLDER</Name>
+          <Value>INBOX</Value>
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>FOLDER_REFRESH_RATE</Name>
+          <Value>10000</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>DELETE_MESSAGE</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>RECEIVING_MODE</Name>
+          <Value>NORMAL</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>MESSAGE_AS_ATTACHMENT</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>EXTRACTED_HEADERS</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>JAVA_MAIL_OUTPUT_DEBUGGING_KEY</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>OUTGOING_HOST</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>TRANSPORT_PROTOCOL</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>PORT</Name>
+          <Value />
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>OUT_SECURE</Name>
+          <Value />
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>OUT_SSL_PROTOCOL</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>OUT_SSL_CIPHER_SUITES</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>OUT_SECURE_TRUSTS</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>OUT_READ_TIMEOUT</Name>
+          <Value />
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>OUT_CONNECTION_TIMEOUT</Name>
+          <Value />
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>USER</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>PASSWORD</Name>
+          <Value />
+          <Type>ptPassword</Type>
+        </Property>
+        <Property>
+          <Name>SENDING_MODE</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>FROM</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>REPLY_TO</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>TO</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>CC</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>SUBJECT</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>SEND_RHAPSODY_MESSAGE</Name>
+          <Value />
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>REPLACEMENT_BODY_TEXT</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>SEND_AS_ATTACHMENT</Name>
+          <Value />
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>ATTACHMENT_NAME</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>BODY_TEXT</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>CONTENT_TYPE</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>SMIME</Name>
+          <Value />
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>SMIME_OPTION</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>SIGN_OPTION</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>PRIVATE_KEY</Name>
+          <Value />
+          <Type>ptKey</Type>
+        </Property>
+        <Property>
+          <Name>SIGN_ALG</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>RECI_CERT</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>ENCRYPTION_ALG</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>PRIORITY</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>EMAIL_HEADERS</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>JAVA_MAIL_INPUT_DEBUGGING</Name>
+          <Value />
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>InputCharacterEncoding</Name>
+          <Value>151</Value>
+          <Type />
+        </Property>
+      </Configuration>
+      <GeneralProperties>
+        <Property>
+          <Name>StartupState</Name>
+          <Value>DONT_START</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>StartupStateTracking</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UseNotesAsSupportNotes</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UserName</Name>
+          <Value>E-mail Client 4</Value>
+          <Type />
+        </Property>
+      </GeneralProperties>
+      <Priority>-1</Priority>
+      <Mode>cpmInput</Mode>
+      <NumConnections>1</NumConnections>
+      <IdleTimeout>0</IdleTimeout>
+      <Autotrack>0</Autotrack>
+      <RetryType>rtLinear</RetryType>
+      <NumRetries>10</NumRetries>
+      <NotificationRetries>5</NotificationRetries>
+      <RetryDelay>5000</RetryDelay>
+      <State>stStopped</State>
+      <Folder>locker_inner;folder1</Folder>
+      <NotificationThresholds>&lt;NotificationThresholds xmlns="http://www.orionhealth.com/rhapsody/2010/12/notifications/notificationThresholds" componentGuid="5cb23ebf-a819-4d77-a4be-0c612102069a"&gt;
+  &lt;ResendPeriods warnings="0" alarms="0" escalations="0"/&gt;
+&lt;/NotificationThresholds&gt;</NotificationThresholds>
+      <MaxRetryDelayForExponential>300000</MaxRetryDelayForExponential>
+      <MessageRetryDelay>1000</MessageRetryDelay>
+    </CommPoint>
+    <CommPoint>
+      <ID>bb9826b6-e4a7-40ae-bd2b-00aa3bdbb3f6</ID>
+      <Type>E-mail</Type>
+      <InputRoutes />
+      <OutputRoutes />
+      <Configuration>
+        <Property>
+          <Name>ConnectionErrorRetriesIncludedMessages</Name>
+          <Value>0</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>OnlineModeAction</Name>
+          <Value>0</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>INCOMING_HOST</Name>
+          <Value>server13</Value>
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>STORE_PROTOCOL</Name>
+          <Value>1</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>POP3_PORT</Name>
+          <Value />
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>IMAP_PORT</Name>
+          <Value>143</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>IN_SECURE</Name>
+          <Value>true</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>IN_SSL_PROTOCOL</Name>
+          <Value>6</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>IN_SSL_CIPHER_SUITES</Name>
+          <Value>STRONG</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>IN_SECURE_TRUSTS</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>IN_READ_TIMEOUT</Name>
+          <Value>10000</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>IN_CONNECTION_TIMEOUT</Name>
+          <Value>30000</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>IN_USER</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>IN_PASSWORD</Name>
+          <Value />
+          <Type>ptPassword</Type>
+        </Property>
+        <Property>
+          <Name>FOLDER</Name>
+          <Value>INBOX</Value>
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>FOLDER_REFRESH_RATE</Name>
+          <Value>10000</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>DELETE_MESSAGE</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>RECEIVING_MODE</Name>
+          <Value>NORMAL</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>MESSAGE_AS_ATTACHMENT</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>EXTRACTED_HEADERS</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>JAVA_MAIL_OUTPUT_DEBUGGING_KEY</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>OUTGOING_HOST</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>TRANSPORT_PROTOCOL</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>PORT</Name>
+          <Value />
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>OUT_SECURE</Name>
+          <Value />
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>OUT_SSL_PROTOCOL</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>OUT_SSL_CIPHER_SUITES</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>OUT_SECURE_TRUSTS</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>OUT_READ_TIMEOUT</Name>
+          <Value />
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>OUT_CONNECTION_TIMEOUT</Name>
+          <Value />
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>USER</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>PASSWORD</Name>
+          <Value />
+          <Type>ptPassword</Type>
+        </Property>
+        <Property>
+          <Name>SENDING_MODE</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>FROM</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>REPLY_TO</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>TO</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>CC</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>SUBJECT</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>SEND_RHAPSODY_MESSAGE</Name>
+          <Value />
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>REPLACEMENT_BODY_TEXT</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>SEND_AS_ATTACHMENT</Name>
+          <Value />
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>ATTACHMENT_NAME</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>BODY_TEXT</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>CONTENT_TYPE</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>SMIME</Name>
+          <Value />
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>SMIME_OPTION</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>SIGN_OPTION</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>PRIVATE_KEY</Name>
+          <Value />
+          <Type>ptKey</Type>
+        </Property>
+        <Property>
+          <Name>SIGN_ALG</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>RECI_CERT</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>ENCRYPTION_ALG</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>PRIORITY</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>EMAIL_HEADERS</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>JAVA_MAIL_INPUT_DEBUGGING</Name>
+          <Value />
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>InputCharacterEncoding</Name>
+          <Value>151</Value>
+          <Type />
+        </Property>
+      </Configuration>
+      <GeneralProperties>
+        <Property>
+          <Name>StartupState</Name>
+          <Value>START_LEVEL_3</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>StartupStateTracking</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UseNotesAsSupportNotes</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UserName</Name>
+          <Value>E-mail Client</Value>
+          <Type />
+        </Property>
+      </GeneralProperties>
+      <Priority>-1</Priority>
+      <Mode>cpmInput</Mode>
+      <NumConnections>1</NumConnections>
+      <IdleTimeout>0</IdleTimeout>
+      <Autotrack>0</Autotrack>
+      <RetryType>rtLinear</RetryType>
+      <NumRetries>10</NumRetries>
+      <NotificationRetries>5</NotificationRetries>
+      <RetryDelay>5000</RetryDelay>
+      <State>stStopped</State>
+      <Folder>Locker</Folder>
+      <NotificationThresholds>&lt;NotificationThresholds xmlns="http://www.orionhealth.com/rhapsody/2010/12/notifications/notificationThresholds" componentGuid="bb9826b6-e4a7-40ae-bd2b-00aa3bdbb3f6"&gt;
+  &lt;ResendPeriods warnings="0" alarms="0" escalations="0"/&gt;
+&lt;/NotificationThresholds&gt;</NotificationThresholds>
+      <MaxRetryDelayForExponential>300000</MaxRetryDelayForExponential>
+      <MessageRetryDelay>1000</MessageRetryDelay>
+    </CommPoint>
+    <CommPoint>
+      <ID>a92c8141-c8e1-4a1e-8971-ea84e7671a67</ID>
+      <Type>c.o.r.modules.sns</Type>
+      <InputRoutes />
+      <OutputRoutes />
+      <Configuration>
+        <Property>
+          <Name>ConnectionErrorRetriesIncludedMessages</Name>
+          <Value>0</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>EndpointUrl</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>DestinationType</Name>
+          <Value>topic</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>Destination</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>AccessKeyId</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>SecretKey</Name>
+          <Value />
+          <Type>ptPassword</Type>
+        </Property>
+        <Property>
+          <Name>Subject</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>MessageStructure</Name>
+          <Value>string</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>ConnectionTimeout</Name>
+          <Value>10000</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>ReadTimeout</Name>
+          <Value>30000</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>InputCharacterEncoding</Name>
+          <Value>151</Value>
+          <Type />
+        </Property>
+      </Configuration>
+      <GeneralProperties>
+        <Property>
+          <Name>StartupState</Name>
+          <Value>START_LEVEL_3</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>StartupStateTracking</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UseNotesAsSupportNotes</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UserName</Name>
+          <Value>Amazon SNS</Value>
+          <Type />
+        </Property>
+      </GeneralProperties>
+      <Priority>-1</Priority>
+      <Mode>cpmOutput</Mode>
+      <NumConnections>1</NumConnections>
+      <IdleTimeout>0</IdleTimeout>
+      <Autotrack>0</Autotrack>
+      <RetryType>rtLinear</RetryType>
+      <NumRetries>5</NumRetries>
+      <NotificationRetries>5</NotificationRetries>
+      <RetryDelay>5000</RetryDelay>
+      <State>stNotConfigured</State>
+      <Folder>Locker;folder1;sub_folder</Folder>
+      <NotificationThresholds>&lt;NotificationThresholds xmlns="http://www.orionhealth.com/rhapsody/2010/12/notifications/notificationThresholds" componentGuid="a92c8141-c8e1-4a1e-8971-ea84e7671a67"&gt;
+  &lt;ResendPeriods warnings="0" alarms="0" escalations="0"/&gt;
+&lt;/NotificationThresholds&gt;</NotificationThresholds>
+      <MaxRetryDelayForExponential>300000</MaxRetryDelayForExponential>
+      <MessageRetryDelay>1000</MessageRetryDelay>
+    </CommPoint>
+    <CommPoint>
+      <ID>be0d8ebf-3794-4ae0-88db-21f2092dab90</ID>
+      <Type>HTTPServer</Type>
+      <InputRoutes />
+      <OutputRoutes />
+      <Configuration>
+        <Property>
+          <Name>ConnectionErrorRetriesIncludedMessages</Name>
+          <Value>0</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>OnlineModeAction</Name>
+          <Value>0</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>LocalHost</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>LocalPort</Name>
+          <Value>80</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>ContextPath</Name>
+          <Value>C:/Path/Test</Value>
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>Timeout</Name>
+          <Value>0</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>Secure</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>SslMode</Name>
+          <Value>6</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>SslCipherSuites</Name>
+          <Value>FIPS</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>ClientAuth</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>SecureKeys</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>SecureTrusts</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>GetAction</Name>
+          <Value>3</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>PutAction</Name>
+          <Value>3</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>PostAction</Name>
+          <Value>5</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>HeadAction</Name>
+          <Value>4</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>TraceAction</Name>
+          <Value>5</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>DeleteAction</Name>
+          <Value>5</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>OptionsAction</Name>
+          <Value>5</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>RedirectURL</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>Template</Name>
+          <Value />
+          <Type>ptFile</Type>
+        </Property>
+        <Property>
+          <Name>RequestParams</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>MessageParamName</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>NullMessage</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>ProtocolSupport</Name>
+          <Value>0</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>RequestHeaders</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>ContentType</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>ContentEncoding</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>ResponseHeaders</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>Copyheaders</Name>
+          <Value />
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>REtoMatchHeaders</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>InputCharacterEncoding</Name>
+          <Value>151</Value>
+          <Type />
+        </Property>
+      </Configuration>
+      <GeneralProperties>
+        <Property>
+          <Name>StartupState</Name>
+          <Value>DONT_START</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>StartupStateTracking</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UseNotesAsSupportNotes</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UserName</Name>
+          <Value>HTTP Server</Value>
+          <Type />
+        </Property>
+      </GeneralProperties>
+      <Priority>-1</Priority>
+      <Mode>cpmInput</Mode>
+      <NumConnections>1</NumConnections>
+      <IdleTimeout>0</IdleTimeout>
+      <Autotrack>0</Autotrack>
+      <RetryType>rtExponential</RetryType>
+      <NumRetries>5</NumRetries>
+      <NotificationRetries>5</NotificationRetries>
+      <RetryDelay>5000</RetryDelay>
+      <State>stNotConfigured</State>
+      <Folder>locker_inner;folder1</Folder>
+      <NotificationThresholds>&lt;NotificationThresholds xmlns="http://www.orionhealth.com/rhapsody/2010/12/notifications/notificationThresholds" componentGuid="be0d8ebf-3794-4ae0-88db-21f2092dab90"&gt;
+  &lt;ResendPeriods warnings="0" alarms="0" escalations="0"/&gt;
+&lt;/NotificationThresholds&gt;</NotificationThresholds>
+      <MaxRetryDelayForExponential>300000</MaxRetryDelayForExponential>
+      <MessageRetryDelay>1000</MessageRetryDelay>
+    </CommPoint>
+    <CommPoint>
+      <ID>33f221f6-dd69-47a1-abb3-ca9ac646b505</ID>
+      <Type>E-mail</Type>
+      <InputRoutes />
+      <OutputRoutes />
+      <Configuration>
+        <Property>
+          <Name>ConnectionErrorRetriesIncludedMessages</Name>
+          <Value>0</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>OnlineModeAction</Name>
+          <Value>0</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>INCOMING_HOST</Name>
+          <Value>server13</Value>
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>STORE_PROTOCOL</Name>
+          <Value>1</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>POP3_PORT</Name>
+          <Value />
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>IMAP_PORT</Name>
+          <Value>143</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>IN_SECURE</Name>
+          <Value>true</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>IN_SSL_PROTOCOL</Name>
+          <Value>6</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>IN_SSL_CIPHER_SUITES</Name>
+          <Value>STRONG</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>IN_SECURE_TRUSTS</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>IN_READ_TIMEOUT</Name>
+          <Value>10000</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>IN_CONNECTION_TIMEOUT</Name>
+          <Value>30000</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>IN_USER</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>IN_PASSWORD</Name>
+          <Value />
+          <Type>ptPassword</Type>
+        </Property>
+        <Property>
+          <Name>FOLDER</Name>
+          <Value>INBOX</Value>
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>FOLDER_REFRESH_RATE</Name>
+          <Value>10000</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>DELETE_MESSAGE</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>RECEIVING_MODE</Name>
+          <Value>NORMAL</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>MESSAGE_AS_ATTACHMENT</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>EXTRACTED_HEADERS</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>JAVA_MAIL_OUTPUT_DEBUGGING_KEY</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>OUTGOING_HOST</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>TRANSPORT_PROTOCOL</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>PORT</Name>
+          <Value />
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>OUT_SECURE</Name>
+          <Value />
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>OUT_SSL_PROTOCOL</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>OUT_SSL_CIPHER_SUITES</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>OUT_SECURE_TRUSTS</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>OUT_READ_TIMEOUT</Name>
+          <Value />
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>OUT_CONNECTION_TIMEOUT</Name>
+          <Value />
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>USER</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>PASSWORD</Name>
+          <Value />
+          <Type>ptPassword</Type>
+        </Property>
+        <Property>
+          <Name>SENDING_MODE</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>FROM</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>REPLY_TO</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>TO</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>CC</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>SUBJECT</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>SEND_RHAPSODY_MESSAGE</Name>
+          <Value />
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>REPLACEMENT_BODY_TEXT</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>SEND_AS_ATTACHMENT</Name>
+          <Value />
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>ATTACHMENT_NAME</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>BODY_TEXT</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>CONTENT_TYPE</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>SMIME</Name>
+          <Value />
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>SMIME_OPTION</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>SIGN_OPTION</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>PRIVATE_KEY</Name>
+          <Value />
+          <Type>ptKey</Type>
+        </Property>
+        <Property>
+          <Name>SIGN_ALG</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>RECI_CERT</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>ENCRYPTION_ALG</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>PRIORITY</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>EMAIL_HEADERS</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>JAVA_MAIL_INPUT_DEBUGGING</Name>
+          <Value />
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>InputCharacterEncoding</Name>
+          <Value>151</Value>
+          <Type />
+        </Property>
+      </Configuration>
+      <GeneralProperties>
+        <Property>
+          <Name>StartupState</Name>
+          <Value>START_LEVEL_3</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>StartupStateTracking</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UseNotesAsSupportNotes</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UserName</Name>
+          <Value>E-mail Client</Value>
+          <Type />
+        </Property>
+      </GeneralProperties>
+      <Priority>-1</Priority>
+      <Mode>cpmInput</Mode>
+      <NumConnections>1</NumConnections>
+      <IdleTimeout>0</IdleTimeout>
+      <Autotrack>0</Autotrack>
+      <RetryType>rtLinear</RetryType>
+      <NumRetries>10</NumRetries>
+      <NotificationRetries>5</NotificationRetries>
+      <RetryDelay>5000</RetryDelay>
+      <State>stStopped</State>
+      <Folder>locker_inner;folder1</Folder>
+      <NotificationThresholds>&lt;NotificationThresholds xmlns="http://www.orionhealth.com/rhapsody/2010/12/notifications/notificationThresholds" componentGuid="33f221f6-dd69-47a1-abb3-ca9ac646b505"&gt;
+  &lt;ResendPeriods warnings="0" alarms="0" escalations="0"/&gt;
+&lt;/NotificationThresholds&gt;</NotificationThresholds>
+      <MaxRetryDelayForExponential>300000</MaxRetryDelayForExponential>
+      <MessageRetryDelay>1000</MessageRetryDelay>
+    </CommPoint>
+    <CommPoint>
+      <ID>9e0241b7-9a04-4a1c-aa2d-64e77b16636e</ID>
+      <Type>E-mail</Type>
+      <InputRoutes />
+      <OutputRoutes />
+      <Configuration>
+        <Property>
+          <Name>ConnectionErrorRetriesIncludedMessages</Name>
+          <Value>0</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>OnlineModeAction</Name>
+          <Value>0</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>INCOMING_HOST</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>STORE_PROTOCOL</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>POP3_PORT</Name>
+          <Value />
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>IMAP_PORT</Name>
+          <Value />
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>IN_SECURE</Name>
+          <Value />
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>IN_SSL_PROTOCOL</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>IN_SSL_CIPHER_SUITES</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>IN_SECURE_TRUSTS</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>IN_READ_TIMEOUT</Name>
+          <Value />
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>IN_CONNECTION_TIMEOUT</Name>
+          <Value />
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>IN_USER</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>IN_PASSWORD</Name>
+          <Value />
+          <Type>ptPassword</Type>
+        </Property>
+        <Property>
+          <Name>FOLDER</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>FOLDER_REFRESH_RATE</Name>
+          <Value />
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>DELETE_MESSAGE</Name>
+          <Value />
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>RECEIVING_MODE</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>MESSAGE_AS_ATTACHMENT</Name>
+          <Value />
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>EXTRACTED_HEADERS</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>JAVA_MAIL_OUTPUT_DEBUGGING_KEY</Name>
+          <Value />
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>OUTGOING_HOST</Name>
+          <Value>smpt_likeGoogle</Value>
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>TRANSPORT_PROTOCOL</Name>
+          <Value>0</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>PORT</Name>
+          <Value>8300</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>OUT_SECURE</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>OUT_SSL_PROTOCOL</Name>
+          <Value>6</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>OUT_SSL_CIPHER_SUITES</Name>
+          <Value>FIPS</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>OUT_SECURE_TRUSTS</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>OUT_READ_TIMEOUT</Name>
+          <Value>0</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>OUT_CONNECTION_TIMEOUT</Name>
+          <Value>0</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>USER</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>PASSWORD</Name>
+          <Value />
+          <Type>ptPassword</Type>
+        </Property>
+        <Property>
+          <Name>SENDING_MODE</Name>
+          <Value>NORMAL</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>FROM</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>REPLY_TO</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>TO</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>CC</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>SUBJECT</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>SEND_RHAPSODY_MESSAGE</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>REPLACEMENT_BODY_TEXT</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>SEND_AS_ATTACHMENT</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>ATTACHMENT_NAME</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>BODY_TEXT</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>CONTENT_TYPE</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>SMIME</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>SMIME_OPTION</Name>
+          <Value>0</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>SIGN_OPTION</Name>
+          <Value>1</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>PRIVATE_KEY</Name>
+          <Value />
+          <Type>ptKey</Type>
+        </Property>
+        <Property>
+          <Name>SIGN_ALG</Name>
+          <Value>0</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>RECI_CERT</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>ENCRYPTION_ALG</Name>
+          <Value>0</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>PRIORITY</Name>
+          <Value>1</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>EMAIL_HEADERS</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>JAVA_MAIL_INPUT_DEBUGGING</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>InputCharacterEncoding</Name>
+          <Value>151</Value>
+          <Type />
+        </Property>
+      </Configuration>
+      <GeneralProperties>
+        <Property>
+          <Name>StartupState</Name>
+          <Value>DONT_START</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>StartupStateTracking</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UseNotesAsSupportNotes</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UserName</Name>
+          <Value>E-mail Client 2</Value>
+          <Type />
+        </Property>
+      </GeneralProperties>
+      <Priority>-1</Priority>
+      <Mode>cpmOutput</Mode>
+      <NumConnections>1</NumConnections>
+      <IdleTimeout>0</IdleTimeout>
+      <Autotrack>0</Autotrack>
+      <RetryType>rtLinear</RetryType>
+      <NumRetries>10</NumRetries>
+      <NotificationRetries>5</NotificationRetries>
+      <RetryDelay>5000</RetryDelay>
+      <State>stNotConfigured</State>
+      <Folder>locker_inner;folder1</Folder>
+      <NotificationThresholds>&lt;NotificationThresholds xmlns="http://www.orionhealth.com/rhapsody/2010/12/notifications/notificationThresholds" componentGuid="9e0241b7-9a04-4a1c-aa2d-64e77b16636e"&gt;
+  &lt;ResendPeriods warnings="0" alarms="0" escalations="0"/&gt;
+&lt;/NotificationThresholds&gt;</NotificationThresholds>
+      <MaxRetryDelayForExponential>300000</MaxRetryDelayForExponential>
+      <MessageRetryDelay>1000</MessageRetryDelay>
+    </CommPoint>
+    <CommPoint>
+      <ID>918aafc1-6867-4794-be36-ae1a860b7620</ID>
+      <Type>E-mail</Type>
+      <InputRoutes />
+      <OutputRoutes />
+      <Configuration>
+        <Property>
+          <Name>ConnectionErrorRetriesIncludedMessages</Name>
+          <Value>0</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>OnlineModeAction</Name>
+          <Value>0</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>INCOMING_HOST</Name>
+          <Value>server13</Value>
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>STORE_PROTOCOL</Name>
+          <Value>1</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>POP3_PORT</Name>
+          <Value />
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>IMAP_PORT</Name>
+          <Value>143</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>IN_SECURE</Name>
+          <Value>true</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>IN_SSL_PROTOCOL</Name>
+          <Value>6</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>IN_SSL_CIPHER_SUITES</Name>
+          <Value>STRONG</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>IN_SECURE_TRUSTS</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>IN_READ_TIMEOUT</Name>
+          <Value>10000</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>IN_CONNECTION_TIMEOUT</Name>
+          <Value>30000</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>IN_USER</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>IN_PASSWORD</Name>
+          <Value />
+          <Type>ptPassword</Type>
+        </Property>
+        <Property>
+          <Name>FOLDER</Name>
+          <Value>INBOX</Value>
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>FOLDER_REFRESH_RATE</Name>
+          <Value>10000</Value>
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>DELETE_MESSAGE</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>RECEIVING_MODE</Name>
+          <Value>NORMAL</Value>
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>MESSAGE_AS_ATTACHMENT</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>EXTRACTED_HEADERS</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>JAVA_MAIL_OUTPUT_DEBUGGING_KEY</Name>
+          <Value>false</Value>
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>OUTGOING_HOST</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>TRANSPORT_PROTOCOL</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>PORT</Name>
+          <Value />
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>OUT_SECURE</Name>
+          <Value />
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>OUT_SSL_PROTOCOL</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>OUT_SSL_CIPHER_SUITES</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>OUT_SECURE_TRUSTS</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>OUT_READ_TIMEOUT</Name>
+          <Value />
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>OUT_CONNECTION_TIMEOUT</Name>
+          <Value />
+          <Type>ptInteger</Type>
+        </Property>
+        <Property>
+          <Name>USER</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>PASSWORD</Name>
+          <Value />
+          <Type>ptPassword</Type>
+        </Property>
+        <Property>
+          <Name>SENDING_MODE</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>FROM</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>REPLY_TO</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>TO</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>CC</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>SUBJECT</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>SEND_RHAPSODY_MESSAGE</Name>
+          <Value />
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>REPLACEMENT_BODY_TEXT</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>SEND_AS_ATTACHMENT</Name>
+          <Value />
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>ATTACHMENT_NAME</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>BODY_TEXT</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>CONTENT_TYPE</Name>
+          <Value />
+          <Type>ptString</Type>
+        </Property>
+        <Property>
+          <Name>SMIME</Name>
+          <Value />
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>SMIME_OPTION</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>SIGN_OPTION</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>PRIVATE_KEY</Name>
+          <Value />
+          <Type>ptKey</Type>
+        </Property>
+        <Property>
+          <Name>SIGN_ALG</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>RECI_CERT</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>ENCRYPTION_ALG</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>PRIORITY</Name>
+          <Value />
+          <Type>ptMap</Type>
+        </Property>
+        <Property>
+          <Name>EMAIL_HEADERS</Name>
+          <Value />
+          <Type>ptArray</Type>
+        </Property>
+        <Property>
+          <Name>JAVA_MAIL_INPUT_DEBUGGING</Name>
+          <Value />
+          <Type>ptBoolean</Type>
+        </Property>
+        <Property>
+          <Name>InputCharacterEncoding</Name>
+          <Value>151</Value>
+          <Type />
+        </Property>
+      </Configuration>
+      <GeneralProperties>
+        <Property>
+          <Name>StartupState</Name>
+          <Value>START_LEVEL_1</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>StartupStateTracking</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UseNotesAsSupportNotes</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UserName</Name>
+          <Value>E-mail Client 3</Value>
+          <Type />
+        </Property>
+      </GeneralProperties>
+      <Priority>-1</Priority>
+      <Mode>cpmInput</Mode>
+      <NumConnections>1</NumConnections>
+      <IdleTimeout>0</IdleTimeout>
+      <Autotrack>0</Autotrack>
+      <RetryType>rtLinear</RetryType>
+      <NumRetries>10</NumRetries>
+      <NotificationRetries>5</NotificationRetries>
+      <RetryDelay>5000</RetryDelay>
+      <State>stStopped</State>
+      <Folder>locker_inner;folder1</Folder>
+      <NotificationThresholds>&lt;NotificationThresholds xmlns="http://www.orionhealth.com/rhapsody/2010/12/notifications/notificationThresholds" componentGuid="918aafc1-6867-4794-be36-ae1a860b7620"&gt;
+  &lt;ResendPeriods warnings="0" alarms="0" escalations="0"/&gt;
+&lt;/NotificationThresholds&gt;</NotificationThresholds>
+      <MaxRetryDelayForExponential>300000</MaxRetryDelayForExponential>
+      <MessageRetryDelay>1000</MessageRetryDelay>
+    </CommPoint>
+    <CommPoint>
+      <ID>7bb59032-3d06-4c11-b662-f83cf1c46ef8</ID>
+      <Type>Sink</Type>
+      <InputRoutes />
+      <OutputRoutes />
+      <Configuration>
+        <Property>
+          <Name>ConnectionErrorRetriesIncludedMessages</Name>
+          <Value>0</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>InputCharacterEncoding</Name>
+          <Value>151</Value>
+          <Type />
+        </Property>
+      </Configuration>
+      <GeneralProperties>
+        <Property>
+          <Name>StartupState</Name>
+          <Value>START_LEVEL_3</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>StartupStateTracking</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UseNotesAsSupportNotes</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UserName</Name>
+          <Value>Sink 2</Value>
+          <Type />
+        </Property>
+      </GeneralProperties>
+      <Priority>-1</Priority>
+      <Mode>cpmOutput</Mode>
+      <NumConnections>1</NumConnections>
+      <IdleTimeout>0</IdleTimeout>
+      <Autotrack>0</Autotrack>
+      <RetryType>rtLinear</RetryType>
+      <NumRetries>5</NumRetries>
+      <NotificationRetries>5</NotificationRetries>
+      <RetryDelay>5000</RetryDelay>
+      <State>stStopped</State>
+      <Folder>Locker</Folder>
+      <NotificationThresholds>&lt;NotificationThresholds xmlns="http://www.orionhealth.com/rhapsody/2010/12/notifications/notificationThresholds" componentGuid="7bb59032-3d06-4c11-b662-f83cf1c46ef8"&gt;
+  &lt;ResendPeriods warnings="0" alarms="0" escalations="0"/&gt;
+&lt;/NotificationThresholds&gt;</NotificationThresholds>
+      <MaxRetryDelayForExponential>300000</MaxRetryDelayForExponential>
+      <MessageRetryDelay>1000</MessageRetryDelay>
+    </CommPoint>
+    <CommPoint>
+      <ID>2e3c5e9c-fb02-4280-b841-4d068dc2d108</ID>
+      <Type>Sink</Type>
+      <InputRoutes />
+      <OutputRoutes />
+      <Configuration>
+        <Property>
+          <Name>ConnectionErrorRetriesIncludedMessages</Name>
+          <Value>0</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>InputCharacterEncoding</Name>
+          <Value>151</Value>
+          <Type />
+        </Property>
+      </Configuration>
+      <GeneralProperties>
+        <Property>
+          <Name>StartupState</Name>
+          <Value>START_LEVEL_2</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>StartupStateTracking</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UseNotesAsSupportNotes</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UserName</Name>
+          <Value>Sink 2</Value>
+          <Type />
+        </Property>
+      </GeneralProperties>
+      <Priority>-1</Priority>
+      <Mode>cpmOutput</Mode>
+      <NumConnections>1</NumConnections>
+      <IdleTimeout>0</IdleTimeout>
+      <Autotrack>0</Autotrack>
+      <RetryType>rtLinear</RetryType>
+      <NumRetries>5</NumRetries>
+      <NotificationRetries>5</NotificationRetries>
+      <RetryDelay>5000</RetryDelay>
+      <State>stStopped</State>
+      <Folder>locker_inner;folder1</Folder>
+      <NotificationThresholds>&lt;NotificationThresholds xmlns="http://www.orionhealth.com/rhapsody/2010/12/notifications/notificationThresholds" componentGuid="2e3c5e9c-fb02-4280-b841-4d068dc2d108"&gt;
+  &lt;ResendPeriods warnings="0" alarms="0" escalations="0"/&gt;
+&lt;/NotificationThresholds&gt;</NotificationThresholds>
+      <MaxRetryDelayForExponential>300000</MaxRetryDelayForExponential>
+      <MessageRetryDelay>1000</MessageRetryDelay>
+    </CommPoint>
+  </CommPoints>
+  <Routes>
+    <Route>
+      <ID>286bec66-0b5d-409f-92f9-02dd5ffcf394</ID>
+      <Folder>Locker</Folder>
+      <Filters>
+        <Filter>
+          <ID>286bec66-0b5d-409f-92f9-02dd5ffcf394/be62a0a0-dc29-4317-be28-f9bbb6f39bf3</ID>
+          <Type>Error</Type>
+          <State>stConfigured</State>
+          <Priority>-1</Priority>
+          <Configuration>
+            <Property>
+              <Name>ErrorMessage</Name>
+              <Value>Sent from error filter</Value>
+              <Type>ptString</Type>
+            </Property>
+          </Configuration>
+          <GeneralProperties>
+            <Property>
+              <Name>UseNotesAsSupportNotes</Name>
+              <Value>false</Value>
+              <Type />
+            </Property>
+            <Property>
+              <Name>UserName</Name>
+              <Value>Error Queue</Value>
+              <Type />
+            </Property>
+          </GeneralProperties>
+          <Destinations>
+            <Destination>
+              <ID>04ade750-64be-4ef6-a5b4-eb7bfe1a7581</ID>
+            </Destination>
+          </Destinations>
+          <NextDestinations xsi:type="xsd:string">&lt;NextDestinations&gt;&lt;Connector&gt;&lt;DestinationId&gt;04ade750-64be-4ef6-a5b4-eb7bfe1a7581&lt;/DestinationId&gt;&lt;/Connector&gt;&lt;/NextDestinations&gt;</NextDestinations>
+        </Filter>
+      </Filters>
+      <InputCommPoints>
+        <InputCommPoint>
+          <ID>e030bf7e-3c4d-4eba-977d-f6ff83499cae</ID>
+          <FirstFilters>
+            <ID>04ade750-64be-4ef6-a5b4-eb7bfe1a7581</ID>
+            <ID>286bec66-0b5d-409f-92f9-02dd5ffcf394/be62a0a0-dc29-4317-be28-f9bbb6f39bf3</ID>
+          </FirstFilters>
+        </InputCommPoint>
+      </InputCommPoints>
+      <OutputCommPoints>
+        <ID>04ade750-64be-4ef6-a5b4-eb7bfe1a7581</ID>
+      </OutputCommPoints>
+      <RouteProperties>
+        <ExtractedProperties>
+          <ExtractedProperty>
+            <Name>def1</Name>
+            <SystemProperty>0</SystemProperty>
+            <Required>0</Required>
+            <ArchiveProperty>0</ArchiveProperty>
+          </ExtractedProperty>
+          <ExtractedProperty>
+            <Name>def2</Name>
+            <SystemProperty>0</SystemProperty>
+            <Required>0</Required>
+            <ArchiveProperty>0</ArchiveProperty>
+          </ExtractedProperty>
+        </ExtractedProperties>
+        <RoutePropertiesDefinitions>
+          <RoutePropertiesDefinition>
+            <Name>Message Definition.s3d</Name>
+            <DefinitionProperties>
+              <DefinitionProperty>
+                <Name>def1</Name>
+                <Messages>
+                  <Message>"This is a secret message and must not be read"</Message>
+                </Messages>
+              </DefinitionProperty>
+            </DefinitionProperties>
+          </RoutePropertiesDefinition>
+          <RoutePropertiesDefinition>
+            <Name>Message Definition.s3d</Name>
+            <DefinitionProperties>
+              <DefinitionProperty>
+                <Name>def1</Name>
+                <Messages>
+                  <Message>"This is a message, nothing else here to see."</Message>
+                </Messages>
+              </DefinitionProperty>
+            </DefinitionProperties>
+          </RoutePropertiesDefinition>
+          <RoutePropertiesDefinition>
+            <SomeRandomElement>It doesn't matter what goes in between</SomeRandomElement>
+          </RoutePropertiesDefinition>
+          <RoutePropertiesDefinition>
+            <Name>Message Definition2.s3d</Name>
+            <DefinitionProperties>
+              <DefinitionProperty>
+                <Name>def2</Name>
+                <Messages>
+                  <Message>"Maybe one shouldn't read this message either"</Message>
+                </Messages>
+              </DefinitionProperty>
+            </DefinitionProperties>
+          </RoutePropertiesDefinition>
+        </RoutePropertiesDefinitions>
+        <RepeatedResponse>brIgnore</RepeatedResponse>
+        <UnsolicitedResponse>brIgnore</UnsolicitedResponse>
+      </RouteProperties>
+      <GeneralProperties>
+        <Property>
+          <Name>_04ade750-64be-4ef6-a5b4-eb7bfe1a7581__Position</Name>
+          <Value>(924,180,975,273)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_286bec66-0b5d-409f-92f9-02dd5ffcf394/be62a0a0-dc29-4317-be28-f9bbb6f39bf3__Position</Name>
+          <Value>(447,250,534,343)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_e030bf7e-3c4d-4eba-977d-f6ff83499cae_I_Position</Name>
+          <Value>(0,80,76,173)</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_InputWidth</Name>
+          <Value>82</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>_OutputStart</Name>
+          <Value>923</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>StartupState</Name>
+          <Value>START_LEVEL_1</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>StartupStateTracking</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UseNotesAsSupportNotes</Name>
+          <Value>false</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>UserName</Name>
+          <Value>rout1</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>FifoMode</Name>
+          <Value>InputOrder</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>RouteErrorHandlerName</Name>
+          <Value>Route Error Handler</Value>
+          <Type />
+        </Property>
+        <Property>
+          <Name>RouteErrorHandlerVisible</Name>
+          <Value>False</Value>
+          <Type />
+        </Property>
+      </GeneralProperties>
+      <Priority>3</Priority>
+      <State>stStopped</State>
+      <NotificationThresholds>&lt;NotificationThresholds xmlns="http://www.orionhealth.com/rhapsody/2010/12/notifications/notificationThresholds" componentGuid="286bec66-0b5d-409f-92f9-02dd5ffcf394"&gt;
+  &lt;ResendPeriods warnings="0" alarms="0" escalations="0"/&gt;
+&lt;/NotificationThresholds&gt;</NotificationThresholds>
+    </Route>
+  </Routes>
+  <Lockers>
+    <Locker Id="30433500-d3bd-11e7-bf20-080027476b61" Name="Locker" />
+    <Locker Id="f5f02984-1722-41e0-b08a-86994767cccf" Name="locker_inner" />
+  </Lockers>
+</Engine>
