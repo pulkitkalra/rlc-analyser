@@ -76,6 +76,18 @@ If you get a compilation error such as: "No Compiler is provided in this environ
 
 
 ## Contributing to the Project
+### Introducing New Features
+For each feature or improvement please refer to the Projects that are currently opened under the Projects tab above. If the project is not currently opened:
+
+1. Make a new project with a clear title and description. Set the project up so has the basic KANBAN style.
+2. Add appropriate to-dos.
+
+Use this space to populate the projects with sub tasks.
+
+### Creating Issues
+If you notice a bug or problem with the functionality of the code, create an issue and in the GitHub Issue Tracker tab in the top bar. 
+
+### Contributing to the Code
 To ensure that the code is maintained to a satisfactory standard, all changes made to the program should undergo an approval process before merging to the master branch. 
 
 1. Fork the orionhealth/rlc-analyser repository.
